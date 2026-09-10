@@ -1,5 +1,10 @@
 # SMART AQI
 
+[![CI](https://github.com/mohammadsameer45/SMART-AQI/actions/workflows/ci.yml/badge.svg)](https://github.com/mohammadsameer45/SMART-AQI/actions/workflows/ci.yml)
+![Python 3.11](https://img.shields.io/badge/python-3.11-blue)
+![React 19 + Vite](https://img.shields.io/badge/react-19%20%2B%20vite-149eca)
+![tests](https://img.shields.io/badge/tests-30%20backend%20%2B%2012%20frontend-brightgreen)
+
 An intelligent air-quality monitoring, visualisation, **7-day forecasting** and
 health-advisory platform for **India → State → District/City → Station**.
 

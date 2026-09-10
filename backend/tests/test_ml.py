@@ -78,6 +78,7 @@ def test_sequence_shapes():
 
 def test_nn_seeding_is_reproducible():
     """reseed() must give byte-identical RNG draws, so training runs match."""
+    pytest.importorskip("tensorflow")
     import numpy as np
     from backend.ml import nn_common
     assert nn_common.SEED == 42
