@@ -1,0 +1,15 @@
+.auth-page { min-height: 100vh; display: grid; place-items: center; position: relative; overflow: hidden; padding: 40px 20px; }
+.auth-canvas { position: absolute; inset: 0; z-index: 0; }
+.auth-fallback { position: absolute; inset: 0;
+  background: radial-gradient(600px 500px at 50% 45%, rgba(124,58,237,.4), transparent 70%); }
+.auth-card { position: relative; z-index: 1; width: 100%; max-width: 420px; padding: 34px 32px;
+  display: flex; flex-direction: column; box-shadow: var(--shadow-soft), var(--shadow-glow); }
+.auth-title { font-size: 26px; }
+.auth-form { display: flex; flex-direction: column; gap: 15px; }
+.auth-alt { margin-top: 18px; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; color: var(--text-2); }
+.auth-alt a { color: var(--violet-400); }
+.pw-meter { height: 5px; border-radius: 999px; background: var(--stroke); overflow: hidden; margin-top: 6px; }
+.pw-meter span { display: block; height: 100%; transition: width .3s var(--ease); background: var(--aqi-verypoor); }
+.pw-meter span[data-s="2"] { background: var(--aqi-moderate); }
+.pw-meter span[data-s="3"] { background: var(--aqi-satisfactory); }
+.pw-meter span[data-s="4"] { background: var(--aqi-good); }

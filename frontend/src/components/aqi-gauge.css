@@ -1,0 +1,12 @@
+.gauge { position: relative; display: grid; place-items: center; }
+.gauge svg { transform: rotate(0deg); overflow: visible; }
+.gauge-track { fill: none; stroke: rgba(255,255,255,0.06); stroke-width: 16; stroke-linecap: round; }
+.gauge-band { fill: none; stroke-width: 4; opacity: 0.55; stroke-linecap: butt; }
+.gauge-progress { fill: none; stroke-width: 16; stroke-linecap: round;
+  filter: drop-shadow(0 0 10px currentColor); transition: stroke .4s var(--ease); }
+.gauge-knob { filter: drop-shadow(0 0 6px #fff); }
+.gauge-center { position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 2px; }
+.gauge-num { font-family: var(--font-display); font-size: 54px; font-weight: 700; line-height: 1; }
+.gauge-cat { font-family: var(--font-display); font-weight: 600; font-size: 15px; color: var(--text-1); }
+.gauge-sub { margin-top: 2px; }

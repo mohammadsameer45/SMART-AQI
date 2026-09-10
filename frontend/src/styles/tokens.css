@@ -1,0 +1,50 @@
+/* SMART AQI design tokens — dark, premium, futuristic. Hand-written CSS only. */
+:root {
+  /* surfaces */
+  --bg-0: #050507;
+  --bg-1: #08080d;
+  --bg-2: #0d0d15;
+  --panel: rgba(255, 255, 255, 0.03);
+  --panel-2: rgba(255, 255, 255, 0.05);
+  --stroke: rgba(255, 255, 255, 0.08);
+  --stroke-strong: rgba(255, 255, 255, 0.14);
+
+  /* brand violet */
+  --violet-900: #4c1d95;
+  --violet-700: #6d28d9;
+  --violet-600: #7c3aed;
+  --violet-500: #8b5cf6;
+  --violet-400: #a78bfa;
+  --violet-glow: rgba(124, 58, 237, 0.35);
+
+  /* text */
+  --text-0: #ffffff;
+  --text-1: #d4d4d8;
+  --text-2: #a1a1aa;
+  --text-3: #71717a;
+
+  /* AQI category colours (CPCB-aligned, semantic — not the brand violet) */
+  --aqi-good: #2e9e4f;
+  --aqi-satisfactory: #7bb93f;
+  --aqi-moderate: #f0c030;
+  --aqi-poor: #f08b24;
+  --aqi-verypoor: #e24b4b;
+  --aqi-severe: #8b2e8b;
+
+  --radius-s: 10px;
+  --radius-m: 16px;
+  --radius-l: 24px;
+  --radius-xl: 32px;
+
+  --shadow-soft: 0 20px 60px -20px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 40px -8px var(--violet-glow);
+
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --nav-h: 68px;
+  --sidebar-w: 244px;
+  --maxw: 1240px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

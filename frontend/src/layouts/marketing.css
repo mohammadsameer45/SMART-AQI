@@ -1,0 +1,22 @@
+.mkt { min-height: 100%; display: flex; flex-direction: column; }
+.mkt main { flex: 1; }
+
+.brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display);
+  font-weight: 700; font-size: 18px; letter-spacing: .04em; color: var(--text-0); }
+.brand-thin { font-weight: 400; color: var(--violet-400); }
+.brand-mark { width: 22px; height: 22px; border-radius: 7px;
+  background: conic-gradient(from 140deg, var(--violet-600), var(--violet-400), var(--violet-700));
+  box-shadow: 0 0 18px var(--violet-glow); }
+
+.mkt-nav { position: sticky; top: 0; z-index: 100;
+  backdrop-filter: blur(14px); background: rgba(5,5,7,.6);
+  border-bottom: 1px solid var(--stroke); }
+.mkt-nav-inner { height: var(--nav-h); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.mkt-links { display: flex; gap: 26px; }
+.mkt-links a { font-size: 14px; color: var(--text-2); transition: color .2s var(--ease); }
+.mkt-links a:hover { color: var(--text-0); }
+
+.mkt-footer { border-top: 1px solid var(--stroke); padding: 40px 0; margin-top: 60px; }
+.mkt-footer-inner { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
+
+@media (max-width: 820px) { .mkt-links { display: none; } }

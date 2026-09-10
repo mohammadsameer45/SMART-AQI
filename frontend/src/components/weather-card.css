@@ -1,0 +1,13 @@
+.weather-card .wx-big { font-size: 30px; }
+.wx-now { display: flex; align-items: center; gap: 26px; margin: 6px 0 16px; flex-wrap: wrap; }
+.wx-temp { font-family: var(--font-display); font-size: 46px; font-weight: 700; color: var(--text-0); line-height: 1; }
+.wx-temp span { font-size: 18px; color: var(--text-3); margin-left: 4px; }
+.wx-metrics { display: grid; grid-template-columns: repeat(2, auto); gap: 8px 26px; }
+.wx-metrics b { font-family: var(--font-display); color: var(--text-1); font-size: 14px; }
+.wx-metrics span { display: block; font-size: 11px; color: var(--text-3); }
+.wx-week { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+.wx-day { flex: 1 0 auto; min-width: 74px; text-align: center; padding: 10px 6px;
+  border-radius: 12px; background: var(--panel-2); border: 1px solid var(--stroke); }
+.wx-dow { display: block; font-size: 11px; color: var(--text-3); }
+.wx-ic { display: block; font-size: 20px; margin: 4px 0; }
+.wx-range { font-size: 12px; color: var(--text-1); }

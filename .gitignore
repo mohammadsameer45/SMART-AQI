@@ -1,0 +1,47 @@
+# --- secrets ---
+backend/.env
+*.env
+!*.env.example
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+lstm_env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- node / vite ---
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.local
+
+# --- data (large / regenerable) ---
+data/raw/
+data/cleaned/
+data/processed/
+# keep small, reviewable metadata + reports; drop the big downloaded GeoJSON
+# and the run logs (both regenerable):
+data/metadata/*.geojson
+data/validation/*.log
+data/validation/_*.json
+
+# --- ml artifacts (large binaries; keep the *.json metrics/config) ---
+backend/ml_models/*.keras
+backend/ml_models/*.pkl
+backend/ml_models/*.joblib
+backend/ml_models/*.h5
+
+# --- misc ---
+nohup.out
+scratchpad/
+
+# --- os / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

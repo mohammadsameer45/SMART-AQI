@@ -1,0 +1,1707 @@
+{
+  "generated_at": "2026-09-10T10:07:52",
+  "source_zip": "C:/Users/new/Desktop/archive.zip",
+  "files": {
+    "stations.csv": {
+      "file": "stations.csv",
+      "rows": 230,
+      "columns": [
+        "StationId",
+        "StationName",
+        "City",
+        "State",
+        "Status"
+      ],
+      "missing": {
+        "StationId": {
+          "null": 0,
+          "null_pct": 0.0,
+          "placeholder_tokens": 0
+        },
+        "StationName": {
+          "null": 0,
+          "null_pct": 0.0,
+          "placeholder_tokens": 0
+        },
+        "City": {
+          "null": 0,
+          "null_pct": 0.0,
+          "placeholder_tokens": 0
+        },
+        "State": {
+          "null": 0,
+          "null_pct": 0.0,
+          "placeholder_tokens": 0
+        },
+        "Status": {
+          "null": 97,
+          "null_pct": 42.17,
+          "placeholder_tokens": 97
+        }
+      },
+      "geo": {
+        "City": {
+          "distinct": 127,
+          "values": [
+            "Agra",
+            "Ahmedabad",
+            "Aizawl",
+            "Ajmer",
+            "Alwar",
+            "Amaravati",
+            "Ambala",
+            "Amritsar",
+            "Ankleshwar",
+            "Asansol",
+            "Aurangabad",
+            "Bagalkot",
+            "Baghpat",
+            "Bahadurgarh",
+            "Ballabgarh",
+            "Bathinda",
+            "Bengaluru",
+            "Bhiwandi",
+            "Bhiwani",
+            "Bhopal",
+            "Brajrajnagar",
+            "Bulandshahr",
+            "Chamarajanagar",
+            "Chandigarh",
+            "Chandrapur",
+            "Chennai",
+            "Chikkaballapur",
+            "Chikkamagaluru",
+            "Coimbatore",
+            "Damoh",
+            "Delhi",
+            "Dewas",
+            "Dharuhera",
+            "Durgapur",
+            "Eloor",
+            "Ernakulam",
+            "Faridabad",
+            "Fatehabad",
+            "Gandhinagar",
+            "Gaya",
+            "Ghaziabad",
+            "Gobindgarh",
+            "Greater Noida",
+            "Gurugram",
+            "Guwahati",
+            "Gwalior",
+            "Hajipur",
+            "Haldia",
+            "Hapur",
+            "Hisar",
+            "Howrah",
+            "Hubballi",
+            "Hyderabad",
+            "Indore",
+            "Jabalpur",
+            "Jaipur",
+            "Jalandhar",
+            "Jind",
+            "Jodhpur",
+            "Jorapokhar",
+            "Kaithal",
+            "Kalaburagi",
+            "Kalyan",
+            "Kannur",
+            "Kanpur",
+            "Karnal",
+            "Katni",
+            "Khanna",
+            "Kochi",
+            "Kolkata",
+            "Kollam",
+            "Kota",
+            "Kozhikode",
+            "Kurukshetra",
+            "Lucknow",
+            "Ludhiana",
+            "Maihar",
+            "Mandideep",
+            "Mandikhera",
+            "Manesar",
+            "Meerut",
+            "Moradabad",
+            "Mumbai",
+            "Muzaffarpur",
+            "Muzzaffarnagar",
+            "Mysuru",
+            "Nagpur",
+            "Nandesari",
+            "Narnaul",
+            "Nashik",
+            "Navi Mumbai",
+            "Noida",
+            "Pali",
+            "Palwal",
+            "Panchkula",
+            "Panipat",
+            "Patiala",
+            "Patna",
+            "Pithampur",
+            "Pune",
+            "Rajamahendravaram",
+            "Ramanagara",
+            "Ratlam",
+            "Rohtak",
+            "Rupnagar",
+            "Sagar",
+            "Satna",
+            "Shillong",
+            "Siliguri",
+            "Singrauli",
+            "Sirsa",
+            "Solapur",
+            "Sonipat",
+            "Talcher",
+            "Thane",
+            "Thiruvananthapuram",
+            "Tirupati",
+            "Udaipur",
+            "Ujjain",
+            "Vapi",
+            "Varanasi",
+            "Vatva",
+            "Vijayapura",
+            "Vijayawada",
+            "Visakhapatnam",
+            "Yadgir",
+            "Yamuna Nagar"
+          ]
+        },
+        "State": {
+          "distinct": 21,
+          "values": [
+            "Andhra Pradesh",
+            "Assam",
+            "Bihar",
+            "Chandigarh",
+            "Delhi",
+            "Gujarat",
+            "Haryana",
+            "Jharkhand",
+            "Karnataka",
+            "Kerala",
+            "Madhya Pradesh",
+            "Maharashtra",
+            "Meghalaya",
+            "Mizoram",
+            "Odisha",
+            "Punjab",
+            "Rajasthan",
+            "Tamil Nadu",
+            "Telangana",
+            "Uttar Pradesh",
+            "West Bengal"
+          ]
+        },
+        "Status": {
+          "distinct": 2,
+          "values": [
+            "Active",
+            "Inactive"
+          ]
+        }
+      },
+      "state_city_pairs": 127,
+      "duplicate_key_rows": 0,
+      "key_columns": [
+        "StationId"
+      ],
+      "pollutant_stats": {},
+      "records_per_city": {
+        "n_groups": 127,
+        "min": 1,
+        "max": 38,
+        "median": 1,
+        "smallest_10": {
+          "Chikkamagaluru": 1,
+          "Chikkaballapur": 1,
+          "Chamarajanagar": 1,
+          "Bagalkot": 1,
+          "Jorapokhar": 1,
+          "Yamuna Nagar": 1,
+          "Sonipat": 1,
+          "Sirsa": 1,
+          "Rohtak": 1,
+          "Siliguri": 1
+        }
+      }
+    },
+    "city_day.csv": {
+      "file": "city_day.csv",
+      "rows": 29531,
+      "columns": [
+        "City",
+        "Date",
+        "PM2.5",
+        "PM10",
+        "NO",
+        "NO2",
+        "NOx",
+        "NH3",
+        "CO",
+        "SO2",
+        "O3",
+        "Benzene",
+        "Toluene",
+        "Xylene",
+        "AQI",
+        "AQI_Bucket"
+      ],
+      "missing": {
+        "City": {
+          "null": 0,
+          "null_pct": 0.0,
+          "placeholder_tokens": 0
+        },
+        "Date": {
+          "null": 0,
+          "null_pct": 0.0,
+          "placeholder_tokens": 0
+        },
+        "PM2.5": {
+          "null": 4598,
+          "null_pct": 15.57,
+          "placeholder_tokens": 0
+        },
+        "PM10": {
+          "null": 11140,
+          "null_pct": 37.72,
+          "placeholder_tokens": 0
+        },
+        "NO": {
+          "null": 3582,
+          "null_pct": 12.13,
+          "placeholder_tokens": 0
+        },
+        "NO2": {
+          "null": 3585,
+          "null_pct": 12.14,
+          "placeholder_tokens": 0
+        },
+        "NOx": {
+          "null": 4185,
+          "null_pct": 14.17,
+          "placeholder_tokens": 0
+        },
+        "NH3": {
+          "null": 10328,
+          "null_pct": 34.97,
+          "placeholder_tokens": 0
+        },
+        "CO": {
+          "null": 2059,
+          "null_pct": 6.97,
+          "placeholder_tokens": 0
+        },
+        "SO2": {
+          "null": 3854,
+          "null_pct": 13.05,
+          "placeholder_tokens": 0
+        },
+        "O3": {
+          "null": 4022,
+          "null_pct": 13.62,
+          "placeholder_tokens": 0
+        },
+        "Benzene": {
+          "null": 5623,
+          "null_pct": 19.04,
+          "placeholder_tokens": 0
+        },
+        "Toluene": {
+          "null": 8041,
+          "null_pct": 27.23,
+          "placeholder_tokens": 0
+        },
+        "Xylene": {
+          "null": 18109,
+          "null_pct": 61.32,
+          "placeholder_tokens": 0
+        },
+        "AQI": {
+          "null": 4681,
+          "null_pct": 15.85,
+          "placeholder_tokens": 0
+        },
+        "AQI_Bucket": {
+          "null": 4681,
+          "null_pct": 15.85,
+          "placeholder_tokens": 4681
+        }
+      },
+      "date": {
+        "column": "Date",
+        "min": "2015-01-01T00:00:00",
+        "max": "2020-07-01T00:00:00",
+        "unparseable": 0,
+        "future_dated": 0
+      },
+      "geo": {
+        "City": {
+          "distinct": 26,
+          "values": [
+            "Ahmedabad",
+            "Aizawl",
+            "Amaravati",
+            "Amritsar",
+            "Bengaluru",
+            "Bhopal",
+            "Brajrajnagar",
+            "Chandigarh",
+            "Chennai",
+            "Coimbatore",
+            "Delhi",
+            "Ernakulam",
+            "Gurugram",
+            "Guwahati",
+            "Hyderabad",
+            "Jaipur",
+            "Jorapokhar",
+            "Kochi",
+            "Kolkata",
+            "Lucknow",
+            "Mumbai",
+            "Patna",
+            "Shillong",
+            "Talcher",
+            "Thiruvananthapuram",
+            "Visakhapatnam"
+          ]
+        }
+      },
+      "duplicate_key_rows": 0,
+      "key_columns": [
+        "City",
+        "Date"
+      ],
+      "pollutant_stats": {
+        "PM2.5": {
+          "present": 24933,
+          "coverage_pct": 84.43,
+          "min": 0.04,
+          "max": 949.99,
+          "mean": 67.45057794890306,
+          "median": 48.57,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "PM10": {
+          "present": 18391,
+          "coverage_pct": 62.28,
+          "min": 0.01,
+          "max": 1000.0,
+          "mean": 118.12710293078135,
+          "median": 95.68,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "NO": {
+          "present": 25949,
+          "coverage_pct": 87.87,
+          "min": 0.02,
+          "max": 390.68,
+          "mean": 17.574729662029362,
+          "median": 9.89,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "NO2": {
+          "present": 25946,
+          "coverage_pct": 87.86,
+          "min": 0.01,
+          "max": 362.21,
+          "mean": 28.560659061126955,
+          "median": 21.69,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "NOx": {
+          "present": 25346,
+          "coverage_pct": 85.83,
+          "min": 0.0,
+          "max": 467.63,
+          "mean": 32.30912333307031,
+          "median": 23.52,
+          "negative": 0,
+          "zero": 740,
+          "above_plausible_max": 0
+        },
+        "NH3": {
+          "present": 19203,
+          "coverage_pct": 65.03,
+          "min": 0.01,
+          "max": 352.89,
+          "mean": 23.48347601937197,
+          "median": 15.85,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "CO": {
+          "present": 27472,
+          "coverage_pct": 93.03,
+          "min": 0.0,
+          "max": 175.81,
+          "mean": 2.2485982090856145,
+          "median": 0.89,
+          "negative": 0,
+          "zero": 2328,
+          "above_plausible_max": 120
+        },
+        "SO2": {
+          "present": 25677,
+          "coverage_pct": 86.95,
+          "min": 0.01,
+          "max": 193.86,
+          "mean": 14.53197725590996,
+          "median": 9.16,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "O3": {
+          "present": 25509,
+          "coverage_pct": 86.38,
+          "min": 0.01,
+          "max": 257.73,
+          "mean": 34.49143047551845,
+          "median": 30.84,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "Benzene": {
+          "present": 23908,
+          "coverage_pct": 80.96,
+          "min": 0.0,
+          "max": 455.03,
+          "mean": 3.280840304500585,
+          "median": 1.07,
+          "negative": 0,
+          "zero": 3802,
+          "above_plausible_max": 0
+        },
+        "Toluene": {
+          "present": 21490,
+          "coverage_pct": 72.77,
+          "min": 0.0,
+          "max": 454.85,
+          "mean": 8.700972080037227,
+          "median": 2.97,
+          "negative": 0,
+          "zero": 2861,
+          "above_plausible_max": 0
+        },
+        "Xylene": {
+          "present": 11422,
+          "coverage_pct": 38.68,
+          "min": 0.0,
+          "max": 170.37,
+          "mean": 3.0701278234985114,
+          "median": 0.98,
+          "negative": 0,
+          "zero": 1747,
+          "above_plausible_max": 0
+        },
+        "AQI": {
+          "present": 24850,
+          "coverage_pct": 84.15,
+          "min": 13.0,
+          "max": 2049.0,
+          "mean": 166.4635814889336,
+          "median": 118.0,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 93
+        }
+      },
+      "aqi_bucket_check": {
+        "rows_with_both": 24850,
+        "mismatches_vs_cpcb": 0,
+        "distinct_bucket_labels": [
+          "Good",
+          "Moderate",
+          "Poor",
+          "Satisfactory",
+          "Severe",
+          "Very Poor"
+        ],
+        "rows_bucket_present_aqi_missing": 0
+      },
+      "records_per_city": {
+        "n_groups": 26,
+        "min": 113,
+        "max": 2009,
+        "median": 1113,
+        "smallest_10": {
+          "Talcher": 925,
+          "Kolkata": 814,
+          "Guwahati": 502,
+          "Coimbatore": 386,
+          "Shillong": 310,
+          "Chandigarh": 304,
+          "Bhopal": 289,
+          "Ernakulam": 162,
+          "Kochi": 162,
+          "Aizawl": 113
+        }
+      }
+    },
+    "station_day.csv": {
+      "file": "station_day.csv",
+      "rows": 108035,
+      "columns": [
+        "StationId",
+        "Date",
+        "PM2.5",
+        "PM10",
+        "NO",
+        "NO2",
+        "NOx",
+        "NH3",
+        "CO",
+        "SO2",
+        "O3",
+        "Benzene",
+        "Toluene",
+        "Xylene",
+        "AQI",
+        "AQI_Bucket"
+      ],
+      "missing": {
+        "StationId": {
+          "null": 0,
+          "null_pct": 0.0,
+          "placeholder_tokens": 0
+        },
+        "Date": {
+          "null": 0,
+          "null_pct": 0.0,
+          "placeholder_tokens": 0
+        },
+        "PM2.5": {
+          "null": 21625,
+          "null_pct": 20.02,
+          "placeholder_tokens": 0
+        },
+        "PM10": {
+          "null": 42706,
+          "null_pct": 39.53,
+          "placeholder_tokens": 0
+        },
+        "NO": {
+          "null": 17106,
+          "null_pct": 15.83,
+          "placeholder_tokens": 0
+        },
+        "NO2": {
+          "null": 16547,
+          "null_pct": 15.32,
+          "placeholder_tokens": 0
+        },
+        "NOx": {
+          "null": 15500,
+          "null_pct": 14.35,
+          "placeholder_tokens": 0
+        },
+        "NH3": {
+          "null": 48105,
+          "null_pct": 44.53,
+          "placeholder_tokens": 0
+        },
+        "CO": {
+          "null": 12998,
+          "null_pct": 12.03,
+          "placeholder_tokens": 0
+        },
+        "SO2": {
+          "null": 25204,
+          "null_pct": 23.33,
+          "placeholder_tokens": 0
+        },
+        "O3": {
+          "null": 25568,
+          "null_pct": 23.67,
+          "placeholder_tokens": 0
+        },
+        "Benzene": {
+          "null": 31455,
+          "null_pct": 29.12,
+          "placeholder_tokens": 0
+        },
+        "Toluene": {
+          "null": 38702,
+          "null_pct": 35.82,
+          "placeholder_tokens": 0
+        },
+        "Xylene": {
+          "null": 85137,
+          "null_pct": 78.81,
+          "placeholder_tokens": 0
+        },
+        "AQI": {
+          "null": 21010,
+          "null_pct": 19.45,
+          "placeholder_tokens": 0
+        },
+        "AQI_Bucket": {
+          "null": 21010,
+          "null_pct": 19.45,
+          "placeholder_tokens": 21010
+        }
+      },
+      "date": {
+        "column": "Date",
+        "min": "2015-01-01T00:00:00",
+        "max": "2020-07-01T00:00:00",
+        "unparseable": 0,
+        "future_dated": 0
+      },
+      "geo": {
+        "StationId": {
+          "distinct": 110,
+          "values": [
+            "AP001",
+            "AP005",
+            "AS001",
+            "BR005",
+            "BR006",
+            "BR007",
+            "BR008",
+            "BR009",
+            "BR010",
+            "CH001",
+            "DL001",
+            "DL002",
+            "DL003",
+            "DL004",
+            "DL005",
+            "DL006",
+            "DL007",
+            "DL008",
+            "DL009",
+            "DL010",
+            "DL011",
+            "DL012",
+            "DL013",
+            "DL014",
+            "DL015",
+            "DL016",
+            "DL017",
+            "DL018",
+            "DL019",
+            "DL020",
+            "DL021",
+            "DL022",
+            "DL023",
+            "DL024",
+            "DL025",
+            "DL026",
+            "DL027",
+            "DL028",
+            "DL029",
+            "DL030",
+            "DL031",
+            "DL032",
+            "DL033",
+            "DL034",
+            "DL035",
+            "DL036",
+            "DL037",
+            "DL038",
+            "GJ001",
+            "HR011",
+            "HR012",
+            "HR013",
+            "HR014",
+            "JH001",
+            "KA002",
+            "KA003",
+            "KA004",
+            "KA005",
+            "KA006",
+            "KA007",
+            "KA008",
+            "KA009",
+            "KA010",
+            "KA011",
+            "KL002",
+            "KL004",
+            "KL007",
+            "KL008",
+            "MH005",
+            "MH006",
+            "MH007",
+            "MH008",
+            "MH009",
+            "MH010",
+            "MH011",
+            "MH012",
+            "MH013",
+            "MH014",
+            "ML001",
+            "MP001",
+            "MZ001",
+            "OD001",
+            "OD002",
+            "PB001",
+            "RJ004",
+            "RJ005",
+            "RJ006",
+            "TG001",
+            "TG002",
+            "TG003",
+            "TG004",
+            "TG005",
+            "TG006",
+            "TN001",
+            "TN002",
+            "TN003",
+            "TN004",
+            "TN005",
+            "UP012",
+            "UP013",
+            "UP014",
+            "UP015",
+            "UP016",
+            "WB007",
+            "WB008",
+            "WB009",
+            "WB010",
+            "WB011",
+            "WB012",
+            "WB013"
+          ]
+        }
+      },
+      "duplicate_key_rows": 0,
+      "key_columns": [
+        "StationId",
+        "Date"
+      ],
+      "pollutant_stats": {
+        "PM2.5": {
+          "present": 86410,
+          "coverage_pct": 79.98,
+          "min": 0.02,
+          "max": 1000.0,
+          "mean": 80.27257134590904,
+          "median": 55.95,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "PM10": {
+          "present": 65329,
+          "coverage_pct": 60.47,
+          "min": 0.01,
+          "max": 1000.0,
+          "mean": 157.9684271915995,
+          "median": 122.09,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "NO": {
+          "present": 90929,
+          "coverage_pct": 84.17,
+          "min": 0.01,
+          "max": 470.0,
+          "mean": 23.123423990146158,
+          "median": 10.29,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "NO2": {
+          "present": 91488,
+          "coverage_pct": 84.68,
+          "min": 0.01,
+          "max": 448.05,
+          "mean": 35.240760099685204,
+          "median": 27.21,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "NOx": {
+          "present": 92535,
+          "coverage_pct": 85.65,
+          "min": 0.0,
+          "max": 467.63,
+          "mean": 41.19505538444913,
+          "median": 26.66,
+          "negative": 0,
+          "zero": 4776,
+          "above_plausible_max": 0
+        },
+        "NH3": {
+          "present": 59930,
+          "coverage_pct": 55.47,
+          "min": 0.01,
+          "max": 418.9,
+          "mean": 28.732875187719,
+          "median": 23.59,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "CO": {
+          "present": 95037,
+          "coverage_pct": 87.97,
+          "min": 0.0,
+          "max": 175.81,
+          "mean": 1.6057493397308418,
+          "median": 0.91,
+          "negative": 0,
+          "zero": 7280,
+          "above_plausible_max": 120
+        },
+        "SO2": {
+          "present": 82831,
+          "coverage_pct": 76.67,
+          "min": 0.01,
+          "max": 195.65,
+          "mean": 12.257634098344823,
+          "median": 8.95,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "O3": {
+          "present": 82467,
+          "coverage_pct": 76.33,
+          "min": 0.01,
+          "max": 963.0,
+          "mean": 38.13483550996156,
+          "median": 30.84,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 3
+        },
+        "Benzene": {
+          "present": 76580,
+          "coverage_pct": 70.88,
+          "min": 0.0,
+          "max": 455.03,
+          "mean": 3.358029250457039,
+          "median": 1.21,
+          "negative": 0,
+          "zero": 12602,
+          "above_plausible_max": 0
+        },
+        "Toluene": {
+          "present": 69333,
+          "coverage_pct": 64.18,
+          "min": 0.0,
+          "max": 454.85,
+          "mean": 15.345394256703157,
+          "median": 4.33,
+          "negative": 0,
+          "zero": 10455,
+          "above_plausible_max": 0
+        },
+        "Xylene": {
+          "present": 22898,
+          "coverage_pct": 21.19,
+          "min": 0.0,
+          "max": 170.37,
+          "mean": 2.4234461525024016,
+          "median": 0.4,
+          "negative": 0,
+          "zero": 6083,
+          "above_plausible_max": 0
+        },
+        "AQI": {
+          "present": 87025,
+          "coverage_pct": 80.55,
+          "min": 8.0,
+          "max": 2049.0,
+          "mean": 179.7492904337834,
+          "median": 132.0,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 95
+        }
+      },
+      "aqi_bucket_check": {
+        "rows_with_both": 87025,
+        "mismatches_vs_cpcb": 0,
+        "distinct_bucket_labels": [
+          "Good",
+          "Moderate",
+          "Poor",
+          "Satisfactory",
+          "Severe",
+          "Very Poor"
+        ],
+        "rows_bucket_present_aqi_missing": 0
+      },
+      "records_per_stationid": {
+        "n_groups": 110,
+        "min": 113,
+        "max": 2009,
+        "median": 882,
+        "smallest_10": {
+          "BR009": 191,
+          "BR008": 191,
+          "KL002": 162,
+          "KL004": 162,
+          "KL007": 140,
+          "BR005": 126,
+          "BR006": 121,
+          "HR012": 119,
+          "HR013": 119,
+          "MZ001": 113
+        }
+      },
+      "stationids_not_in_stations_csv": [],
+      "n_stationids": 110
+    },
+    "city_hour.csv": {
+      "file": "city_hour.csv",
+      "rows": 707875,
+      "columns": [
+        "City",
+        "Datetime",
+        "PM2.5",
+        "PM10",
+        "NO",
+        "NO2",
+        "NOx",
+        "NH3",
+        "CO",
+        "SO2",
+        "O3",
+        "Benzene",
+        "Toluene",
+        "Xylene",
+        "AQI",
+        "AQI_Bucket"
+      ],
+      "missing": {
+        "City": {
+          "null": 0,
+          "null_pct": 0.0,
+          "placeholder_tokens": 0
+        },
+        "Datetime": {
+          "null": 0,
+          "null_pct": 0.0,
+          "placeholder_tokens": 0
+        },
+        "PM2.5": {
+          "null": 145088,
+          "null_pct": 20.5,
+          "placeholder_tokens": 0
+        },
+        "PM10": {
+          "null": 296737,
+          "null_pct": 41.92,
+          "placeholder_tokens": 0
+        },
+        "NO": {
+          "null": 116632,
+          "null_pct": 16.48,
+          "placeholder_tokens": 0
+        },
+        "NO2": {
+          "null": 117122,
+          "null_pct": 16.55,
+          "placeholder_tokens": 0
+        },
+        "NOx": {
+          "null": 123224,
+          "null_pct": 17.41,
+          "placeholder_tokens": 0
+        },
+        "NH3": {
+          "null": 272542,
+          "null_pct": 38.5,
+          "placeholder_tokens": 0
+        },
+        "CO": {
+          "null": 86517,
+          "null_pct": 12.22,
+          "placeholder_tokens": 0
+        },
+        "SO2": {
+          "null": 130373,
+          "null_pct": 18.42,
+          "placeholder_tokens": 0
+        },
+        "O3": {
+          "null": 129208,
+          "null_pct": 18.25,
+          "placeholder_tokens": 0
+        },
+        "Benzene": {
+          "null": 163646,
+          "null_pct": 23.12,
+          "placeholder_tokens": 0
+        },
+        "Toluene": {
+          "null": 220607,
+          "null_pct": 31.16,
+          "placeholder_tokens": 0
+        },
+        "Xylene": {
+          "null": 455829,
+          "null_pct": 64.39,
+          "placeholder_tokens": 0
+        },
+        "AQI": {
+          "null": 129080,
+          "null_pct": 18.23,
+          "placeholder_tokens": 0
+        },
+        "AQI_Bucket": {
+          "null": 129080,
+          "null_pct": 18.23,
+          "placeholder_tokens": 129080
+        }
+      },
+      "date": {
+        "column": "Datetime",
+        "min": "2015-01-01T01:00:00",
+        "max": "2020-07-01T00:00:00",
+        "unparseable": 0,
+        "future_dated": 0
+      },
+      "geo": {
+        "City": {
+          "distinct": 26,
+          "values": [
+            "Ahmedabad",
+            "Aizawl",
+            "Amaravati",
+            "Amritsar",
+            "Bengaluru",
+            "Bhopal",
+            "Brajrajnagar",
+            "Chandigarh",
+            "Chennai",
+            "Coimbatore",
+            "Delhi",
+            "Ernakulam",
+            "Gurugram",
+            "Guwahati",
+            "Hyderabad",
+            "Jaipur",
+            "Jorapokhar",
+            "Kochi",
+            "Kolkata",
+            "Lucknow",
+            "Mumbai",
+            "Patna",
+            "Shillong",
+            "Talcher",
+            "Thiruvananthapuram",
+            "Visakhapatnam"
+          ]
+        }
+      },
+      "duplicate_key_rows": 0,
+      "key_columns": [
+        "City",
+        "Datetime"
+      ],
+      "pollutant_stats": {
+        "PM2.5": {
+          "present": 562787,
+          "coverage_pct": 79.5,
+          "min": 0.01,
+          "max": 999.99,
+          "mean": 67.6229937614053,
+          "median": 46.42,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "PM10": {
+          "present": 411138,
+          "coverage_pct": 58.08,
+          "min": 0.01,
+          "max": 1000.0,
+          "mean": 119.07580396363264,
+          "median": 91.5,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "NO": {
+          "present": 591243,
+          "coverage_pct": 83.52,
+          "min": 0.01,
+          "max": 499.99,
+          "mean": 17.42175543727368,
+          "median": 7.96,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "NO2": {
+          "present": 590753,
+          "coverage_pct": 83.45,
+          "min": 0.01,
+          "max": 499.51,
+          "mean": 28.88515702840273,
+          "median": 20.32,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "NOx": {
+          "present": 584651,
+          "coverage_pct": 82.59,
+          "min": 0.0,
+          "max": 498.61,
+          "mean": 32.28756507728542,
+          "median": 20.79,
+          "negative": 0,
+          "zero": 19811,
+          "above_plausible_max": 0
+        },
+        "NH3": {
+          "present": 435333,
+          "coverage_pct": 61.5,
+          "min": 0.01,
+          "max": 499.97,
+          "mean": 23.60795868909548,
+          "median": 15.38,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "CO": {
+          "present": 621358,
+          "coverage_pct": 87.78,
+          "min": 0.0,
+          "max": 498.57,
+          "mean": 2.183539296186738,
+          "median": 0.8,
+          "negative": 0,
+          "zero": 66088,
+          "above_plausible_max": 2978
+        },
+        "SO2": {
+          "present": 577502,
+          "coverage_pct": 81.58,
+          "min": 0.01,
+          "max": 199.96,
+          "mean": 14.038307486381003,
+          "median": 8.37,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "O3": {
+          "present": 578667,
+          "coverage_pct": 81.75,
+          "min": 0.01,
+          "max": 497.62,
+          "mean": 34.798978998283985,
+          "median": 26.24,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "Benzene": {
+          "present": 544229,
+          "coverage_pct": 76.88,
+          "min": 0.0,
+          "max": 498.07,
+          "mean": 3.08759498299429,
+          "median": 0.86,
+          "negative": 0,
+          "zero": 118727,
+          "above_plausible_max": 0
+        },
+        "Toluene": {
+          "present": 487268,
+          "coverage_pct": 68.84,
+          "min": 0.0,
+          "max": 499.4,
+          "mean": 8.660926574287657,
+          "median": 2.59,
+          "negative": 0,
+          "zero": 89705,
+          "above_plausible_max": 0
+        },
+        "Xylene": {
+          "present": 252046,
+          "coverage_pct": 35.61,
+          "min": 0.0,
+          "max": 499.99,
+          "mean": 3.130536806773367,
+          "median": 0.79,
+          "negative": 0,
+          "zero": 49350,
+          "above_plausible_max": 0
+        },
+        "AQI": {
+          "present": 578795,
+          "coverage_pct": 81.77,
+          "min": 8.0,
+          "max": 3133.0,
+          "mean": 166.4135004621671,
+          "median": 116.0,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 2665
+        }
+      },
+      "aqi_bucket_check": {
+        "rows_with_both": 578795,
+        "mismatches_vs_cpcb": 0,
+        "distinct_bucket_labels": [
+          "Good",
+          "Moderate",
+          "Poor",
+          "Satisfactory",
+          "Severe",
+          "Very Poor"
+        ],
+        "rows_bucket_present_aqi_missing": 0
+      },
+      "records_per_city": {
+        "n_groups": 26,
+        "min": 2680,
+        "max": 48192,
+        "median": 26678,
+        "smallest_10": {
+          "Talcher": 22161,
+          "Kolkata": 19503,
+          "Guwahati": 12002,
+          "Coimbatore": 9229,
+          "Shillong": 7402,
+          "Chandigarh": 7263,
+          "Bhopal": 6903,
+          "Kochi": 3854,
+          "Ernakulam": 3852,
+          "Aizawl": 2680
+        }
+      }
+    },
+    "station_hour.csv": {
+      "file": "station_hour.csv",
+      "rows": 2589083,
+      "columns": [
+        "StationId",
+        "Datetime",
+        "PM2.5",
+        "PM10",
+        "NO",
+        "NO2",
+        "NOx",
+        "NH3",
+        "CO",
+        "SO2",
+        "O3",
+        "Benzene",
+        "Toluene",
+        "Xylene",
+        "AQI",
+        "AQI_Bucket"
+      ],
+      "missing": {
+        "StationId": {
+          "null": 0,
+          "null_pct": 0.0,
+          "placeholder_tokens": 0
+        },
+        "Datetime": {
+          "null": 0,
+          "null_pct": 0.0,
+          "placeholder_tokens": 0
+        },
+        "PM2.5": {
+          "null": 647689,
+          "null_pct": 25.02,
+          "placeholder_tokens": 0
+        },
+        "PM10": {
+          "null": 1119252,
+          "null_pct": 43.23,
+          "placeholder_tokens": 0
+        },
+        "NO": {
+          "null": 553711,
+          "null_pct": 21.39,
+          "placeholder_tokens": 0
+        },
+        "NO2": {
+          "null": 528973,
+          "null_pct": 20.43,
+          "placeholder_tokens": 0
+        },
+        "NOx": {
+          "null": 490808,
+          "null_pct": 18.96,
+          "placeholder_tokens": 0
+        },
+        "NH3": {
+          "null": 1236618,
+          "null_pct": 47.76,
+          "placeholder_tokens": 0
+        },
+        "CO": {
+          "null": 499302,
+          "null_pct": 19.28,
+          "placeholder_tokens": 0
+        },
+        "SO2": {
+          "null": 742737,
+          "null_pct": 28.69,
+          "placeholder_tokens": 0
+        },
+        "O3": {
+          "null": 725973,
+          "null_pct": 28.04,
+          "placeholder_tokens": 0
+        },
+        "Benzene": {
+          "null": 861579,
+          "null_pct": 33.28,
+          "placeholder_tokens": 0
+        },
+        "Toluene": {
+          "null": 1042366,
+          "null_pct": 40.26,
+          "placeholder_tokens": 0
+        },
+        "Xylene": {
+          "null": 2075104,
+          "null_pct": 80.15,
+          "placeholder_tokens": 0
+        },
+        "AQI": {
+          "null": 570190,
+          "null_pct": 22.02,
+          "placeholder_tokens": 0
+        },
+        "AQI_Bucket": {
+          "null": 570190,
+          "null_pct": 22.02,
+          "placeholder_tokens": 570190
+        }
+      },
+      "date": {
+        "column": "Datetime",
+        "min": "2015-01-01T01:00:00",
+        "max": "2020-07-01T00:00:00",
+        "unparseable": 0,
+        "future_dated": 0
+      },
+      "geo": {
+        "StationId": {
+          "distinct": 110,
+          "values": [
+            "AP001",
+            "AP005",
+            "AS001",
+            "BR005",
+            "BR006",
+            "BR007",
+            "BR008",
+            "BR009",
+            "BR010",
+            "CH001",
+            "DL001",
+            "DL002",
+            "DL003",
+            "DL004",
+            "DL005",
+            "DL006",
+            "DL007",
+            "DL008",
+            "DL009",
+            "DL010",
+            "DL011",
+            "DL012",
+            "DL013",
+            "DL014",
+            "DL015",
+            "DL016",
+            "DL017",
+            "DL018",
+            "DL019",
+            "DL020",
+            "DL021",
+            "DL022",
+            "DL023",
+            "DL024",
+            "DL025",
+            "DL026",
+            "DL027",
+            "DL028",
+            "DL029",
+            "DL030",
+            "DL031",
+            "DL032",
+            "DL033",
+            "DL034",
+            "DL035",
+            "DL036",
+            "DL037",
+            "DL038",
+            "GJ001",
+            "HR011",
+            "HR012",
+            "HR013",
+            "HR014",
+            "JH001",
+            "KA002",
+            "KA003",
+            "KA004",
+            "KA005",
+            "KA006",
+            "KA007",
+            "KA008",
+            "KA009",
+            "KA010",
+            "KA011",
+            "KL002",
+            "KL004",
+            "KL007",
+            "KL008",
+            "MH005",
+            "MH006",
+            "MH007",
+            "MH008",
+            "MH009",
+            "MH010",
+            "MH011",
+            "MH012",
+            "MH013",
+            "MH014",
+            "ML001",
+            "MP001",
+            "MZ001",
+            "OD001",
+            "OD002",
+            "PB001",
+            "RJ004",
+            "RJ005",
+            "RJ006",
+            "TG001",
+            "TG002",
+            "TG003",
+            "TG004",
+            "TG005",
+            "TG006",
+            "TN001",
+            "TN002",
+            "TN003",
+            "TN004",
+            "TN005",
+            "UP012",
+            "UP013",
+            "UP014",
+            "UP015",
+            "UP016",
+            "WB007",
+            "WB008",
+            "WB009",
+            "WB010",
+            "WB011",
+            "WB012",
+            "WB013"
+          ]
+        }
+      },
+      "duplicate_key_rows": 0,
+      "key_columns": [
+        "StationId",
+        "Datetime"
+      ],
+      "pollutant_stats": {
+        "PM2.5": {
+          "present": 1941394,
+          "coverage_pct": 74.98,
+          "min": 0.01,
+          "max": 1000.0,
+          "mean": 80.86481392236713,
+          "median": 52.59,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "PM10": {
+          "present": 1469831,
+          "coverage_pct": 56.77,
+          "min": 0.01,
+          "max": 1000.0,
+          "mean": 158.48390628582473,
+          "median": 116.25,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "NO": {
+          "present": 2035372,
+          "coverage_pct": 78.61,
+          "min": 0.01,
+          "max": 500.0,
+          "mean": 22.788253464231612,
+          "median": 7.15,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "NO2": {
+          "present": 2060110,
+          "coverage_pct": 79.57,
+          "min": 0.01,
+          "max": 499.99,
+          "mean": 35.23689135531598,
+          "median": 24.79,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "NOx": {
+          "present": 2098275,
+          "coverage_pct": 81.04,
+          "min": 0.0,
+          "max": 500.0,
+          "mean": 40.55114833851617,
+          "median": 22.86,
+          "negative": 0,
+          "zero": 117924,
+          "above_plausible_max": 0
+        },
+        "NH3": {
+          "present": 1352465,
+          "coverage_pct": 52.24,
+          "min": 0.01,
+          "max": 499.97,
+          "mean": 28.70855573342008,
+          "median": 22.35,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "CO": {
+          "present": 2089781,
+          "coverage_pct": 80.72,
+          "min": 0.0,
+          "max": 498.57,
+          "mean": 1.50236604696856,
+          "median": 0.8,
+          "negative": 0,
+          "zero": 181502,
+          "above_plausible_max": 2978
+        },
+        "SO2": {
+          "present": 1846346,
+          "coverage_pct": 71.31,
+          "min": 0.01,
+          "max": 199.96,
+          "mean": 12.116024564193282,
+          "median": 8.25,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 0
+        },
+        "O3": {
+          "present": 1863110,
+          "coverage_pct": 71.96,
+          "min": 0.01,
+          "max": 997.0,
+          "mean": 38.06408486884834,
+          "median": 24.75,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 331
+        },
+        "Benzene": {
+          "present": 1727504,
+          "coverage_pct": 66.72,
+          "min": 0.0,
+          "max": 498.07,
+          "mean": 3.305493208698793,
+          "median": 0.96,
+          "negative": 0,
+          "zero": 392342,
+          "above_plausible_max": 0
+        },
+        "Toluene": {
+          "present": 1546717,
+          "coverage_pct": 59.74,
+          "min": 0.0,
+          "max": 499.99,
+          "mean": 14.902663208589546,
+          "median": 3.4,
+          "negative": 0,
+          "zero": 312987,
+          "above_plausible_max": 0
+        },
+        "Xylene": {
+          "present": 513979,
+          "coverage_pct": 19.85,
+          "min": 0.0,
+          "max": 499.99,
+          "mean": 2.4488809270417655,
+          "median": 0.2,
+          "negative": 0,
+          "zero": 208359,
+          "above_plausible_max": 0
+        },
+        "AQI": {
+          "present": 2018893,
+          "coverage_pct": 77.98,
+          "min": 5.0,
+          "max": 3133.0,
+          "mean": 180.1730274957613,
+          "median": 131.0,
+          "negative": 0,
+          "zero": 0,
+          "above_plausible_max": 2728
+        }
+      },
+      "aqi_bucket_check": {
+        "rows_with_both": 2018893,
+        "mismatches_vs_cpcb": 0,
+        "distinct_bucket_labels": [
+          "Good",
+          "Moderate",
+          "Poor",
+          "Satisfactory",
+          "Severe",
+          "Very Poor"
+        ],
+        "rows_bucket_present_aqi_missing": 0
+      },
+      "records_per_stationid": {
+        "n_groups": 110,
+        "min": 2680,
+        "max": 48192,
+        "median": 21135,
+        "smallest_10": {
+          "BR008": 4543,
+          "BR010": 4543,
+          "KL004": 3854,
+          "KL002": 3852,
+          "KL007": 3320,
+          "BR005": 2985,
+          "BR006": 2863,
+          "HR013": 2817,
+          "HR012": 2817,
+          "MZ001": 2680
+        }
+      },
+      "stationids_not_in_stations_csv": [],
+      "n_stationids": 110
+    }
+  }
+}

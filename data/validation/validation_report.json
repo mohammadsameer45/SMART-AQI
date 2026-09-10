@@ -1,0 +1,312 @@
+{
+  "files": {
+    "city_day.csv.gz": [
+      {
+        "check": "state_non_empty",
+        "status": "PASS",
+        "detail": "0 rows with null state"
+      },
+      {
+        "check": "city_non_empty",
+        "status": "PASS",
+        "detail": "0 rows with null city"
+      },
+      {
+        "check": "dates_parse",
+        "status": "PASS",
+        "detail": "0 unparseable"
+      },
+      {
+        "check": "dates_in_window",
+        "status": "PASS",
+        "detail": "range 2015-01-01 00:00:00 .. 2020-07-01 00:00:00"
+      },
+      {
+        "check": "no_future_dates",
+        "status": "PASS",
+        "detail": "0 future rows"
+      },
+      {
+        "check": "pollutants_numeric",
+        "status": "PASS",
+        "detail": "non-numeric cols: none"
+      },
+      {
+        "check": "aqi_non_negative",
+        "status": "PASS",
+        "detail": "0 negative AQI"
+      },
+      {
+        "check": "aqi_within_hard_max",
+        "status": "PASS",
+        "detail": "0 AQI > 1000"
+      },
+      {
+        "check": "aqi_above_scale_note",
+        "status": "PASS",
+        "detail": "450 AQI in 501..1000 (kept as real)"
+      },
+      {
+        "check": "no_residual_conc_outliers",
+        "status": "PASS",
+        "detail": "none"
+      },
+      {
+        "check": "no_co_equals_no_misfill",
+        "status": "PASS",
+        "detail": "0 rows with CO exactly == NO"
+      },
+      {
+        "check": "no_duplicate_keys",
+        "status": "PASS",
+        "detail": "0 dup rows on ['city', 'date']"
+      },
+      {
+        "check": "bucket_labels_valid",
+        "status": "PASS",
+        "detail": "unexpected: none"
+      },
+      {
+        "check": "bucket_matches_aqi",
+        "status": "PASS",
+        "detail": "0/24757 rows where bucket != categorize(AQI)"
+      },
+      {
+        "check": "unit_consistency",
+        "status": "PASS",
+        "detail": "median out of band: none"
+      }
+    ],
+    "station_day.csv.gz": [
+      {
+        "check": "state_non_empty",
+        "status": "PASS",
+        "detail": "0 rows with null state"
+      },
+      {
+        "check": "city_non_empty",
+        "status": "PASS",
+        "detail": "0 rows with null city"
+      },
+      {
+        "check": "dates_parse",
+        "status": "PASS",
+        "detail": "0 unparseable"
+      },
+      {
+        "check": "dates_in_window",
+        "status": "PASS",
+        "detail": "range 2015-01-01 00:00:00 .. 2020-07-01 00:00:00"
+      },
+      {
+        "check": "no_future_dates",
+        "status": "PASS",
+        "detail": "0 future rows"
+      },
+      {
+        "check": "pollutants_numeric",
+        "status": "PASS",
+        "detail": "non-numeric cols: none"
+      },
+      {
+        "check": "aqi_non_negative",
+        "status": "PASS",
+        "detail": "0 negative AQI"
+      },
+      {
+        "check": "aqi_within_hard_max",
+        "status": "PASS",
+        "detail": "0 AQI > 1000"
+      },
+      {
+        "check": "aqi_above_scale_note",
+        "status": "PASS",
+        "detail": "1788 AQI in 501..1000 (kept as real)"
+      },
+      {
+        "check": "no_residual_conc_outliers",
+        "status": "PASS",
+        "detail": "none"
+      },
+      {
+        "check": "no_co_equals_no_misfill",
+        "status": "PASS",
+        "detail": "0 rows with CO exactly == NO"
+      },
+      {
+        "check": "no_duplicate_keys",
+        "status": "PASS",
+        "detail": "0 dup rows on ['station_id', 'date']"
+      },
+      {
+        "check": "bucket_labels_valid",
+        "status": "PASS",
+        "detail": "unexpected: none"
+      },
+      {
+        "check": "bucket_matches_aqi",
+        "status": "PASS",
+        "detail": "0/86930 rows where bucket != categorize(AQI)"
+      },
+      {
+        "check": "unit_consistency",
+        "status": "PASS",
+        "detail": "median out of band: none"
+      }
+    ],
+    "city_hour.csv.gz": [
+      {
+        "check": "state_non_empty",
+        "status": "PASS",
+        "detail": "0 rows with null state"
+      },
+      {
+        "check": "city_non_empty",
+        "status": "PASS",
+        "detail": "0 rows with null city"
+      },
+      {
+        "check": "dates_parse",
+        "status": "PASS",
+        "detail": "0 unparseable"
+      },
+      {
+        "check": "dates_in_window",
+        "status": "PASS",
+        "detail": "range 2015-01-01 01:00:00 .. 2020-07-01 00:00:00"
+      },
+      {
+        "check": "no_future_dates",
+        "status": "PASS",
+        "detail": "0 future rows"
+      },
+      {
+        "check": "pollutants_numeric",
+        "status": "PASS",
+        "detail": "non-numeric cols: none"
+      },
+      {
+        "check": "aqi_non_negative",
+        "status": "PASS",
+        "detail": "0 negative AQI"
+      },
+      {
+        "check": "aqi_within_hard_max",
+        "status": "PASS",
+        "detail": "0 AQI > 1000"
+      },
+      {
+        "check": "aqi_above_scale_note",
+        "status": "PASS",
+        "detail": "8470 AQI in 501..1000 (kept as real)"
+      },
+      {
+        "check": "no_residual_conc_outliers",
+        "status": "PASS",
+        "detail": "none"
+      },
+      {
+        "check": "no_co_equals_no_misfill",
+        "status": "PASS",
+        "detail": "0 rows with CO exactly == NO"
+      },
+      {
+        "check": "no_duplicate_keys",
+        "status": "PASS",
+        "detail": "0 dup rows on ['city', 'date']"
+      },
+      {
+        "check": "bucket_labels_valid",
+        "status": "PASS",
+        "detail": "unexpected: none"
+      },
+      {
+        "check": "bucket_matches_aqi",
+        "status": "PASS",
+        "detail": "0/576130 rows where bucket != categorize(AQI)"
+      },
+      {
+        "check": "unit_consistency",
+        "status": "PASS",
+        "detail": "median out of band: none"
+      }
+    ],
+    "station_hour.csv.gz": [
+      {
+        "check": "state_non_empty",
+        "status": "PASS",
+        "detail": "0 rows with null state"
+      },
+      {
+        "check": "city_non_empty",
+        "status": "PASS",
+        "detail": "0 rows with null city"
+      },
+      {
+        "check": "dates_parse",
+        "status": "PASS",
+        "detail": "0 unparseable"
+      },
+      {
+        "check": "dates_in_window",
+        "status": "PASS",
+        "detail": "range 2015-01-01 01:00:00 .. 2020-07-01 00:00:00"
+      },
+      {
+        "check": "no_future_dates",
+        "status": "PASS",
+        "detail": "0 future rows"
+      },
+      {
+        "check": "pollutants_numeric",
+        "status": "PASS",
+        "detail": "non-numeric cols: none"
+      },
+      {
+        "check": "aqi_non_negative",
+        "status": "PASS",
+        "detail": "0 negative AQI"
+      },
+      {
+        "check": "aqi_within_hard_max",
+        "status": "PASS",
+        "detail": "0 AQI > 1000"
+      },
+      {
+        "check": "aqi_above_scale_note",
+        "status": "PASS",
+        "detail": "41033 AQI in 501..1000 (kept as real)"
+      },
+      {
+        "check": "no_residual_conc_outliers",
+        "status": "PASS",
+        "detail": "none"
+      },
+      {
+        "check": "no_co_equals_no_misfill",
+        "status": "PASS",
+        "detail": "0 rows with CO exactly == NO"
+      },
+      {
+        "check": "no_duplicate_keys",
+        "status": "PASS",
+        "detail": "0 dup rows on ['station_id', 'date']"
+      },
+      {
+        "check": "bucket_labels_valid",
+        "status": "PASS",
+        "detail": "unexpected: none"
+      },
+      {
+        "check": "bucket_matches_aqi",
+        "status": "PASS",
+        "detail": "0/2016165 rows where bucket != categorize(AQI)"
+      },
+      {
+        "check": "unit_consistency",
+        "status": "PASS",
+        "detail": "median out of band: none"
+      }
+    ]
+  }
+}
