@@ -38,3 +38,14 @@ export const models = {
   metrics: () => api.get('/model-metrics'),
   insights: (model) => api.get(`/model-insights/${model}`),
 }
+
+export const leaderboard = {
+  national: () => api.get('/leaderboard'),
+  compare: (pairs) => api.get('/compare', { params: { areas: pairs.join(',') } }),
+}
+
+export const alerts = {
+  list: () => api.get('/alerts'),
+  create: (state, area, threshold) => api.post('/alerts', { state, area, threshold }),
+  remove: (id) => api.delete(`/alerts/${id}`),
+}

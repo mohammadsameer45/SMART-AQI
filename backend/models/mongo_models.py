@@ -24,9 +24,10 @@ AQI_RECORDS = "aqi_records"
 FORECAST_RECORDS = "forecast_records"
 MODEL_METRICS = "model_metrics"
 HEALTH_ADVISORIES = "health_advisories"
+ALERTS = "alerts"
 
 ALL_COLLECTIONS = [USERS, LOCATIONS, AQI_RECORDS, FORECAST_RECORDS,
-                   MODEL_METRICS, HEALTH_ADVISORIES]
+                   MODEL_METRICS, HEALTH_ADVISORIES, ALERTS]
 
 _client: Optional[MongoClient] = None
 
@@ -135,6 +136,13 @@ def ensure_indexes() -> dict[str, list[str]]:
         col(HEALTH_ADVISORIES).create_index(
             [("aqi_bucket", ASCENDING), ("audience", ASCENDING)],
             unique=True, name="ux_bucket_audience"),
+    ]
+
+    created[ALERTS] = [
+        col(ALERTS).create_index([("user_id", ASCENDING)], name="ix_user"),
+        col(ALERTS).create_index(
+            [("user_id", ASCENDING), ("state", ASCENDING), ("area", ASCENDING)],
+            unique=True, name="ux_user_state_area"),
     ]
     return created
 

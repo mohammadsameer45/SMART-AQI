@@ -3,6 +3,7 @@ import { Link, NavLink, Outlet } from 'react-router-dom'
 import { useAuth } from '../auth/AuthContext'
 import { SelectionProvider } from '../components/SelectionContext'
 import AreaPicker from '../components/AreaPicker'
+import { useAlertsWatcher } from '../hooks/useAlertsWatcher'
 import './dashboard.css'
 
 const LINKS = [
@@ -12,6 +13,7 @@ const LINKS = [
   { to: '/app/explorer', label: 'District Explorer', icon: '⊞' },
   { to: '/app/state', label: 'State Overview', icon: '◱' },
   { to: '/app/map', label: '3D AQI Map', icon: '◍' },
+  { to: '/app/leaderboard', label: 'Leaderboard', icon: '⇕' },
   { to: '/app/pollutants', label: 'Pollutants', icon: '≋' },
   { to: '/app/health', label: 'Health Advisory', icon: '✚' },
   { to: '/app/models', label: 'Model Insights', icon: '⟐' },
@@ -21,6 +23,7 @@ const LINKS = [
 export default function DashboardLayout() {
   const { user, logout } = useAuth()
   const [open, setOpen] = useState(false)
+  useAlertsWatcher()
 
   return (
     <SelectionProvider>

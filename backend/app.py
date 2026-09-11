@@ -29,11 +29,13 @@ def create_app() -> Flask:
          supports_credentials=False, methods=["GET", "POST", "OPTIONS"],
          allow_headers=["Content-Type", "Authorization"])
 
-    from backend.routes import (aqi_routes, auth_routes, forecast_routes,
-                                health_routes, location_routes, map_routes,
-                                model_routes, weather_routes)
+    from backend.routes import (aqi_routes, alert_routes, auth_routes,
+                                forecast_routes, health_routes,
+                                leaderboard_routes, location_routes,
+                                map_routes, model_routes, weather_routes)
     for mod in (auth_routes, location_routes, aqi_routes, forecast_routes,
-                health_routes, model_routes, weather_routes, map_routes):
+                health_routes, model_routes, weather_routes, map_routes,
+                leaderboard_routes, alert_routes):
         app.register_blueprint(mod.bp)
 
     # ------------------------------------------------------------- health ----

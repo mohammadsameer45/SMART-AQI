@@ -99,6 +99,57 @@ def test_live_status(client, auth_headers):
         assert d["reason"]
 
 
+def test_leaderboard(client, auth_headers):
+    d = _data(client, "/api/leaderboard", auth_headers)
+    assert d["n_districts"] > 0
+    assert len(d["best"]) > 0 and len(d["worst"]) > 0
+    # ranked ascending by AQI (best = cleanest = lowest AQI first)
+    assert d["best"][0]["aqi"] <= d["best"][-1]["aqi"]
+    assert d["worst"][0]["aqi"] >= d["worst"][-1]["aqi"]
+    for row in d["best"] + d["worst"]:
+        assert row["state"] and row["district"] and row["aqi"] is not None
+
+
+def test_compare(client, auth_headers):
+    d = _data(client, "/api/compare?areas=Delhi:Delhi,Delhi:New Delhi", auth_headers)
+    assert len(d["areas"]) == 2
+    for a in d["areas"]:
+        assert a["state"] == "Delhi" and a["current"] is not None
+
+    assert client.get("/api/compare?areas=Delhi:Delhi",
+                      headers=auth_headers).status_code == 400
+    assert client.get("/api/compare?areas=NotAPair",
+                      headers=auth_headers).status_code == 400
+
+
+def test_alerts_crud(client, auth_headers):
+    empty = _data(client, "/api/alerts", auth_headers)
+    assert empty == []
+
+    created = client.post("/api/alerts", headers=auth_headers,
+                          json={"state": "Delhi", "area": "New Delhi", "threshold": 50})
+    assert created.status_code == 201
+    rule = created.get_json()["data"]
+    assert rule["state"] == "Delhi" and rule["threshold"] == 50
+
+    rows = _data(client, "/api/alerts", auth_headers)
+    assert len(rows) == 1
+    assert rows[0]["id"] == rule["id"]
+    assert isinstance(rows[0]["triggered"], bool)
+    assert rows[0]["current_aqi"] is not None
+
+    bad = client.post("/api/alerts", headers=auth_headers,
+                      json={"state": "Delhi", "area": "New Delhi", "threshold": 9999})
+    assert bad.status_code == 400
+
+    deleted = client.delete(f"/api/alerts/{rule['id']}", headers=auth_headers)
+    assert deleted.status_code == 200
+    assert _data(client, "/api/alerts", auth_headers) == []
+
+    missing = client.delete(f"/api/alerts/{rule['id']}", headers=auth_headers)
+    assert missing.status_code == 404
+
+
 def test_state_overview(client, auth_headers):
     d = _data(client, "/api/states/Delhi/overview", auth_headers)
     assert d["state"] == "Delhi"

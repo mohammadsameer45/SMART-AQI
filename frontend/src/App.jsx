@@ -16,6 +16,7 @@ const ForecastPage = lazy(() => import('./pages/ForecastPage'))
 const DistrictExplorer = lazy(() => import('./pages/DistrictExplorer'))
 const AQIMap = lazy(() => import('./pages/AQIMap'))
 const StateOverview = lazy(() => import('./pages/StateOverview'))
+const Leaderboard = lazy(() => import('./pages/Leaderboard'))
 const PollutantAnalysis = lazy(() => import('./pages/PollutantAnalysis'))
 const HealthAdvisory = lazy(() => import('./pages/HealthAdvisory'))
 const ModelInsights = lazy(() => import('./pages/ModelInsights'))
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="explorer" element={<DistrictExplorer />} />
           <Route path="map" element={<AQIMap />} />
           <Route path="state" element={<StateOverview />} />
+          <Route path="leaderboard" element={<Leaderboard />} />
           <Route path="pollutants" element={<PollutantAnalysis />} />
           <Route path="health" element={<HealthAdvisory />} />
           <Route path="models" element={<ModelInsights />} />
