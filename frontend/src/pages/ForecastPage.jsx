@@ -5,22 +5,28 @@ import SceneCanvas from '../three/SceneCanvas'
 import ForecastRibbon from '../three/ForecastRibbon'
 import { GlassCard, Loader, ErrorState, EmptyState, SectionTitle, AQIChip } from '../components/ui/Bits'
 import { ForecastChart } from '../charts/charts'
-import { bandFor, fmtDateLong } from '../utils/aqi'
+import { bandFor, aqiDisplay, fmtDateLong } from '../utils/aqi'
 import './dash-pages.css'
 
 export default function ForecastPage() {
   const { state, area } = useSelection()
   const { data, loading, error, refetch } = useApi(
     () => aqiApi.forecast(state, area), [state, area], { enabled: !!(state && area) })
+  const cur = useApi(() => aqiApi.current(state, area), [state, area], { enabled: !!(state && area) })
 
   if (!state || !area) return <Loader />
   if (loading) return <Loader label="Loading forecast…" />
   if (error) return <ErrorState error={error} onRetry={refetch} />
 
+  const curBand = cur.data?.available ? bandFor(cur.data.AQI) : null
+
   if (!data.forecast_available) {
     return (
       <div>
-        <div className="page-head"><h1>7-Day Forecast</h1><p>{area}, {state}</p></div>
+        <div className="page-head">
+          <h1>7-Day AQI Forecast</h1>
+          <p>AI-powered air-quality predictions for the next seven days.</p>
+        </div>
         <EmptyState title="No forecast for this area yet" hint={data.reason} />
       </div>
     )
@@ -29,11 +35,27 @@ export default function ForecastPage() {
   return (
     <div>
       <div className="page-head">
-        <h1>7-Day Forecast</h1>
-        <p>{area}, {state} · model <b>{data.model}</b> · generated {fmtDateLong(data.generated_at)}</p>
+        <h1>7-Day AQI Forecast</h1>
+        <p>AI-powered air-quality predictions for the next seven days — {area}, {state}.</p>
       </div>
 
-      <div className="banner">{data.note} {data.method ? `Method: ${data.method}.` : ''}</div>
+      <div className="fc-page-status">
+        {cur.data?.available && (
+          <div className="fc-status-chip">
+            <span className="fc-status-label">
+              <span className={`fc-live-dot ${cur.data.is_live ? 'on' : ''}`} />
+              CURRENT AQI · {cur.data.is_live ? 'LIVE' : 'HISTORICAL'} · CPCB
+            </span>
+            <AQIChip label={`${aqiDisplay(cur.data.AQI)} · ${curBand?.label}`} color={curBand?.hex} />
+          </div>
+        )}
+        <div className="fc-status-chip">
+          <span className="fc-status-label">◆ 7-DAY FORECAST · PREDICTED · SMART AQI {data.model}</span>
+        </div>
+      </div>
+
+      <div className="banner">{data.note} {data.method ? `Method: ${data.method}.` : ''}
+        {' '}Generated {fmtDateLong(data.generated_at)}.</div>
 
       <GlassCard className="card" style={{ marginBottom: 18 }}>
         <SectionTitle eyebrow="Interactive 3D" title="Forecast ribbon" />

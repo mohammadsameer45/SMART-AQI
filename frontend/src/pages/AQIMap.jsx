@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useSelection } from '../components/SelectionContext'
 import { useApi } from '../hooks/useApi'
 import api from '../api/client'
@@ -10,9 +10,14 @@ import './dash-pages.css'
 import './aqi-map.css'
 
 export default function AQIMap() {
-  const { state, setState, setArea } = useSelection()
+  const { state, area, setState, setArea } = useSelection()
   const [drill, setDrill] = useState(null)   // null = India, else a state name
   const [rotate, setRotate] = useState(true)
+
+  // Picking a state anywhere else in the app (the top-bar AreaPicker) should
+  // drive this map too — drill in and focus it automatically instead of
+  // leaving the map static while the selector changes.
+  useEffect(() => { if (state) setDrill(state) }, [state])
 
   const map = useApi(
     () => api.get(drill ? `/map/state/${encodeURIComponent(drill)}` : '/map/india'),
@@ -56,7 +61,8 @@ export default function AQIMap() {
             : (
               <SceneCanvas camera={{ position: [0, 11, 9], fov: 42 }}
                 style={{ width: '100%', height: '100%' }} fallback={<div />}>
-                <IndiaMap3D data={map.data} onSelect={onSelect} autoRotate={rotate} />
+                <IndiaMap3D data={map.data} onSelect={onSelect} autoRotate={rotate}
+                  selected={drill ? area : state} />
               </SceneCanvas>
             )}
         </div>
@@ -70,8 +76,8 @@ export default function AQIMap() {
           <span className="ml-item"><span className="ml-sw" style={{ background: '#181820' }} /> No data</span>
         </div>
         <div className="card-note">
-          Bar height &amp; colour = current AQI. Click a {drill ? 'district to select it' : 'state to drill in'} ·
-          drag to orbit · scroll to zoom.
+          Bar height &amp; colour = current AQI · the glowing marker tracks your selected {drill ? 'district' : 'state'}.
+          Click a {drill ? 'district to select it' : 'state to drill in'} · drag to orbit · scroll to zoom.
         </div>
       </GlassCard>
 
@@ -84,7 +90,8 @@ export default function AQIMap() {
               .sort((a, b) => b.properties.aqi - a.properties.aqi)
               .map((f) => {
                 const p = f.properties
-                return <AQIChip key={p.name} label={`${p.name} · ${p.aqi}`} color={bandFor(p.aqi)?.hex} />
+                return <AQIChip key={p.name} label={`${p.name} · ${p.aqi}`} color={bandFor(p.aqi)?.hex}
+                  onClick={() => setArea(p.name)} />
               })}
           </div>
         </GlassCard>

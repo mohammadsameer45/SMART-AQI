@@ -5,6 +5,7 @@ import AQIGauge from '../components/AQIGauge'
 import { GlassCard, StatTile, Loader, ErrorState, AQIChip, SectionTitle } from '../components/ui/Bits'
 import { HistoryChart, ForecastChart } from '../charts/charts'
 import WeatherCard from '../components/WeatherCard'
+import ForecastTeaser from '../components/ForecastTeaser'
 import { bandFor, fmtDateLong } from '../utils/aqi'
 import './dash-pages.css'
 
@@ -59,6 +60,9 @@ export default function DashboardHome() {
             sub={`through ${data.coverage?.history_end || '—'}`} />
         </div>
       </div>
+
+      <ForecastTeaser days={fc?.days} model={fc?.model}
+        available={fc?.forecast_available} reason={fc?.reason} />
 
       <div className="grid g-2">
         <GlassCard className="card">

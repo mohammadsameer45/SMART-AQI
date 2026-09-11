@@ -16,6 +16,13 @@
   border: 1px solid color-mix(in srgb, var(--c) 40%, transparent); }
 .aqi-chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c);
   box-shadow: 0 0 10px var(--c); }
+.aqi-chip-btn { cursor: pointer; font: inherit; transition: transform .15s var(--ease), background .15s; }
+.aqi-chip-btn:hover { background: color-mix(in srgb, var(--c) 26%, transparent); transform: translateY(-1px); }
 
-.section-title { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+.section-title { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px;
+  margin-bottom: 18px; flex-wrap: wrap; }
 .section-title h2 { font-size: 22px; margin-top: 6px; }
+
+@media (max-width: 480px) {
+  .card { padding: 16px; }
+}

@@ -20,10 +20,10 @@ export default function Settings() {
         <GlassCard className="card">
           <SectionTitle title="About the data" />
           <p className="tiny muted">
-            Historical air-quality data from CPCB monitoring stations (Kaggle
-            2015–2020 release), cleaned and validated. Weather and live current
-            readings activate once a data.gov.in API key is configured on the
-            server. District boundaries from geoBoundaries.
+            HISTORICAL air-quality data from CPCB monitoring stations (Kaggle
+            2015–2020 release), cleaned and validated. LIVE current readings and
+            weather come from the CPCB real-time feed (data.gov.in) and
+            Open-Meteo. District boundaries from geoBoundaries.
           </p>
           <p className="tiny muted" style={{ marginTop: 12 }}>
             Forecasts are model predictions, not measurements. Health guidance is

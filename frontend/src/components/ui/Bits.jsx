@@ -41,11 +41,12 @@ export function ErrorState({ error, onRetry }) {
   )
 }
 
-export function AQIChip({ label, color }) {
+export function AQIChip({ label, color, onClick }) {
+  const Tag = onClick ? 'button' : 'span'
   return (
-    <span className="aqi-chip" style={{ '--c': color }}>
+    <Tag className={`aqi-chip${onClick ? ' aqi-chip-btn' : ''}`} style={{ '--c': color }} onClick={onClick}>
       <span className="dot" /> {label}
-    </span>
+    </Tag>
   )
 }
 

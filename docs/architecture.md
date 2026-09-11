@@ -435,3 +435,34 @@ Chrome extension declined) — the 3D map, atmosphere and chart scenes compile
 and the data is verified, but nothing has been rendered in a real browser yet.
 Also: responsive polish, State Overview page (§33), a scheduled live-feed
 refresh, and geolocating the ~28 unmatched historical stations.
+
+- **Controlled enhancement pass (2026-09-11)** — re-ran the live CPCB
+  ingestion + district spatial join (`scripts/ingest_cpcb_live.py`,
+  `scripts/build_station_districts.py`) against today's real feed (488
+  stations reporting today vs 505 on the previous pull — normal day-to-day
+  churn in which stations are live); confirmed via MongoDB: 94 geolocated
+  stations placed into 21 states / 39 districts, no fabricated data.
+  `backend/services/map_service.py` now attaches `pm25`,
+  `pm10` and `last_updated` to each district feature. `three/IndiaMap3D.jsx`
+  had a real orientation bug fixed (the latitude-to-world-Z sign was
+  inverted, rendering south India at the top of the view) and gained a
+  persistent selected-region marker plus a `CameraRig` that pans/focuses the
+  camera onto whatever state/district is selected anywhere in the app
+  (`AQIMap.jsx` now syncs its `drill` state off the global `SelectionContext`
+  instead of only reacting to clicks on the map itself). Added
+  `components/ForecastTeaser.jsx` — an animated ribbon/card on the Overview
+  page promoting the existing dedicated Forecast tab (CSS gradient glow,
+  moving sheen, animated sparkline, trend indicator, `prefers-reduced-motion`
+  aware). Found and fixed a real yellow-branding bug: the generic `.banner`
+  info-note style (used for data-source disclaimers on Overview/Forecast) was
+  reusing the CPCB "Moderate" AQI category colour (`#f0c030`) even though it
+  isn't an AQI-severity indicator — recoloured to the violet brand palette;
+  the actual `--aqi-moderate` token is untouched. Stale "Live feed pending
+  API key" copy (footer, Settings) updated to reflect that the live layer has
+  been active since the earlier CPCB phase. `ForecastPage.jsx` gained a
+  subtitle, a CURRENT AQI · LIVE/HISTORICAL chip and an explicit
+  PREDICTED/model-name chip. No ML, auth, thresholds or existing routes
+  touched. Backend tests 30 passed, frontend tests 12 passed, `npm run build`
+  1651 modules OK. Browser visual QA still not performed (extension declined
+  again, no Playwright available in this environment) — dev servers were left
+  running on :5000/:5173 for the user to check manually.

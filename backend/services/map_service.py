@@ -95,13 +95,21 @@ def _latest_district_aqi(state: str) -> dict[str, dict]:
                     "AQI": {"$ne": None}}},
         {"$sort": {"ts": -1}},
         {"$group": {"_id": {"d": "$district", "day": "$date"},
-                    "aqi": {"$avg": "$AQI"}, "ts": {"$first": "$ts"}}},
+                    "aqi": {"$avg": "$AQI"}, "pm25": {"$avg": "$PM25"},
+                    "pm10": {"$avg": "$PM10"}, "ts": {"$first": "$ts"}}},
         {"$sort": {"ts": -1}},
-        {"$group": {"_id": "$_id.d", "aqi": {"$first": "$aqi"}}},
+        {"$group": {"_id": "$_id.d", "aqi": {"$first": "$aqi"},
+                    "pm25": {"$first": "$pm25"}, "pm10": {"$first": "$pm10"},
+                    "ts": {"$first": "$ts"}}},
     ]):
         if row["_id"]:
-            out[row["_id"]] = {"aqi": round(row["aqi"]),
-                               "bucket": categorize(round(row["aqi"]))}
+            out[row["_id"]] = {
+                "aqi": round(row["aqi"]),
+                "bucket": categorize(round(row["aqi"])),
+                "pm25": round(row["pm25"], 1) if row.get("pm25") is not None else None,
+                "pm10": round(row["pm10"], 1) if row.get("pm10") is not None else None,
+                "last_updated": row["ts"].isoformat() if row.get("ts") else None,
+            }
     return out
 
 
@@ -170,8 +178,12 @@ def _state(name: str) -> dict:
     for f in feats:
         d = aqi.get(f["properties"]["name"])
         f["properties"].update({
+            "state": name,
             "aqi": d["aqi"] if d else None,
             "aqi_bucket": d["bucket"] if d else None,
+            "pm25": d["pm25"] if d else None,
+            "pm10": d["pm10"] if d else None,
+            "last_updated": d["last_updated"] if d else None,
             "has_data": bool(d),
         })
     return {"type": "FeatureCollection", "level": "district",

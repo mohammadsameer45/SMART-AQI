@@ -38,7 +38,7 @@ export default function DashboardLayout() {
             ))}
           </nav>
           <div className="dash-side-foot tiny muted">
-            Historical data 2015–2020.<br />Live feed pending API key.
+            HISTORICAL 2015–2020 · LIVE CPCB feed<br />FORECAST next 7 days ({new Date().getFullYear()})
           </div>
         </aside>
 
