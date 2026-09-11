@@ -39,7 +39,11 @@ function shapeFromRings(rings) {
 }
 
 // Lightweight centroid (mean of the largest ring's projected vertices) — good
-// enough to point a camera at, not a true area centroid.
+// enough to point a camera at, not a true area centroid. Returns WORLD [x, z]
+// (not the raw pre-rotation projected [x, y]) — Region's geometry applies
+// rotateX(-PI/2), which maps local y -> world -z, so this must negate the
+// averaged y the same way or the marker/camera focus lands mirrored
+// north<->south from the region it's supposed to mark.
 function centroidOf(feature) {
   const polys = polygonsOf(feature?.geometry)
   if (!polys.length) return null
@@ -47,7 +51,7 @@ function centroidOf(feature) {
   for (const poly of polys) if (poly[0].length > ring.length) ring = poly[0]
   let sx = 0, sy = 0
   ring.forEach(([lon, lat]) => { const [x, y] = project(lon, lat); sx += x; sy += y })
-  return [sx / ring.length, sy / ring.length]
+  return [sx / ring.length, -(sy / ring.length)]
 }
 
 function regionMatches(feature, level, selected) {
