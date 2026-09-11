@@ -55,7 +55,9 @@ export default function ForecastPage() {
       </div>
 
       <div className="banner">{data.note} {data.method ? `Method: ${data.method}.` : ''}
-        {' '}Generated {fmtDateLong(data.generated_at)}.</div>
+        {' '}Generated {fmtDateLong(data.generated_at)}. Horizon (+1d…+7d) counts forward from this
+        station's own last data point, which can lag today's calendar date — treat +1d…+7d as the
+        reliable label, not the printed date.</div>
 
       <GlassCard className="card" style={{ marginBottom: 18 }}>
         <SectionTitle eyebrow="Interactive 3D" title="Forecast ribbon" />
@@ -77,13 +79,16 @@ export default function ForecastPage() {
           <SectionTitle title="Day by day" />
           <div className="table-scroll">
             <table className="table">
-              <thead><tr><th>Date</th><th>AQI</th><th>Category</th><th>Range</th></tr></thead>
+              <thead><tr><th>Horizon</th><th>AQI</th><th>Category</th><th>Range</th></tr></thead>
               <tbody>
                 {data.days.map((d) => {
                   const b = bandFor(d.predicted_AQI)
                   return (
                     <tr key={d.horizon_day}>
-                      <td>{fmtDateLong(d.forecast_date)}</td>
+                      <td>
+                        <b>+{d.horizon_day}d</b>
+                        <div className="tiny muted">{fmtDateLong(d.forecast_date)}</div>
+                      </td>
                       <td style={{ color: b?.hex, fontWeight: 700 }}>{Math.round(d.predicted_AQI)}</td>
                       <td><AQIChip label={b?.label} color={b?.hex} /></td>
                       <td className="muted tiny">{Math.round(d.lower)}–{Math.round(d.upper)}</td>
