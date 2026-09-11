@@ -18,7 +18,7 @@ log = logging.getLogger("smart_aqi.push")
 
 
 def configured() -> bool:
-    return bool(config.VAPID_PRIVATE_KEY_PEM and config.VAPID_SUBJECT)
+    return bool(config.VAPID_PRIVATE_KEY and config.VAPID_SUBJECT)
 
 
 def send_to_user(user_id: str, title: str, body: str, url: str = "/app/settings") -> int:
@@ -39,7 +39,7 @@ def _send_one(sub: dict, title: str, body: str, url: str) -> bool:
         webpush(
             subscription_info=subscription_info,
             data=json.dumps({"title": title, "body": body, "url": url}),
-            vapid_private_key=config.VAPID_PRIVATE_KEY_PEM,
+            vapid_private_key=config.VAPID_PRIVATE_KEY,
             vapid_claims={"sub": config.VAPID_SUBJECT},
         )
         return True

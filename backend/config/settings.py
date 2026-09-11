@@ -50,7 +50,9 @@ class Config:
     LIVE_REFRESH_MINUTES: int = int(os.getenv("LIVE_REFRESH_MINUTES", "45"))
 
     # --- web push (threshold alerts) ---
-    VAPID_PRIVATE_KEY_PEM: str = os.getenv("VAPID_PRIVATE_KEY_PEM", "").replace("\\n", "\n")
+    # Raw base64url, NOT PEM — pywebpush's Vapid.from_string() auto-detects
+    # RAW vs DER by decoded byte length and a PEM header isn't valid base64.
+    VAPID_PRIVATE_KEY: str = os.getenv("VAPID_PRIVATE_KEY", "")
     VAPID_PUBLIC_KEY: str = os.getenv("VAPID_PUBLIC_KEY", "")
     VAPID_SUBJECT: str = os.getenv("VAPID_SUBJECT", "")
 
