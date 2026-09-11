@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useSelection } from '../components/SelectionContext'
 import { useApi } from '../hooks/useApi'
 import { aqi as aqiApi } from '../api/endpoints'
@@ -7,12 +8,14 @@ import { HistoryChart, ForecastChart } from '../charts/charts'
 import WeatherCard from '../components/WeatherCard'
 import ForecastTeaser from '../components/ForecastTeaser'
 import { bandFor, fmtDateLong } from '../utils/aqi'
+import { downloadOverviewReport } from '../utils/report'
 import './dash-pages.css'
 
 export default function DashboardHome() {
   const { state, area } = useSelection()
   const { data, loading, error, refetch } = useApi(
     () => aqiApi.dashboard(state, area), [state, area], { enabled: !!(state && area) })
+  const [downloading, setDownloading] = useState(false)
 
   if (!state || !area) return <Loader label="Loading locations…" />
   if (loading) return <Loader label="Loading dashboard…" />
@@ -23,11 +26,22 @@ export default function DashboardHome() {
   const fc = data.forecast
   const adv = data.advisory
 
+  const onDownload = async () => {
+    setDownloading(true)
+    try { downloadOverviewReport({ state, area, data }) }
+    finally { setDownloading(false) }
+  }
+
   return (
     <div>
-      <div className="page-head">
-        <h1>Overview</h1>
-        <p>{area}, {state}{cur?.available ? ` · as of ${fmtDateLong(cur.as_of)}` : ''}</p>
+      <div className="page-head page-head-row">
+        <div>
+          <h1>Overview</h1>
+          <p>{area}, {state}{cur?.available ? ` · as of ${fmtDateLong(cur.as_of)}` : ''}</p>
+        </div>
+        <button className="btn btn-ghost" onClick={onDownload} disabled={downloading}>
+          {downloading ? 'Preparing…' : '⭳ Download report'}
+        </button>
       </div>
 
       {cur?.available && !cur.is_live && (

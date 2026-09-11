@@ -1,6 +1,7 @@
 .page-head { margin-bottom: 22px; }
 .page-head h1 { font-size: 26px; }
 .page-head p { color: var(--text-2); font-size: 14px; margin-top: 4px; }
+.page-head-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
 
 .grid { display: grid; gap: 18px; }
 .g-2 { grid-template-columns: 1fr 1fr; }
