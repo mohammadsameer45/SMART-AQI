@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useSelection } from '../components/SelectionContext'
 import { useApi } from '../hooks/useApi'
 import { aqi as aqiApi } from '../api/endpoints'
@@ -6,6 +7,7 @@ import ForecastRibbon from '../three/ForecastRibbon'
 import { GlassCard, Loader, ErrorState, EmptyState, SectionTitle, AQIChip } from '../components/ui/Bits'
 import { ForecastChart } from '../charts/charts'
 import { bandFor, aqiDisplay, fmtDateLong } from '../utils/aqi'
+import { downloadForecastReport } from '../utils/report'
 import './dash-pages.css'
 
 export default function ForecastPage() {
@@ -13,6 +15,7 @@ export default function ForecastPage() {
   const { data, loading, error, refetch } = useApi(
     () => aqiApi.forecast(state, area), [state, area], { enabled: !!(state && area) })
   const cur = useApi(() => aqiApi.current(state, area), [state, area], { enabled: !!(state && area) })
+  const [downloading, setDownloading] = useState(false)
 
   if (!state || !area) return <Loader />
   if (loading) return <Loader label="Loading forecast…" />
@@ -20,12 +23,20 @@ export default function ForecastPage() {
 
   const curBand = cur.data?.available ? bandFor(cur.data.AQI) : null
 
+  const onDownload = async () => {
+    setDownloading(true)
+    try { downloadForecastReport({ state, area, current: cur.data, forecast: data }) }
+    finally { setDownloading(false) }
+  }
+
   if (!data.forecast_available) {
     return (
       <div>
-        <div className="page-head">
-          <h1>7-Day AQI Forecast</h1>
-          <p>AI-powered air-quality predictions for the next seven days.</p>
+        <div className="page-head page-head-row">
+          <div>
+            <h1>7-Day AQI Forecast</h1>
+            <p>AI-powered air-quality predictions for the next seven days.</p>
+          </div>
         </div>
         <EmptyState title="No forecast for this area yet" hint={data.reason} />
       </div>
@@ -34,9 +45,14 @@ export default function ForecastPage() {
 
   return (
     <div>
-      <div className="page-head">
-        <h1>7-Day AQI Forecast</h1>
-        <p>AI-powered air-quality predictions for the next seven days — {area}, {state}.</p>
+      <div className="page-head page-head-row">
+        <div>
+          <h1>7-Day AQI Forecast</h1>
+          <p>AI-powered air-quality predictions for the next seven days — {area}, {state}.</p>
+        </div>
+        <button className="btn btn-ghost" onClick={onDownload} disabled={downloading}>
+          {downloading ? 'Preparing…' : '⭳ Download report'}
+        </button>
       </div>
 
       <div className="fc-page-status">
