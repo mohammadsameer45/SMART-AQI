@@ -49,6 +49,11 @@ class Config:
     # scripts/refresh_worker.py re-pulls the CPCB live feed on this interval
     LIVE_REFRESH_MINUTES: int = int(os.getenv("LIVE_REFRESH_MINUTES", "45"))
 
+    # --- web push (threshold alerts) ---
+    VAPID_PRIVATE_KEY_PEM: str = os.getenv("VAPID_PRIVATE_KEY_PEM", "").replace("\\n", "\n")
+    VAPID_PUBLIC_KEY: str = os.getenv("VAPID_PUBLIC_KEY", "")
+    VAPID_SUBJECT: str = os.getenv("VAPID_SUBJECT", "")
+
     # --- paths ---
     DATA_DIR: Path = PROJECT_ROOT / "data"
     CLEANED_DIR: Path = DATA_DIR / "cleaned"

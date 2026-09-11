@@ -63,3 +63,36 @@ def delete(user_id: str, rule_id: str) -> None:
     res = M.col(M.ALERTS).delete_one({"_id": oid, "user_id": user_id})
     if res.deleted_count == 0:
         raise ApiError("not_found", "Alert rule not found", 404)
+
+
+def check_and_notify_all() -> dict:
+    """
+    Evaluate every alert rule (all users) against a fresh current-AQI read
+    and push-notify only on the edge — the transition from not-triggered to
+    triggered — so a still-bad reading doesn't re-notify every cycle. Called
+    from scripts/check_alerts.py, run periodically by refresh_worker.py.
+    """
+    from backend.services import push_service
+
+    checked = notified = 0
+    for r in M.col(M.ALERTS).find({}):
+        checked += 1
+        cur = aqi_service.current(r["state"], r["area"])
+        aqi = cur.get("AQI") if cur.get("available") else None
+        triggered = aqi is not None and aqi >= r["threshold"]
+        was_triggered = bool(r.get("was_triggered"))
+
+        if triggered and not was_triggered:
+            sent = push_service.send_to_user(
+                r["user_id"], "SMART AQI alert",
+                f"AQI in {r['area']}, {r['state']} is {round(aqi)} — "
+                f"above your alert threshold of {r['threshold']}.")
+            if sent:
+                notified += 1
+
+        if triggered != was_triggered:
+            M.col(M.ALERTS).update_one(
+                {"_id": r["_id"]},
+                {"$set": {"was_triggered": triggered,
+                          **({"last_notified_at": M.utcnow()} if triggered and not was_triggered else {})}})
+    return {"checked": checked, "notified": notified}

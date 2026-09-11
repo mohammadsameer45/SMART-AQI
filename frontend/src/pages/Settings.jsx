@@ -5,6 +5,7 @@ import { useToast } from '../hooks/useToast'
 import { geo, alerts as alertsApi } from '../api/endpoints'
 import { GlassCard, SectionTitle, AQIChip, Loader } from '../components/ui/Bits'
 import { bandFor, aqiDisplay } from '../utils/aqi'
+import { pushSupported, enablePush, currentPushState } from '../utils/push'
 import './dash-pages.css'
 import './leaderboard.css'
 
@@ -27,11 +28,12 @@ function AlertsCard() {
   const [area, setArea] = useState('')
   const [threshold, setThreshold] = useState(150)
   const [saving, setSaving] = useState(false)
-  const [notifPerm, setNotifPerm] = useState(
-    typeof Notification !== 'undefined' ? Notification.permission : 'unsupported')
+  const [pushState, setPushState] = useState('checking')
+  const [enabling, setEnabling] = useState(false)
   const areas = useAreasFor(state)
 
   useEffect(() => { if (states?.length && !state) setState(states[0]) }, [states, state])
+  useEffect(() => { currentPushState().then(setPushState) }, [])
 
   const addRule = async (e) => {
     e.preventDefault()
@@ -54,10 +56,17 @@ function AlertsCard() {
   }
 
   const enableNotifications = async () => {
-    if (typeof Notification === 'undefined') return
-    const perm = await Notification.requestPermission()
-    setNotifPerm(perm)
-    if (perm === 'granted') toast.success('Browser notifications enabled.')
+    setEnabling(true)
+    try {
+      const on = await enablePush()
+      setPushState(on ? 'subscribed' : await currentPushState())
+      if (on) toast.success('Push notifications enabled — alerts will reach you even in the background.')
+      else toast.error('Notifications were not enabled (permission denied or unsupported).')
+    } catch (err) {
+      toast.error(err.message || 'Could not enable push notifications.')
+    } finally {
+      setEnabling(false)
+    }
   }
 
   return (
@@ -68,10 +77,23 @@ function AlertsCard() {
         against the same live/historical current-AQI data as the rest of the app.
       </p>
 
-      {typeof Notification !== 'undefined' && notifPerm !== 'granted' && (
-        <button className="btn btn-ghost" style={{ marginBottom: 14 }} onClick={enableNotifications}>
-          🔔 Enable browser notifications
+      {pushState === 'subscribed' ? (
+        <p className="tiny" style={{ color: 'var(--aqi-good)', marginBottom: 14 }}>
+          ✓ Push notifications enabled on this browser.
+        </p>
+      ) : pushSupported() && pushState !== 'denied' ? (
+        <button className="btn btn-ghost" style={{ marginBottom: 14 }} onClick={enableNotifications} disabled={enabling}>
+          {enabling ? 'Enabling…' : '🔔 Enable push notifications'}
         </button>
+      ) : pushState === 'denied' ? (
+        <p className="tiny muted" style={{ marginBottom: 14 }}>
+          Notifications are blocked for this site in your browser settings.
+        </p>
+      ) : (
+        <p className="tiny muted" style={{ marginBottom: 14 }}>
+          Push notifications aren't supported in this browser — you'll still see
+          in-app alerts while SMART AQI is open.
+        </p>
       )}
 
       {loading ? <Loader label="Loading alerts…" />

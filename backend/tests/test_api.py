@@ -164,6 +164,29 @@ def test_state_overview(client, auth_headers):
                       headers=auth_headers).status_code == 404
 
 
+def test_push_vapid_key(client):
+    d = _data(client, "/api/push/vapid-public-key", {})
+    assert isinstance(d["configured"], bool)
+    if d["configured"]:
+        assert d["key"]
+
+
+def test_push_subscribe_and_unsubscribe(client, auth_headers):
+    fake_sub = {
+        "endpoint": "https://example.com/push/test-endpoint-pytest",
+        "keys": {"p256dh": "fake-p256dh", "auth": "fake-auth"},
+    }
+    created = client.post("/api/push/subscribe", headers=auth_headers, json=fake_sub)
+    assert created.status_code == 201
+
+    bad = client.post("/api/push/subscribe", headers=auth_headers, json={"endpoint": "x"})
+    assert bad.status_code == 400
+
+    removed = client.delete("/api/push/subscribe", headers=auth_headers,
+                            json={"endpoint": fake_sub["endpoint"]})
+    assert removed.status_code == 200
+
+
 def test_map_india_and_state(client, auth_headers):
     india = _data(client, "/api/map/india", auth_headers)
     assert india["level"] == "state"

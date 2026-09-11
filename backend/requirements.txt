@@ -30,5 +30,9 @@ tensorflow==2.21.0     # pulls keras==3.15.1
 requests==2.33.1
 shapely==2.0.6         # station -> district point-in-polygon
 
+# --- web push (threshold alerts) ---
+pywebpush==2.5.0
+py-vapid==1.9.4
+
 # --- tests ---
 pytest==8.3.4

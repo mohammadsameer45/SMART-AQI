@@ -26,16 +26,17 @@ def create_app() -> Flask:
     app = Flask(__name__)
 
     CORS(app, resources={r"/api/*": {"origins": [config.FRONTEND_URL]}},
-         supports_credentials=False, methods=["GET", "POST", "OPTIONS"],
+         supports_credentials=False, methods=["GET", "POST", "DELETE", "OPTIONS"],
          allow_headers=["Content-Type", "Authorization"])
 
     from backend.routes import (aqi_routes, alert_routes, auth_routes,
                                 forecast_routes, health_routes,
                                 leaderboard_routes, location_routes,
-                                map_routes, model_routes, weather_routes)
+                                map_routes, model_routes, push_routes,
+                                weather_routes)
     for mod in (auth_routes, location_routes, aqi_routes, forecast_routes,
                 health_routes, model_routes, weather_routes, map_routes,
-                leaderboard_routes, alert_routes):
+                leaderboard_routes, alert_routes, push_routes):
         app.register_blueprint(mod.bp)
 
     # ------------------------------------------------------------- health ----

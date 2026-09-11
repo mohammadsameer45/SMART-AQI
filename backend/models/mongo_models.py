@@ -25,9 +25,10 @@ FORECAST_RECORDS = "forecast_records"
 MODEL_METRICS = "model_metrics"
 HEALTH_ADVISORIES = "health_advisories"
 ALERTS = "alerts"
+PUSH_SUBSCRIPTIONS = "push_subscriptions"
 
 ALL_COLLECTIONS = [USERS, LOCATIONS, AQI_RECORDS, FORECAST_RECORDS,
-                   MODEL_METRICS, HEALTH_ADVISORIES, ALERTS]
+                   MODEL_METRICS, HEALTH_ADVISORIES, ALERTS, PUSH_SUBSCRIPTIONS]
 
 _client: Optional[MongoClient] = None
 
@@ -143,6 +144,12 @@ def ensure_indexes() -> dict[str, list[str]]:
         col(ALERTS).create_index(
             [("user_id", ASCENDING), ("state", ASCENDING), ("area", ASCENDING)],
             unique=True, name="ux_user_state_area"),
+    ]
+
+    created[PUSH_SUBSCRIPTIONS] = [
+        col(PUSH_SUBSCRIPTIONS).create_index([("user_id", ASCENDING)], name="ix_user"),
+        col(PUSH_SUBSCRIPTIONS).create_index(
+            [("endpoint", ASCENDING)], unique=True, name="ux_endpoint"),
     ]
     return created
 

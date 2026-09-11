@@ -1,10 +1,13 @@
 """
 refresh_worker.py  -  keep the CPCB live feed current.
 
-Runs the two live-data steps on a fixed interval:
+Runs the live-data steps on a fixed interval:
 
   1. scripts/ingest_cpcb_live.py       pull ~500 stations from data.gov.in
   2. scripts/build_station_districts.py point-in-polygon any new coordinates
+  3. scripts/check_alerts.py           push-notify any newly-triggered
+                                       threshold alert (skipped if step 1
+                                       failed, or VAPID keys aren't set)
 
 Each cycle's outcome is written to the `meta` collection
 (`_id = "live_refresh"`) so `GET /api/live/status` can report freshness, and to
@@ -83,6 +86,9 @@ def _cycle() -> dict:
     if ok1:
         ok2, m2 = _run_step("build_station_districts.py")
         _log("  " + m2)
+    if ok1:
+        ok3, m3 = _run_step("check_alerts.py")
+        _log("  " + m3)
 
     try:
         stations = M.col("cpcb_live").estimated_document_count()
