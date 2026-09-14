@@ -29,8 +29,7 @@ export default function AskAnalyst() {
     setLog((l) => [...l, { role: 'q', text: question }])
     setBusy(true)
     try {
-      const res = await aqiApi.analyst(state, area, question)
-      const d = res.data
+      const d = await aqiApi.analyst(state, area, question)
       setLog((l) => [...l, { role: 'a', text: d.available ? d.answer : (d.reason || "Couldn't answer that.") }])
     } catch {
       setLog((l) => [...l, { role: 'a', text: 'Something went wrong reaching the analyst.' }])
