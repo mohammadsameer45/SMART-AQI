@@ -48,6 +48,11 @@ export const weather = {
   dispersion: (state, area) => api.get(`/dispersion/${S(state, area)}`),
 }
 
+export const fire = {
+  events: (state, area) => api.get(`/fire-events/${S(state, area)}`),
+  impact: (state, area) => api.get(`/fire-impact/${S(state, area)}`),
+}
+
 export const models = {
   metrics: () => api.get('/model-metrics'),
   insights: (model) => api.get(`/model-insights/${model}`),

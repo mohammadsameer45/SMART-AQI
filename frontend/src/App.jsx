@@ -21,6 +21,7 @@ const PollutantAnalysis = lazy(() => import('./pages/PollutantAnalysis'))
 const HealthAdvisory = lazy(() => import('./pages/HealthAdvisory'))
 const ModelInsights = lazy(() => import('./pages/ModelInsights'))
 const Settings = lazy(() => import('./pages/Settings'))
+const FireImpact = lazy(() => import('./pages/FireImpact'))
 
 export default function App() {
   return (
@@ -43,6 +44,7 @@ export default function App() {
           <Route path="state" element={<StateOverview />} />
           <Route path="leaderboard" element={<Leaderboard />} />
           <Route path="pollutants" element={<PollutantAnalysis />} />
+          <Route path="fire" element={<FireImpact />} />
           <Route path="health" element={<HealthAdvisory />} />
           <Route path="models" element={<ModelInsights />} />
           <Route path="settings" element={<Settings />} />

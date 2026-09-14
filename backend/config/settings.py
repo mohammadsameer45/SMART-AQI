@@ -50,6 +50,10 @@ class Config:
 )
     OPEN_METEO_BASE: str = os.getenv("OPEN_METEO_BASE",
                                      "https://api.open-meteo.com")
+    # Free key from https://firms.modaps.eosdis.nasa.gov/api/area/
+    FIRMS_MAP_KEY: str = os.getenv("FIRMS_MAP_KEY", "")
+    FIRMS_BASE: str = os.getenv("FIRMS_BASE",
+                                "https://firms.modaps.eosdis.nasa.gov/api/area/csv")
     # scripts/refresh_worker.py re-pulls the CPCB live feed on this interval
     LIVE_REFRESH_MINUTES: int = int(os.getenv("LIVE_REFRESH_MINUTES", "45"))
 

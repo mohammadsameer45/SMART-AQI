@@ -16,6 +16,7 @@ const LINKS = [
   { to: '/app/map', label: '3D AQI Map', icon: '◍' },
   { to: '/app/leaderboard', label: 'Leaderboard', icon: '⇕' },
   { to: '/app/pollutants', label: 'Pollutants', icon: '≋' },
+  { to: '/app/fire', label: 'Fire & Smoke', icon: '🔥' },
   { to: '/app/health', label: 'Health Advisory', icon: '✚' },
   { to: '/app/models', label: 'Model Insights', icon: '⟐' },
   { to: '/app/settings', label: 'Settings', icon: '⚙' },
