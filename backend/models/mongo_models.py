@@ -21,6 +21,7 @@ from backend.config import config
 USERS = "users"
 LOCATIONS = "locations"
 AQI_RECORDS = "aqi_records"
+LIVE_AQI = "live_aqi"
 FORECAST_RECORDS = "forecast_records"
 MODEL_METRICS = "model_metrics"
 HEALTH_ADVISORIES = "health_advisories"

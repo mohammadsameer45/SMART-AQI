@@ -44,6 +44,10 @@ class Config:
     DATA_GOV_IN_API_KEY: str = os.getenv("DATA_GOV_IN_API_KEY", "")
     DATA_GOV_IN_AQI_RESOURCE: str = os.getenv(
         "DATA_GOV_IN_AQI_RESOURCE", "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69")
+    DATA_GOV_IN_LGD_DISTRICT_RESOURCE: str = os.getenv(
+    "DATA_GOV_IN_LGD_DISTRICT_RESOURCE",
+    "37231365-78ba-44d5-ac22-3deec40b9197"
+)
     OPEN_METEO_BASE: str = os.getenv("OPEN_METEO_BASE",
                                      "https://api.open-meteo.com")
     # scripts/refresh_worker.py re-pulls the CPCB live feed on this interval

@@ -1,3 +1,4 @@
+
 # --- secrets ---
 backend/.env
 *.env
@@ -26,6 +27,7 @@ data/processed/
 # keep small, reviewable metadata + reports; drop the big downloaded GeoJSON
 # and the run logs (both regenerable):
 data/metadata/*.geojson
+data/metadata/*.parquet
 data/validation/*.log
 data/validation/_*.json
 

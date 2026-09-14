@@ -6,7 +6,8 @@
     "adm1_state": "Andhra Pradesh",
     "district": "Guntur",
     "lat": 16.5150833,
-    "lon": 80.5181667
+    "lon": 80.5181667,
+    "source": "historical"
   },
   "station:AP005": {
     "station": "GVM Corporation, Visakhapatnam - APPCB",
@@ -15,16 +16,18 @@
     "adm1_state": "Andhra Pradesh",
     "district": "Visakhapatnam",
     "lat": 17.72,
-    "lon": 83.3
+    "lon": 83.3,
+    "source": "historical"
   },
   "station:AS001": {
     "station": "Railway Colony, Guwahati - APCB",
     "station_id": "AS001",
     "dataset_state": "Assam",
     "adm1_state": "Assam",
-    "district": "Kamrup Metropolitan",
+    "district": "Kamrup Metro",
     "lat": 26.181742,
-    "lon": 91.78063
+    "lon": 91.78063,
+    "source": "historical"
   },
   "station:BR005": {
     "station": "DRM Office Danapur, Patna - BSPCB",
@@ -33,7 +36,8 @@
     "adm1_state": "Bihar",
     "district": "Patna",
     "lat": 25.586562,
-    "lon": 85.043586
+    "lon": 85.043586,
+    "source": "historical"
   },
   "station:BR006": {
     "station": "Govt. High School Shikarpur, Patna - BSPCB",
@@ -42,7 +46,8 @@
     "adm1_state": "Bihar",
     "district": "Patna",
     "lat": 25.592539,
-    "lon": 85.227158
+    "lon": 85.227158,
+    "source": "historical"
   },
   "station:BR007": {
     "station": "IGSC Planetarium Complex, Patna - BSPCB",
@@ -51,7 +56,8 @@
     "adm1_state": "Bihar",
     "district": "Patna",
     "lat": 25.610369,
-    "lon": 85.132568
+    "lon": 85.132568,
+    "source": "historical"
   },
   "station:BR008": {
     "station": "Muradpur, Patna - BSPCB",
@@ -60,7 +66,8 @@
     "adm1_state": "Bihar",
     "district": "Patna",
     "lat": 25.619651,
-    "lon": 85.147382
+    "lon": 85.147382,
+    "source": "historical"
   },
   "station:BR009": {
     "station": "Rajbansi Nagar, Patna - BSPCB",
@@ -69,7 +76,8 @@
     "adm1_state": "Bihar",
     "district": "Patna",
     "lat": 25.599486,
-    "lon": 85.113666
+    "lon": 85.113666,
+    "source": "historical"
   },
   "station:BR010": {
     "station": "Samanpura, Patna - BSPCB",
@@ -78,7 +86,8 @@
     "adm1_state": "Bihar",
     "district": "Patna",
     "lat": 25.596727,
-    "lon": 85.085624
+    "lon": 85.085624,
+    "source": "historical"
   },
   "station:CH001": {
     "station": "Sector-25, Chandigarh - CPCC",
@@ -87,7 +96,8 @@
     "adm1_state": "Chandigarh",
     "district": "Chandigarh",
     "lat": 30.751462,
-    "lon": 76.762879
+    "lon": 76.762879,
+    "source": "historical"
   },
   "station:DL001": {
     "station": "Alipur, Delhi - DPCC",
@@ -96,25 +106,28 @@
     "adm1_state": "Delhi",
     "district": "North",
     "lat": 28.815329,
-    "lon": 77.15301
+    "lon": 77.15301,
+    "source": "historical"
   },
   "station:DL002": {
     "station": "Anand Vihar, Delhi - DPCC",
     "station_id": "DL002",
     "dataset_state": "Delhi",
     "adm1_state": "Delhi",
-    "district": "East",
+    "district": "Shahdara",
     "lat": 28.647622,
-    "lon": 77.315809
+    "lon": 77.315809,
+    "source": "historical"
   },
   "station:DL003": {
     "station": "Ashok Vihar, Delhi - DPCC",
     "station_id": "DL003",
     "dataset_state": "Delhi",
     "adm1_state": "Delhi",
-    "district": "North",
+    "district": "North West",
     "lat": 28.695381,
-    "lon": 77.181665
+    "lon": 77.181665,
+    "source": "historical"
   },
   "station:DL004": {
     "station": "Aya Nagar, Delhi - IMD",
@@ -123,7 +136,8 @@
     "adm1_state": "Haryana",
     "district": null,
     "lat": 28.4706914,
-    "lon": 77.1099364
+    "lon": 77.1099364,
+    "source": "historical"
   },
   "station:DL005": {
     "station": "Bawana, Delhi - DPCC",
@@ -132,7 +146,8 @@
     "adm1_state": "Delhi",
     "district": "North",
     "lat": 28.7762,
-    "lon": 77.051074
+    "lon": 77.051074,
+    "source": "historical"
   },
   "station:DL006": {
     "station": "Burari Crossing, Delhi - IMD",
@@ -141,7 +156,8 @@
     "adm1_state": "Delhi",
     "district": "North",
     "lat": 28.7256504,
-    "lon": 77.2011573
+    "lon": 77.2011573,
+    "source": "historical"
   },
   "station:DL007": {
     "station": "CRRI Mathura Road, Delhi - IMD",
@@ -150,7 +166,8 @@
     "adm1_state": "Delhi",
     "district": "South East",
     "lat": 28.5512005,
-    "lon": 77.2735737
+    "lon": 77.2735737,
+    "source": "historical"
   },
   "station:DL008": {
     "station": "DTU, Delhi - CPCB",
@@ -159,7 +176,8 @@
     "adm1_state": "Delhi",
     "district": "North",
     "lat": 28.7500499,
-    "lon": 77.1112615
+    "lon": 77.1112615,
+    "source": "historical"
   },
   "station:DL009": {
     "station": "Dr. Karni Singh Shooting Range, Delhi - DPCC",
@@ -168,7 +186,8 @@
     "adm1_state": "Delhi",
     "district": "South East",
     "lat": 28.498571,
-    "lon": 77.26484
+    "lon": 77.26484,
+    "source": "historical"
   },
   "station:DL010": {
     "station": "Dwarka-Sector 8, Delhi - DPCC",
@@ -177,7 +196,8 @@
     "adm1_state": "Delhi",
     "district": "New Delhi",
     "lat": 28.5710274,
-    "lon": 77.0719006
+    "lon": 77.0719006,
+    "source": "historical"
   },
   "station:DL012": {
     "station": "IGI Airport (T3), Delhi - IMD",
@@ -186,7 +206,8 @@
     "adm1_state": "Delhi",
     "district": "New Delhi",
     "lat": 28.5627763,
-    "lon": 77.1180053
+    "lon": 77.1180053,
+    "source": "historical"
   },
   "station:DL013": {
     "station": "IHBAS, Dilshad Garden, Delhi - CPCB",
@@ -195,7 +216,8 @@
     "adm1_state": "Delhi",
     "district": "Shahdara",
     "lat": 28.6811736,
-    "lon": 77.3025234
+    "lon": 77.3025234,
+    "source": "historical"
   },
   "station:DL014": {
     "station": "ITO, Delhi - CPCB",
@@ -204,7 +226,8 @@
     "adm1_state": "Delhi",
     "district": "Central",
     "lat": 28.628624,
-    "lon": 77.24106
+    "lon": 77.24106,
+    "source": "historical"
   },
   "station:DL015": {
     "station": "Jahangirpuri, Delhi - DPCC",
@@ -213,7 +236,8 @@
     "adm1_state": "Delhi",
     "district": "North",
     "lat": 28.73282,
-    "lon": 77.170633
+    "lon": 77.170633,
+    "source": "historical"
   },
   "station:DL016": {
     "station": "Jawaharlal Nehru Stadium, Delhi - DPCC",
@@ -222,16 +246,18 @@
     "adm1_state": "Delhi",
     "district": "South East",
     "lat": 28.58028,
-    "lon": 77.233829
+    "lon": 77.233829,
+    "source": "historical"
   },
   "station:DL017": {
     "station": "Lodhi Road, Delhi - IMD",
     "station_id": "DL017",
     "dataset_state": "Delhi",
     "adm1_state": "Delhi",
-    "district": "South East",
+    "district": "New Delhi",
     "lat": 28.5918245,
-    "lon": 77.2273074
+    "lon": 77.2273074,
+    "source": "historical"
   },
   "station:DL018": {
     "station": "Major Dhyan Chand National Stadium, Delhi - DPCC",
@@ -240,7 +266,8 @@
     "adm1_state": "Delhi",
     "district": "New Delhi",
     "lat": 28.611281,
-    "lon": 77.237738
+    "lon": 77.237738,
+    "source": "historical"
   },
   "station:DL019": {
     "station": "Mandir Marg, Delhi - DPCC",
@@ -249,16 +276,18 @@
     "adm1_state": "Delhi",
     "district": "New Delhi",
     "lat": 28.636429,
-    "lon": 77.201067
+    "lon": 77.201067,
+    "source": "historical"
   },
   "station:DL020": {
     "station": "Mundka, Delhi - DPCC",
     "station_id": "DL020",
     "dataset_state": "Delhi",
     "adm1_state": "Delhi",
-    "district": "West",
+    "district": "North West",
     "lat": 28.684678,
-    "lon": 77.076574
+    "lon": 77.076574,
+    "source": "historical"
   },
   "station:DL021": {
     "station": "NSIT Dwarka, Delhi - CPCB",
@@ -267,7 +296,8 @@
     "adm1_state": "Delhi",
     "district": "South West",
     "lat": 28.60909,
-    "lon": 77.0325413
+    "lon": 77.0325413,
+    "source": "historical"
   },
   "station:DL022": {
     "station": "Najafgarh, Delhi - DPCC",
@@ -276,7 +306,8 @@
     "adm1_state": "Delhi",
     "district": "South West",
     "lat": 28.570173,
-    "lon": 76.933762
+    "lon": 76.933762,
+    "source": "historical"
   },
   "station:DL023": {
     "station": "Narela, Delhi - DPCC",
@@ -285,7 +316,8 @@
     "adm1_state": "Delhi",
     "district": "North",
     "lat": 28.822836,
-    "lon": 77.101981
+    "lon": 77.101981,
+    "source": "historical"
   },
   "station:DL024": {
     "station": "Nehru Nagar, Delhi - DPCC",
@@ -294,7 +326,8 @@
     "adm1_state": "Delhi",
     "district": "South East",
     "lat": 28.56789,
-    "lon": 77.250515
+    "lon": 77.250515,
+    "source": "historical"
   },
   "station:DL025": {
     "station": "North Campus, DU, Delhi - IMD",
@@ -303,7 +336,8 @@
     "adm1_state": "Delhi",
     "district": "West",
     "lat": 28.6573814,
-    "lon": 77.1585447
+    "lon": 77.1585447,
+    "source": "historical"
   },
   "station:DL026": {
     "station": "Okhla Phase-2, Delhi - DPCC",
@@ -312,7 +346,8 @@
     "adm1_state": "Delhi",
     "district": "South East",
     "lat": 28.530785,
-    "lon": 77.271255
+    "lon": 77.271255,
+    "source": "historical"
   },
   "station:DL027": {
     "station": "Patparganj, Delhi - DPCC",
@@ -321,7 +356,8 @@
     "adm1_state": "Delhi",
     "district": "East",
     "lat": 28.623763,
-    "lon": 77.287209
+    "lon": 77.287209,
+    "source": "historical"
   },
   "station:DL028": {
     "station": "Punjabi Bagh, Delhi - DPCC",
@@ -330,7 +366,8 @@
     "adm1_state": "Delhi",
     "district": "West",
     "lat": 28.674045,
-    "lon": 77.131023
+    "lon": 77.131023,
+    "source": "historical"
   },
   "station:DL029": {
     "station": "Pusa, Delhi - DPCC",
@@ -339,7 +376,8 @@
     "adm1_state": "Delhi",
     "district": "West",
     "lat": 28.639652,
-    "lon": 77.146275
+    "lon": 77.146275,
+    "source": "historical"
   },
   "station:DL030": {
     "station": "Pusa, Delhi - IMD",
@@ -348,7 +386,8 @@
     "adm1_state": "Delhi",
     "district": "West",
     "lat": 28.639652,
-    "lon": 77.146275
+    "lon": 77.146275,
+    "source": "historical"
   },
   "station:DL031": {
     "station": "R K Puram, Delhi - DPCC",
@@ -357,7 +396,8 @@
     "adm1_state": "Delhi",
     "district": "New Delhi",
     "lat": 28.563262,
-    "lon": 77.186937
+    "lon": 77.186937,
+    "source": "historical"
   },
   "station:DL032": {
     "station": "Rohini, Delhi - DPCC",
@@ -366,7 +406,8 @@
     "adm1_state": "Delhi",
     "district": "North",
     "lat": 28.732528,
-    "lon": 77.11992
+    "lon": 77.11992,
+    "source": "historical"
   },
   "station:DL033": {
     "station": "Shadipur, Delhi - CPCB",
@@ -375,7 +416,8 @@
     "adm1_state": "Delhi",
     "district": "West",
     "lat": 28.6514781,
-    "lon": 77.1473105
+    "lon": 77.1473105,
+    "source": "historical"
   },
   "station:DL034": {
     "station": "Sirifort, Delhi - CPCB",
@@ -384,16 +426,18 @@
     "adm1_state": "Delhi",
     "district": "South",
     "lat": 28.5504249,
-    "lon": 77.2159377
+    "lon": 77.2159377,
+    "source": "historical"
   },
   "station:DL035": {
     "station": "Sonia Vihar, Delhi - DPCC",
     "station_id": "DL035",
     "dataset_state": "Delhi",
     "adm1_state": "Delhi",
-    "district": "North East",
+    "district": "Central",
     "lat": 28.710508,
-    "lon": 77.249485
+    "lon": 77.249485,
+    "source": "historical"
   },
   "station:DL036": {
     "station": "Sri Aurobindo Marg, Delhi - DPCC",
@@ -402,70 +446,78 @@
     "adm1_state": "Delhi",
     "district": "South",
     "lat": 28.531346,
-    "lon": 77.190156
+    "lon": 77.190156,
+    "source": "historical"
   },
   "station:DL037": {
     "station": "Vivek Vihar, Delhi - DPCC",
     "station_id": "DL037",
     "dataset_state": "Delhi",
     "adm1_state": "Delhi",
-    "district": "East",
+    "district": "Shahdara",
     "lat": 28.672342,
-    "lon": 77.31526
+    "lon": 77.31526,
+    "source": "historical"
   },
   "station:DL038": {
     "station": "Wazirpur, Delhi - DPCC",
     "station_id": "DL038",
     "dataset_state": "Delhi",
     "adm1_state": "Delhi",
-    "district": "North",
+    "district": "North West",
     "lat": 28.699793,
-    "lon": 77.165453
+    "lon": 77.165453,
+    "source": "historical"
   },
   "station:GJ001": {
     "station": "Maninagar, Ahmedabad - GPCB",
     "station_id": "GJ001",
     "dataset_state": "Gujarat",
     "adm1_state": "Gujarat",
-    "district": "Ahmadabad",
+    "district": "Ahmedabad",
     "lat": 23.002657,
-    "lon": 72.591912
+    "lon": 72.591912,
+    "source": "historical"
   },
   "station:HR011": {
     "station": "NISE Gwal Pahari, Gurugram - IMD",
     "station_id": "HR011",
     "dataset_state": "Haryana",
     "adm1_state": "Haryana",
-    "district": "Gurgaon",
+    "district": "Gurugram",
     "lat": 28.422681,
-    "lon": 77.148944
+    "lon": 77.148944,
+    "source": "historical"
   },
   "station:HR012": {
     "station": "Sector-51, Gurugram - HSPCB",
     "station_id": "HR012",
     "dataset_state": "Haryana",
     "adm1_state": "Haryana",
-    "district": "Gurgaon",
+    "district": "Gurugram",
     "lat": 28.4227,
-    "lon": 77.0667
+    "lon": 77.0667,
+    "source": "historical"
   },
   "station:HR013": {
     "station": "Teri Gram, Gurugram - HSPCB",
     "station_id": "HR013",
     "dataset_state": "Haryana",
     "adm1_state": "Haryana",
-    "district": "Gurgaon",
+    "district": "Gurugram",
     "lat": 28.4275,
-    "lon": 77.1465
+    "lon": 77.1465,
+    "source": "historical"
   },
   "station:HR014": {
     "station": "Vikas Sadan, Gurugram - HSPCB",
     "station_id": "HR014",
     "dataset_state": "Haryana",
     "adm1_state": "Haryana",
-    "district": "Gurgaon",
+    "district": "Gurugram",
     "lat": 28.4501238,
-    "lon": 77.0263051
+    "lon": 77.0263051,
+    "source": "historical"
   },
   "station:JH001": {
     "station": "Tata Stadium, Jorapokhar - JSPCB",
@@ -474,61 +526,78 @@
     "adm1_state": "Jharkhand",
     "district": "Dhanbad",
     "lat": 23.707909,
-    "lon": 86.41467
+    "lon": 86.41467,
+    "source": "historical"
   },
   "station:KA004": {
     "station": "Bapuji Nagar, Bengaluru - KSPCB",
     "station_id": "KA004",
     "dataset_state": "Karnataka",
     "adm1_state": "Karnataka",
-    "district": "Bangalore",
+    "district": "Bengaluru Urban",
     "lat": 12.951913,
-    "lon": 77.539784
+    "lon": 77.539784,
+    "source": "historical"
+  },
+  "station:KA005": {
+    "station": "City Railway Station, Bengaluru - KSPCB",
+    "station_id": "KA005",
+    "dataset_state": "Karnataka",
+    "adm1_state": "Karnataka",
+    "district": "Bengaluru Urban",
+    "lat": 12.9756843,
+    "lon": 77.5660749,
+    "source": "historical"
   },
   "station:KA006": {
     "station": "Hebbal, Bengaluru - KSPCB",
     "station_id": "KA006",
     "dataset_state": "Karnataka",
     "adm1_state": "Karnataka",
-    "district": "Bangalore",
+    "district": "Bengaluru Urban",
     "lat": 13.029152,
-    "lon": 77.585901
+    "lon": 77.585901,
+    "source": "historical"
   },
   "station:KA007": {
     "station": "Hombegowda Nagar, Bengaluru - KSPCB",
     "station_id": "KA007",
     "dataset_state": "Karnataka",
     "adm1_state": "Karnataka",
-    "district": "Bangalore",
+    "district": "Bengaluru Urban",
     "lat": 12.938539,
-    "lon": 77.5901
+    "lon": 77.5901,
+    "source": "historical"
   },
   "station:KA008": {
     "station": "Jayanagar 5th Block, Bengaluru - KSPCB",
     "station_id": "KA008",
     "dataset_state": "Karnataka",
     "adm1_state": "Karnataka",
-    "district": "Bangalore",
+    "district": "Bengaluru Urban",
     "lat": 12.920984,
-    "lon": 77.584908
+    "lon": 77.584908,
+    "source": "historical"
   },
   "station:KA009": {
     "station": "Peenya, Bengaluru - CPCB",
     "station_id": "KA009",
     "dataset_state": "Karnataka",
     "adm1_state": "Karnataka",
-    "district": "Bangalore",
+    "district": "Bengaluru Urban",
     "lat": 13.0270199,
-    "lon": 77.494094
+    "lon": 77.494094,
+    "source": "historical"
   },
   "station:KA011": {
     "station": "Silk Board, Bengaluru - KSPCB",
     "station_id": "KA011",
     "dataset_state": "Karnataka",
     "adm1_state": "Karnataka",
-    "district": "Bangalore",
+    "district": "Bengaluru Urban",
     "lat": 12.917348,
-    "lon": 77.622813
+    "lon": 77.622813,
+    "source": "historical"
   },
   "station:KL007": {
     "station": "Kariavattom, Thiruvananthapuram - Kerala PCB",
@@ -537,7 +606,8 @@
     "adm1_state": "Kerala",
     "district": "Thiruvananthapuram",
     "lat": 8.5637,
-    "lon": 76.8865
+    "lon": 76.8865,
+    "source": "historical"
   },
   "station:KL008": {
     "station": "Plammoodu, Thiruvananthapuram - Kerala PCB",
@@ -546,7 +616,8 @@
     "adm1_state": "Kerala",
     "district": "Thiruvananthapuram",
     "lat": 8.5149093,
-    "lon": 76.9435879
+    "lon": 76.9435879,
+    "source": "historical"
   },
   "station:MH006": {
     "station": "Borivali East, Mumbai - MPCB",
@@ -555,7 +626,8 @@
     "adm1_state": "Maharashtra",
     "district": "Mumbai Suburban",
     "lat": 19.2243333,
-    "lon": 72.8658113
+    "lon": 72.8658113,
+    "source": "historical"
   },
   "station:MH007": {
     "station": "Chhatrapati Shivaji Intl. Airport (T2), Mumbai - MPCB",
@@ -564,7 +636,8 @@
     "adm1_state": "Maharashtra",
     "district": "Mumbai Suburban",
     "lat": 19.10078,
-    "lon": 72.87462
+    "lon": 72.87462,
+    "source": "historical"
   },
   "station:MH009": {
     "station": "Kurla, Mumbai - MPCB",
@@ -573,7 +646,8 @@
     "adm1_state": "Maharashtra",
     "district": "Mumbai Suburban",
     "lat": 19.0863,
-    "lon": 72.8888
+    "lon": 72.8888,
+    "source": "historical"
   },
   "station:MH010": {
     "station": "Powai, Mumbai - MPCB",
@@ -582,7 +656,8 @@
     "adm1_state": "Maharashtra",
     "district": "Mumbai Suburban",
     "lat": 19.1375,
-    "lon": 72.915056
+    "lon": 72.915056,
+    "source": "historical"
   },
   "station:MH011": {
     "station": "Sion, Mumbai - MPCB",
@@ -591,7 +666,8 @@
     "adm1_state": "Maharashtra",
     "district": "Mumbai",
     "lat": 19.047,
-    "lon": 72.8746
+    "lon": 72.8746,
+    "source": "historical"
   },
   "station:MH014": {
     "station": "Worli, Mumbai - MPCB",
@@ -600,7 +676,8 @@
     "adm1_state": "Maharashtra",
     "district": "Mumbai",
     "lat": 18.9936162,
-    "lon": 72.8128113
+    "lon": 72.8128113,
+    "source": "historical"
   },
   "station:ML001": {
     "station": "Lumpyngngad, Shillong - Meghalaya PCB",
@@ -609,7 +686,8 @@
     "adm1_state": "Meghalaya",
     "district": "East Khasi Hills",
     "lat": 25.5586,
-    "lon": 91.8985
+    "lon": 91.8985,
+    "source": "historical"
   },
   "station:MP001": {
     "station": "T T Nagar, Bhopal - MPPCB",
@@ -618,7 +696,8 @@
     "adm1_state": "Madhya Pradesh",
     "district": "Bhopal",
     "lat": 23.233584,
-    "lon": 77.400574
+    "lon": 77.400574,
+    "source": "historical"
   },
   "station:MZ001": {
     "station": "Sikulpuikawn, Aizawl - Mizoram PCB",
@@ -627,7 +706,8 @@
     "adm1_state": "Mizoram",
     "district": "Aizawl",
     "lat": 23.7176342,
-    "lon": 92.7192841
+    "lon": 92.7192841,
+    "source": "historical"
   },
   "station:OD001": {
     "station": "GM Office, Brajrajnagar - OSPCB",
@@ -636,7 +716,8 @@
     "adm1_state": "Odisha",
     "district": "Jharsuguda",
     "lat": 21.8004996,
-    "lon": 83.8396977
+    "lon": 83.8396977,
+    "source": "historical"
   },
   "station:OD002": {
     "station": "Talcher Coalfields,Talcher - OSPCB",
@@ -645,7 +726,8 @@
     "adm1_state": "Odisha",
     "district": "Anugul",
     "lat": 20.9360711,
-    "lon": 85.1707021
+    "lon": 85.1707021,
+    "source": "historical"
   },
   "station:PB001": {
     "station": "Golden Temple, Amritsar - PPCB",
@@ -654,7 +736,8 @@
     "adm1_state": "Punjab",
     "district": "Amritsar",
     "lat": 31.62,
-    "lon": 74.876512
+    "lon": 74.876512,
+    "source": "historical"
   },
   "station:RJ004": {
     "station": "Adarsh Nagar, Jaipur - RSPCB",
@@ -663,7 +746,8 @@
     "adm1_state": "Rajasthan",
     "district": "Jaipur",
     "lat": 26.902909,
-    "lon": 75.836858
+    "lon": 75.836858,
+    "source": "historical"
   },
   "station:RJ005": {
     "station": "Police Commissionerate, Jaipur - RSPCB",
@@ -672,7 +756,8 @@
     "adm1_state": "Rajasthan",
     "district": "Jaipur",
     "lat": 26.9164092,
-    "lon": 75.7994901
+    "lon": 75.7994901,
+    "source": "historical"
   },
   "station:RJ006": {
     "station": "Shastri Nagar, Jaipur - RSPCB",
@@ -681,25 +766,28 @@
     "adm1_state": "Rajasthan",
     "district": "Jaipur",
     "lat": 26.9502929,
-    "lon": 75.730943
+    "lon": 75.730943,
+    "source": "historical"
   },
   "station:TG001": {
     "station": "Bollaram Industrial Area, Hyderabad - TSPCB",
     "station_id": "TG001",
     "dataset_state": "Telangana",
     "adm1_state": "Telangana",
-    "district": "Medchal",
+    "district": "Medchal Malkajgiri",
     "lat": 17.518,
-    "lon": 78.383
+    "lon": 78.383,
+    "source": "historical"
   },
   "station:TG002": {
     "station": "Central University, Hyderabad - TSPCB",
     "station_id": "TG002",
     "dataset_state": "Telangana",
     "adm1_state": "Telangana",
-    "district": "Rangareddy",
+    "district": "Ranga Reddy",
     "lat": 17.460103,
-    "lon": 78.334361
+    "lon": 78.334361,
+    "source": "historical"
   },
   "station:TG003": {
     "station": "ICRISAT Patancheru, Hyderabad - TSPCB",
@@ -708,7 +796,8 @@
     "adm1_state": "Telangana",
     "district": "Sangareddy",
     "lat": 17.5184,
-    "lon": 78.278777
+    "lon": 78.278777,
+    "source": "historical"
   },
   "station:TG004": {
     "station": "IDA Pashamylaram, Hyderabad - TSPCB",
@@ -717,43 +806,58 @@
     "adm1_state": "Telangana",
     "district": "Sangareddy",
     "lat": 17.5316895,
-    "lon": 78.218939
+    "lon": 78.218939,
+    "source": "historical"
   },
   "station:TG005": {
     "station": "Sanathnagar, Hyderabad - TSPCB",
     "station_id": "TG005",
     "dataset_state": "Telangana",
     "adm1_state": "Telangana",
-    "district": "Hydrabad",
+    "district": "Medchal Malkajgiri",
     "lat": 17.4559458,
-    "lon": 78.4332152
+    "lon": 78.4332152,
+    "source": "historical"
   },
   "station:TG006": {
     "station": "Zoo Park, Hyderabad - TSPCB",
     "station_id": "TG006",
     "dataset_state": "Telangana",
     "adm1_state": "Telangana",
-    "district": "Hydrabad",
+    "district": "Hyderabad",
     "lat": 17.349694,
-    "lon": 78.451437
+    "lon": 78.451437,
+    "source": "historical"
   },
   "station:TN002": {
     "station": "Manali Village, Chennai - TNPCB",
     "station_id": "TN002",
     "dataset_state": "Tamil Nadu",
     "adm1_state": "Tamil Nadu",
-    "district": "Thiruvallur",
+    "district": "Chennai",
     "lat": 13.1662,
-    "lon": 80.2584
+    "lon": 80.2584,
+    "source": "historical"
   },
   "station:TN003": {
     "station": "Manali, Chennai - CPCB",
     "station_id": "TN003",
     "dataset_state": "Tamil Nadu",
     "adm1_state": "Tamil Nadu",
-    "district": "Thiruvallur",
+    "district": "Chennai",
     "lat": 13.164544,
-    "lon": 80.26285
+    "lon": 80.26285,
+    "source": "historical"
+  },
+  "station:TN004": {
+    "station": "Velachery Res. Area, Chennai - CPCB",
+    "station_id": "TN004",
+    "dataset_state": "Tamil Nadu",
+    "adm1_state": "Tamil Nadu",
+    "district": "Chennai",
+    "lat": 13.0052189,
+    "lon": 80.2398125,
+    "source": "historical"
   },
   "station:TN005": {
     "station": "SIDCO Kurichi, Coimbatore - TNPCB",
@@ -762,7 +866,8 @@
     "adm1_state": "Tamil Nadu",
     "district": "Coimbatore",
     "lat": 10.942451,
-    "lon": 76.978996
+    "lon": 76.978996,
+    "source": "historical"
   },
   "station:UP013": {
     "station": "Gomti Nagar, Lucknow - UPPCB",
@@ -771,7 +876,8 @@
     "adm1_state": "Uttar Pradesh",
     "district": "Lucknow",
     "lat": 26.86812,
-    "lon": 81.005119
+    "lon": 81.005119,
+    "source": "historical"
   },
   "station:UP014": {
     "station": "Lalbagh, Lucknow - CPCB",
@@ -780,7 +886,8 @@
     "adm1_state": "Uttar Pradesh",
     "district": "Lucknow",
     "lat": 26.8458805,
-    "lon": 80.9365541
+    "lon": 80.9365541,
+    "source": "historical"
   },
   "station:UP016": {
     "station": "Talkatora District Industries Center, Lucknow - CPCB",
@@ -789,7 +896,8 @@
     "adm1_state": "Uttar Pradesh",
     "district": "Lucknow",
     "lat": 26.83399722,
-    "lon": 80.8917361
+    "lon": 80.8917361,
+    "source": "historical"
   },
   "station:WB007": {
     "station": "Ballygunge, Kolkata - WBPCB",
@@ -798,16 +906,18 @@
     "adm1_state": "West Bengal",
     "district": "Kolkata",
     "lat": 22.5367507,
-    "lon": 88.3638022
+    "lon": 88.3638022,
+    "source": "historical"
   },
   "station:WB008": {
     "station": "Bidhannagar, Kolkata - WBPCB",
     "station_id": "WB008",
     "dataset_state": "West Bengal",
     "adm1_state": "West Bengal",
-    "district": "North Twenty Four Parganas",
+    "district": "North 24 Parganas",
     "lat": 22.58157048,
-    "lon": 88.41002457
+    "lon": 88.41002457,
+    "source": "historical"
   },
   "station:WB009": {
     "station": "Fort William, Kolkata - WBPCB",
@@ -816,25 +926,28 @@
     "adm1_state": "West Bengal",
     "district": "Kolkata",
     "lat": 22.55664,
-    "lon": 88.342674
+    "lon": 88.342674,
+    "source": "historical"
   },
   "station:WB010": {
     "station": "Jadavpur, Kolkata - WBPCB",
     "station_id": "WB010",
     "dataset_state": "West Bengal",
     "adm1_state": "West Bengal",
-    "district": "South Twenty Four Parganas",
+    "district": "Kolkata",
     "lat": 22.49929,
-    "lon": 88.36917
+    "lon": 88.36917,
+    "source": "historical"
   },
   "station:WB011": {
     "station": "Rabindra Bharati University, Kolkata - WBPCB",
     "station_id": "WB011",
     "dataset_state": "West Bengal",
     "adm1_state": "West Bengal",
-    "district": "Kolkata",
+    "district": "North 24 Parganas",
     "lat": 22.627847,
-    "lon": 88.380669
+    "lon": 88.380669,
+    "source": "historical"
   },
   "station:WB012": {
     "station": "Rabindra Sarobar, Kolkata - WBPCB",
@@ -843,6 +956,4107 @@
     "adm1_state": "West Bengal",
     "district": "Kolkata",
     "lat": 22.51106,
-    "lon": 88.35142
+    "lon": 88.35142,
+    "source": "historical"
+  },
+  "station:WB013": {
+    "station": "Victoria, Kolkata - WBPCB",
+    "station_id": "WB013",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Kolkata",
+    "lat": 22.5448082,
+    "lon": 88.3403691,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mangala_bilaspur_ntpc_d180d3": {
+    "station": "Mangala, Bilaspur - NTPC",
+    "station_id": "CPCB_LIVE_mangala_bilaspur_ntpc_d180d3",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Bilaspur",
+    "lat": 22.08815,
+    "lon": 82.13737,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_nawapara_secl_colony_chhal_cecb_87638d": {
+    "station": "Nawapara SECL Colony, Chhal - CECB",
+    "station_id": "CPCB_LIVE_nawapara_secl_colony_chhal_cecb_87638d",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Raigarh",
+    "lat": 22.118125,
+    "lon": 83.140608,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_urja_nagar_korba_cecb_3951bc": {
+    "station": "Urja Nagar, Korba - CECB",
+    "station_id": "CPCB_LIVE_urja_nagar_korba_cecb_3951bc",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Korba",
+    "lat": 22.348441,
+    "lon": 82.549611,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rampur_korba_cecb_6c07dd": {
+    "station": "Rampur, Korba - CECB",
+    "station_id": "CPCB_LIVE_rampur_korba_cecb_6c07dd",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Korba",
+    "lat": 22.368195,
+    "lon": 82.746431,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_op_jindal_school_kunjemura_cecb_23e180": {
+    "station": "OP Jindal School, Kunjemura - CECB",
+    "station_id": "CPCB_LIVE_op_jindal_school_kunjemura_cecb_23e180",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Raigarh",
+    "lat": 22.12665,
+    "lon": 83.483212,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_govt_higher_secondary_school_milupara_ce_648d37": {
+    "station": "Govt. Higher Secondary School, Milupara - CECB",
+    "station_id": "CPCB_LIVE_govt_higher_secondary_school_milupara_ce_648d37",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Raigarh",
+    "lat": 22.1910172,
+    "lon": 83.5197009,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_krishak_nagar_raipur_cecb_8ad5e4": {
+    "station": "Krishak Nagar, Raipur - CECB",
+    "station_id": "CPCB_LIVE_krishak_nagar_raipur_cecb_8ad5e4",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Raipur",
+    "lat": 21.237755,
+    "lon": 81.705301,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bhatagaon_new_isbt_raipur_cecb_af4582": {
+    "station": "Bhatagaon New ISBT, Raipur - CECB",
+    "station_id": "CPCB_LIVE_bhatagaon_new_isbt_raipur_cecb_af4582",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Raipur",
+    "lat": 21.219665,
+    "lon": 81.630094,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_town_hall_munger_bspcb_247464": {
+    "station": "Town Hall, Munger - BSPCB",
+    "station_id": "CPCB_LIVE_town_hall_munger_bspcb_247464",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Munger",
+    "lat": 25.376776,
+    "lon": 86.471523,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_buddha_colony_muzaffarpur_bspcb_283c82": {
+    "station": "Buddha Colony, Muzaffarpur - BSPCB",
+    "station_id": "CPCB_LIVE_buddha_colony_muzaffarpur_bspcb_283c82",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Muzaffarpur",
+    "lat": 26.11442,
+    "lon": 85.39813,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mariam_nagar_purnia_bspcb_80d96d": {
+    "station": "Mariam Nagar, Purnia - BSPCB",
+    "station_id": "CPCB_LIVE_mariam_nagar_purnia_bspcb_80d96d",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Bhagalpur",
+    "lat": 25.366336,
+    "lon": 87.117468,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_dangi_tola_rajgir_bspcb_b566ad": {
+    "station": "Dangi Tola, Rajgir - BSPCB",
+    "station_id": "CPCB_LIVE_dangi_tola_rajgir_bspcb_b566ad",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Nalanda",
+    "lat": 25.0328,
+    "lon": 85.41948,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_dada_peer_sasaram_bspcb_70d11e": {
+    "station": "Dada Peer, Sasaram - BSPCB",
+    "station_id": "CPCB_LIVE_dada_peer_sasaram_bspcb_70d11e",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Rohtas",
+    "lat": 24.952822,
+    "lon": 84.002396,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_22_chandigarh_cpcc_15798c": {
+    "station": "Sector 22, Chandigarh - CPCC",
+    "station_id": "CPCB_LIVE_sector_22_chandigarh_cpcc_15798c",
+    "dataset_state": "Chandigarh",
+    "adm1_state": "Chandigarh",
+    "district": "Chandigarh",
+    "lat": 30.735567,
+    "lon": 76.775714,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_hathkhoj_bhilai_cecb_0557b7": {
+    "station": "Hathkhoj, Bhilai - CECB",
+    "station_id": "CPCB_LIVE_hathkhoj_bhilai_cecb_0557b7",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Durg",
+    "lat": 21.224231,
+    "lon": 81.40835,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_civic_center_bhilai_bhilai_steel_plant_b7e6ac": {
+    "station": "Civic Center, Bhilai - Bhilai Steel Plant",
+    "station_id": "CPCB_LIVE_civic_center_bhilai_bhilai_steel_plant_b7e6ac",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Durg",
+    "lat": 21.185571,
+    "lon": 81.343175,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_collectorate_gaya_bspcb_def2ed": {
+    "station": "Collectorate, Gaya - BSPCB",
+    "station_id": "CPCB_LIVE_collectorate_gaya_bspcb_def2ed",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Gaya",
+    "lat": 24.7955,
+    "lon": 84.9994,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_industrial_area_hajipur_bspcb_3d0524": {
+    "station": "Industrial Area, Hajipur - BSPCB",
+    "station_id": "CPCB_LIVE_industrial_area_hajipur_bspcb_3d0524",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Vaishali",
+    "lat": 25.697189,
+    "lon": 85.2459,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mirchaibari_katihar_bspcb_8ba622": {
+    "station": "Mirchaibari, Katihar - BSPCB",
+    "station_id": "CPCB_LIVE_mirchaibari_katihar_bspcb_8ba622",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Katihar",
+    "lat": 25.560083,
+    "lon": 87.553265,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sdm_office_khagra_kishanganj_bspcb_688b96": {
+    "station": "SDM Office_Khagra, Kishanganj - BSPCB",
+    "station_id": "CPCB_LIVE_sdm_office_khagra_kishanganj_bspcb_688b96",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Kishanganj",
+    "lat": 26.0881305,
+    "lon": 87.93840336,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_forest_rest_house_manguraha_bspcb_452028": {
+    "station": "Forest Rest House, Manguraha - BSPCB",
+    "station_id": "CPCB_LIVE_forest_rest_house_manguraha_bspcb_452028",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Pashchim Champaran",
+    "lat": 27.308328,
+    "lon": 84.531742,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_gandak_colony_motihari_bspcb_cd6018": {
+    "station": "Gandak Colony, Motihari - BSPCB",
+    "station_id": "CPCB_LIVE_gandak_colony_motihari_bspcb_cd6018",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Purbi Champaran",
+    "lat": 26.63086,
+    "lon": 84.90051,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sita_rama_nagar_kurnool_appcb_762b3f": {
+    "station": "Sita Rama Nagar, Kurnool - APPCB",
+    "station_id": "CPCB_LIVE_sita_rama_nagar_kurnool_appcb_762b3f",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Kurnool",
+    "lat": 15.83411,
+    "lon": 78.028546,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_srinivas_nagar_colony_machilipatnam_appc_e4bd86": {
+    "station": "Srinivas Nagar Colony, Machilipatnam - APPCB",
+    "station_id": "CPCB_LIVE_srinivas_nagar_colony_machilipatnam_appc_e4bd86",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Krishna",
+    "lat": 16.186555,
+    "lon": 81.13219,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ambedkar_nagar_nellore_appcb_6cd669": {
+    "station": "Ambedkar Nagar, Nellore - APPCB",
+    "station_id": "CPCB_LIVE_ambedkar_nagar_nellore_appcb_6cd669",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Sri Potti Sriramulu Nellore",
+    "lat": 14.438164,
+    "lon": 79.966814,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_anand_kala_kshetram_rajamahendravaram_ap_1d8c3e": {
+    "station": "Anand Kala Kshetram, Rajamahendravaram - APPCB",
+    "station_id": "CPCB_LIVE_anand_kala_kshetram_rajamahendravaram_ap_1d8c3e",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "East Godavari",
+    "lat": 16.9872867,
+    "lon": 81.7363176,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_hb_colony_vijayawada_appcb_cbfed0": {
+    "station": "HB Colony, Vijayawada - APPCB",
+    "station_id": "CPCB_LIVE_hb_colony_vijayawada_appcb_cbfed0",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Ntr",
+    "lat": 16.536107,
+    "lon": 80.594233,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rajiv_gandhi_park_vijayawada_appcb_8ea696": {
+    "station": "Rajiv Gandhi Park, Vijayawada - APPCB",
+    "station_id": "CPCB_LIVE_rajiv_gandhi_park_vijayawada_appcb_8ea696",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Ntr",
+    "lat": 16.509717,
+    "lon": 80.612222,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_naharlagun_naharlagun_apspcb_7e3b10": {
+    "station": "Naharlagun, Naharlagun - APSPCB",
+    "station_id": "CPCB_LIVE_naharlagun_naharlagun_apspcb_7e3b10",
+    "dataset_state": "Arunachal Pradesh",
+    "adm1_state": "ARUNACHAL PRADESH",
+    "district": "Itanagar capital complex",
+    "lat": 27.103358,
+    "lon": 93.679645,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_lgbi_airport_guwahati_pcba_764f47": {
+    "station": "LGBI Airport, Guwahati - PCBA",
+    "station_id": "CPCB_LIVE_lgbi_airport_guwahati_pcba_764f47",
+    "dataset_state": "Assam",
+    "adm1_state": "Assam",
+    "district": "Kamrup Metro",
+    "lat": 26.10887,
+    "lon": 91.589544,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_pan_bazaar_guwahati_pcba_054e73": {
+    "station": "Pan Bazaar, Guwahati - PCBA",
+    "station_id": "CPCB_LIVE_pan_bazaar_guwahati_pcba_054e73",
+    "dataset_state": "Assam",
+    "adm1_state": "Assam",
+    "district": "Kamrup Metro",
+    "lat": 26.1875,
+    "lon": 91.744194,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_gangineni_cheruvu_chittoor_appcb_fee974": {
+    "station": "Gangineni Cheruvu, Chittoor - APPCB",
+    "station_id": "CPCB_LIVE_gangineni_cheruvu_chittoor_appcb_fee974",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Chittoor",
+    "lat": 13.20488,
+    "lon": 79.097889,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_district_court_eluru_appcb_507c22": {
+    "station": "District Court, Eluru - APPCB",
+    "station_id": "CPCB_LIVE_district_court_eluru_appcb_507c22",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Eluru",
+    "lat": 16.711754,
+    "lon": 81.092095,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rajendra_nagar_north_guntur_appcb_c86918": {
+    "station": "Rajendra Nagar North, Guntur - APPCB",
+    "station_id": "CPCB_LIVE_rajendra_nagar_north_guntur_appcb_c86918",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Guntur",
+    "lat": 16.316553,
+    "lon": 80.413302,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_yerramukkapalli_kadapa_appcb_85fd4c": {
+    "station": "Yerramukkapalli, Kadapa - APPCB",
+    "station_id": "CPCB_LIVE_yerramukkapalli_kadapa_appcb_85fd4c",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Y.S.R.",
+    "lat": 14.465052,
+    "lon": 78.824187,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rama_rao_peta_kakinada_appcb_31b169": {
+    "station": "Rama Rao Peta, Kakinada - APPCB",
+    "station_id": "CPCB_LIVE_rama_rao_peta_kakinada_appcb_31b169",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Kakinada",
+    "lat": 16.962488,
+    "lon": 82.229513,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kharahiya_basti_araria_bspcb_909f11": {
+    "station": "Kharahiya Basti, Araria - BSPCB",
+    "station_id": "CPCB_LIVE_kharahiya_basti_araria_bspcb_909f11",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Araria",
+    "lat": 26.146529,
+    "lon": 87.454184,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_new_dm_office_arrah_bspcb_a4ff67": {
+    "station": "New DM Office, Arrah - BSPCB",
+    "station_id": "CPCB_LIVE_new_dm_office_arrah_bspcb_a4ff67",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Bhojpur",
+    "lat": 25.5626095,
+    "lon": 84.663264,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_lohiyanagar_begusarai_bspcb_d285f8": {
+    "station": "Lohiyanagar, Begusarai - BSPCB",
+    "station_id": "CPCB_LIVE_lohiyanagar_begusarai_bspcb_d285f8",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Begusarai",
+    "lat": 25.42742023,
+    "lon": 86.13886079,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kamalnath_nagar_bettiah_bspcb_e224e1": {
+    "station": "Kamalnath Nagar, Bettiah - BSPCB",
+    "station_id": "CPCB_LIVE_kamalnath_nagar_bettiah_bspcb_e224e1",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Pashchim Champaran",
+    "lat": 26.80365,
+    "lon": 84.51954,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_d_m_colony_bihar_sharif_bspcb_52cbed": {
+    "station": "D M Colony, Bihar Sharif - BSPCB",
+    "station_id": "CPCB_LIVE_d_m_colony_bihar_sharif_bspcb_52cbed",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Nalanda",
+    "lat": 25.204762,
+    "lon": 85.51496,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_iitg_guwahati_pcba_237869": {
+    "station": "IITG, Guwahati - PCBA",
+    "station_id": "CPCB_LIVE_iitg_guwahati_pcba_237869",
+    "dataset_state": "Assam",
+    "adm1_state": "Assam",
+    "district": "Kamrup",
+    "lat": 26.2028636,
+    "lon": 91.70046436,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bata_chowk_nalbari_pcba_2da41a": {
+    "station": "Bata Chowk, Nalbari - PCBA",
+    "station_id": "CPCB_LIVE_bata_chowk_nalbari_pcba_2da41a",
+    "dataset_state": "Assam",
+    "adm1_state": "Assam",
+    "district": "Nalbari",
+    "lat": 26.446912,
+    "lon": 91.439057,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_tarapur_silchar_pcba_0ca103": {
+    "station": "Tarapur, Silchar - PCBA",
+    "station_id": "CPCB_LIVE_tarapur_silchar_pcba_0ca103",
+    "dataset_state": "Assam",
+    "adm1_state": "Assam",
+    "district": "Cachar",
+    "lat": 24.82827,
+    "lon": 92.79525,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_gulzarpet_anantapur_appcb_21535f": {
+    "station": "Gulzarpet, Anantapur - APPCB",
+    "station_id": "CPCB_LIVE_gulzarpet_anantapur_appcb_21535f",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Ananthapuramu",
+    "lat": 14.675886,
+    "lon": 77.593027,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_chandni_chowk_delhi_iitm_bed5ea": {
+    "station": "Chandni Chowk, Delhi - IITM",
+    "station_id": "CPCB_LIVE_chandni_chowk_delhi_iitm_bed5ea",
+    "dataset_state": "Delhi",
+    "adm1_state": "Delhi",
+    "district": "Central",
+    "lat": 28.656756,
+    "lon": 77.227234,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_iit_delhi_delhi_iitm_cabd2b": {
+    "station": "IIT Delhi, Delhi - IITM",
+    "station_id": "CPCB_LIVE_iit_delhi_delhi_iitm_cabd2b",
+    "dataset_state": "Delhi",
+    "adm1_state": "Delhi",
+    "district": "South",
+    "lat": 28.54246,
+    "lon": 77.191651,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ignou_maidan_garhi_delhi_dpcc_2ccba9": {
+    "station": "IGNOU_Maidan Garhi, Delhi - DPCC",
+    "station_id": "CPCB_LIVE_ignou_maidan_garhi_delhi_dpcc_2ccba9",
+    "dataset_state": "Delhi",
+    "adm1_state": "Delhi",
+    "district": "South",
+    "lat": 28.493624,
+    "lon": 77.201159,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_commonwealth_sports_complex_delhi_dpcc_99220d": {
+    "station": "Commonwealth Sports Complex, Delhi - DPCC",
+    "station_id": "CPCB_LIVE_commonwealth_sports_complex_delhi_dpcc_99220d",
+    "dataset_state": "Delhi",
+    "adm1_state": "Delhi",
+    "district": "Central",
+    "lat": 28.615828,
+    "lon": 77.271992,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_talkatora_garden_delhi_dpcc_f298bc": {
+    "station": "Talkatora Garden, Delhi - DPCC",
+    "station_id": "CPCB_LIVE_talkatora_garden_delhi_dpcc_f298bc",
+    "dataset_state": "Delhi",
+    "adm1_state": "Delhi",
+    "district": "New Delhi",
+    "lat": 28.62181,
+    "lon": 77.1944633,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_aya_nagar_delhi_iitm_a7b41b": {
+    "station": "Aya Nagar, Delhi - IITM",
+    "station_id": "CPCB_LIVE_aya_nagar_delhi_iitm_a7b41b",
+    "dataset_state": "Delhi",
+    "adm1_state": "Haryana",
+    "district": null,
+    "lat": 28.4706914,
+    "lon": 77.1099364,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_burari_crossing_delhi_iitm_e1ad87": {
+    "station": "Burari Crossing, Delhi - IITM",
+    "station_id": "CPCB_LIVE_burari_crossing_delhi_iitm_e1ad87",
+    "dataset_state": "Delhi",
+    "adm1_state": "Delhi",
+    "district": "North",
+    "lat": 28.7256504,
+    "lon": 77.2011573,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_aiims_raipur_cecb_d9210d": {
+    "station": "AIIMS, Raipur - CECB",
+    "station_id": "CPCB_LIVE_aiims_raipur_cecb_d9210d",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Raipur",
+    "lat": 21.258815,
+    "lon": 81.578979,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_siltara_phase_ii_raipur_cecb_09b155": {
+    "station": "Siltara Phase-II, Raipur - CECB",
+    "station_id": "CPCB_LIVE_siltara_phase_ii_raipur_cecb_09b155",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Raipur",
+    "lat": 21.371751,
+    "lon": 81.664929,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_op_jindal_industrial_park_tumidih_cecb_1d5630": {
+    "station": "OP Jindal Industrial Park, Tumidih - CECB",
+    "station_id": "CPCB_LIVE_op_jindal_industrial_park_tumidih_cecb_1d5630",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Raigarh",
+    "lat": 22.06631475,
+    "lon": 83.33820077,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_cantonment_area_delhi_dpcc_9b2904": {
+    "station": "Cantonment Area, Delhi - DPCC",
+    "station_id": "CPCB_LIVE_cantonment_area_delhi_dpcc_9b2904",
+    "dataset_state": "Delhi",
+    "adm1_state": "Delhi",
+    "district": "New Delhi",
+    "lat": 28.594169,
+    "lon": 77.1251,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_police_lines_jind_hspcb_354024": {
+    "station": "Police Lines, Jind - HSPCB",
+    "station_id": "CPCB_LIVE_police_lines_jind_hspcb_354024",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Jind",
+    "lat": 29.307814,
+    "lon": 76.337619,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rishi_nagar_kaithal_hspcb_b22d92": {
+    "station": "Rishi Nagar, Kaithal - HSPCB",
+    "station_id": "CPCB_LIVE_rishi_nagar_kaithal_hspcb_b22d92",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Kaithal",
+    "lat": 29.8006,
+    "lon": 76.4155,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_12_karnal_hspcb_91d879": {
+    "station": "Sector-12, Karnal - HSPCB",
+    "station_id": "CPCB_LIVE_sector_12_karnal_hspcb_91d879",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Karnal",
+    "lat": 29.6953,
+    "lon": 77.0027,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_7_kurukshetra_hspcb_eb62fb": {
+    "station": "Sector-7, Kurukshetra - HSPCB",
+    "station_id": "CPCB_LIVE_sector_7_kurukshetra_hspcb_eb62fb",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Kurukshetra",
+    "lat": 29.966942,
+    "lon": 76.875879,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_2_imt_manesar_hspcb_5ab3b8": {
+    "station": "Sector-2 IMT, Manesar - HSPCB",
+    "station_id": "CPCB_LIVE_sector_2_imt_manesar_hspcb_5ab3b8",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Gurugram",
+    "lat": 28.360699,
+    "lon": 76.93609,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shastri_nagar_narnaul_hspcb_28431f": {
+    "station": "Shastri Nagar, Narnaul - HSPCB",
+    "station_id": "CPCB_LIVE_shastri_nagar_narnaul_hspcb_28431f",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Mahendragarh",
+    "lat": 28.060249,
+    "lon": 76.113115,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_gidc_nandesari_nandesari_ind_association_45b70b": {
+    "station": "GIDC, Nandesari - Nandesari Ind. Association",
+    "station_id": "CPCB_LIVE_gidc_nandesari_nandesari_ind_association_45b70b",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Vadodara",
+    "lat": 22.410802,
+    "lon": 73.097923,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mavdi_rajkot_nexteng_enviro_00dfef": {
+    "station": "Mavdi, Rajkot - Nexteng Enviro",
+    "station_id": "CPCB_LIVE_mavdi_rajkot_nexteng_enviro_00dfef",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Rajkot",
+    "lat": 22.248853,
+    "lon": 70.776774,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bapunagar_vadodara_nexteng_enviro_fc19a2": {
+    "station": "Bapunagar, Vadodara - Nexteng Enviro",
+    "station_id": "CPCB_LIVE_bapunagar_vadodara_nexteng_enviro_fc19a2",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Vadodara",
+    "lat": 22.320153,
+    "lon": 73.216285,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_phase_1_gidc_vapi_gpcb_f9fe77": {
+    "station": "Phase-1 GIDC, Vapi - GPCB",
+    "station_id": "CPCB_LIVE_phase_1_gidc_vapi_gpcb_f9fe77",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Valsad",
+    "lat": 20.362421,
+    "lon": 72.918013,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_phase_4_gidc_vatva_gpcb_ebcc2a": {
+    "station": "Phase-4 GIDC, Vatva - GPCB",
+    "station_id": "CPCB_LIVE_phase_4_gidc_vatva_gpcb_ebcc2a",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Ahmedabad",
+    "lat": 22.969611,
+    "lon": 72.6435,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_patti_mehar_ambala_hspcb_f7bb89": {
+    "station": "Patti Mehar, Ambala - HSPCB",
+    "station_id": "CPCB_LIVE_patti_mehar_ambala_hspcb_f7bb89",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Ambala",
+    "lat": 30.379589,
+    "lon": 76.778328,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_arya_nagar_bahadurgarh_hspcb_a4e777": {
+    "station": "Arya Nagar, Bahadurgarh - HSPCB",
+    "station_id": "CPCB_LIVE_arya_nagar_bahadurgarh_hspcb_a4e777",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Jhajjar",
+    "lat": 28.6701,
+    "lon": 76.9254,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_raikhad_ahmedabad_iitm_ca9f47": {
+    "station": "Raikhad, Ahmedabad - IITM",
+    "station_id": "CPCB_LIVE_raikhad_ahmedabad_iitm_ca9f47",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Ahmedabad",
+    "lat": 23.020509,
+    "lon": 72.579261,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sac_isro_satellite_ahmedabad_iitm_79acb3": {
+    "station": "SAC ISRO Satellite, Ahmedabad - IITM",
+    "station_id": "CPCB_LIVE_sac_isro_satellite_ahmedabad_iitm_79acb3",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Ahmedabad",
+    "lat": 23.023389,
+    "lon": 72.515201,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rakhial_ahmedabad_iitm_55fd38": {
+    "station": "Rakhial, Ahmedabad - IITM",
+    "station_id": "CPCB_LIVE_rakhial_ahmedabad_iitm_55fd38",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Ahmedabad",
+    "lat": 23.016834,
+    "lon": 72.625775,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_svpi_airport_hansol_ahmedabad_iitm_51d8bd": {
+    "station": "SVPI Airport Hansol, Ahmedabad - IITM",
+    "station_id": "CPCB_LIVE_svpi_airport_hansol_ahmedabad_iitm_51d8bd",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Ahmedabad",
+    "lat": 23.076793,
+    "lon": 72.627874,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_gidc_ankleshwar_gpcb_e489c5": {
+    "station": "GIDC, Ankleshwar - GPCB",
+    "station_id": "CPCB_LIVE_gidc_ankleshwar_gpcb_e489c5",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Bharuch",
+    "lat": 21.613267,
+    "lon": 73.010555,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_vidhyanagar_bhavnagar_nexteng_enviro_03e903": {
+    "station": "Vidhyanagar, Bhavnagar - Nexteng Enviro",
+    "station_id": "CPCB_LIVE_vidhyanagar_bhavnagar_nexteng_enviro_03e903",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Bhavnagar",
+    "lat": 21.755417,
+    "lon": 72.139056,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_10_gandhinagar_gpcb_12c36f": {
+    "station": "Sector-10, Gandhinagar - GPCB",
+    "station_id": "CPCB_LIVE_sector_10_gandhinagar_gpcb_12c36f",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Gandhinagar",
+    "lat": 23.221714,
+    "lon": 72.654328,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_gift_city_gandhinagar_iitm_6f53c4": {
+    "station": "GIFT City, Gandhinagar - IITM",
+    "station_id": "CPCB_LIVE_gift_city_gandhinagar_iitm_6f53c4",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Gandhinagar",
+    "lat": 23.163798,
+    "lon": 72.677768,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_iiphg_lekawada_gandhinagar_iitm_6708d7": {
+    "station": "IIPHG Lekawada, Gandhinagar - IITM",
+    "station_id": "CPCB_LIVE_iiphg_lekawada_gandhinagar_iitm_6708d7",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Gandhinagar",
+    "lat": 23.243639,
+    "lon": 72.68994,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_north_campus_du_delhi_iitm_81be5b": {
+    "station": "North Campus, DU, Delhi - IITM",
+    "station_id": "CPCB_LIVE_north_campus_du_delhi_iitm_81be5b",
+    "dataset_state": "Delhi",
+    "adm1_state": "Delhi",
+    "district": "West",
+    "lat": 28.6573814,
+    "lon": 77.1585447,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_chandkheda_ahmedabad_iitm_0704a2": {
+    "station": "Chandkheda, Ahmedabad - IITM",
+    "station_id": "CPCB_LIVE_chandkheda_ahmedabad_iitm_0704a2",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Ahmedabad",
+    "lat": 23.107969,
+    "lon": 72.574648,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_nsut_jaffarpur_delhi_dpcc_a5679f": {
+    "station": "NSUT Jaffarpur, Delhi - DPCC",
+    "station_id": "CPCB_LIVE_nsut_jaffarpur_delhi_dpcc_a5679f",
+    "dataset_state": "Delhi",
+    "adm1_state": "Delhi",
+    "district": "South West",
+    "lat": 28.594004,
+    "lon": 76.909423,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mini_secretariat_charkhi_dadri_hspcb_7addcb": {
+    "station": "Mini Secretariat, Charkhi Dadri - HSPCB",
+    "station_id": "CPCB_LIVE_mini_secretariat_charkhi_dadri_hspcb_7addcb",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Charki Dadri",
+    "lat": 28.593883,
+    "lon": 76.270653,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_municipal_corporation_office_dharuhera_h_9408f3": {
+    "station": "Municipal Corporation Office, Dharuhera -  HSPCB",
+    "station_id": "CPCB_LIVE_municipal_corporation_office_dharuhera_h_9408f3",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Rewari",
+    "lat": 28.2068,
+    "lon": 76.7997,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_11_faridabad_hspcb_284a8b": {
+    "station": "Sector 11, Faridabad - HSPCB",
+    "station_id": "CPCB_LIVE_sector_11_faridabad_hspcb_284a8b",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Faridabad",
+    "lat": 28.376058,
+    "lon": 77.315741,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_new_industrial_town_faridabad_hspcb_9c4408": {
+    "station": "New Industrial Town, Faridabad - HSPCB",
+    "station_id": "CPCB_LIVE_new_industrial_town_faridabad_hspcb_9c4408",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Faridabad",
+    "lat": 28.39072,
+    "lon": 77.30059,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_nise_gwal_pahari_gurugram_iitm_7a8580": {
+    "station": "NISE Gwal Pahari, Gurugram - IITM",
+    "station_id": "CPCB_LIVE_nise_gwal_pahari_gurugram_iitm_7a8580",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Gurugram",
+    "lat": 28.422681,
+    "lon": 77.148944,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_amity_university_panchgaon_iitm_ac2e86": {
+    "station": "Amity University, Panchgaon - IITM",
+    "station_id": "CPCB_LIVE_amity_university_panchgaon_iitm_ac2e86",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Gurugram",
+    "lat": 28.3153,
+    "lon": 76.9143,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_6_panchkula_hspcb_8115b7": {
+    "station": "Sector-6, Panchkula - HSPCB",
+    "station_id": "CPCB_LIVE_sector_6_panchkula_hspcb_8115b7",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Panchkula",
+    "lat": 30.7057778,
+    "lon": 76.8531805555555,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_18_panipat_hspcb_182b07": {
+    "station": "Sector-18, Panipat - HSPCB",
+    "station_id": "CPCB_LIVE_sector_18_panipat_hspcb_182b07",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Panipat",
+    "lat": 29.432304,
+    "lon": 76.972765,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_md_university_rohtak_hspcb_9b4bbc": {
+    "station": "MD University, Rohtak - HSPCB",
+    "station_id": "CPCB_LIVE_md_university_rohtak_hspcb_9b4bbc",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Jhajjar",
+    "lat": 28.52123,
+    "lon": 76.37138,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_f_block_sirsa_hspcb_96a9b9": {
+    "station": "F-Block, Sirsa - HSPCB",
+    "station_id": "CPCB_LIVE_f_block_sirsa_hspcb_96a9b9",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Sirsa",
+    "lat": 29.5364,
+    "lon": 75.0158,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_murthal_sonipat_hspcb_bbb660": {
+    "station": "Murthal, Sonipat - HSPCB",
+    "station_id": "CPCB_LIVE_murthal_sonipat_hspcb_bbb660",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Sonipat",
+    "lat": 29.0272,
+    "lon": 77.0621,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_gobind_pura_yamuna_nagar_hspcb_c2733d": {
+    "station": "Gobind Pura, Yamuna Nagar - HSPCB",
+    "station_id": "CPCB_LIVE_gobind_pura_yamuna_nagar_hspcb_c2733d",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Yamunanagar",
+    "lat": 30.1480566,
+    "lon": 77.2893471,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_himuda_complex_phase_1_baddi_hppcb_212f6a": {
+    "station": "HIMUDA Complex Phase-1, Baddi - HPPCB",
+    "station_id": "CPCB_LIVE_himuda_complex_phase_1_baddi_hppcb_212f6a",
+    "dataset_state": "Himachal Pradesh",
+    "adm1_state": "Himachal Pradesh",
+    "district": "Solan",
+    "lat": 30.943887,
+    "lon": 76.801991,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_khrew_pampore_jkpcc_72b68e": {
+    "station": "Khrew, Pampore - JKPCC",
+    "station_id": "CPCB_LIVE_khrew_pampore_jkpcc_72b68e",
+    "dataset_state": "Jammu and Kashmir",
+    "adm1_state": "Jammu And Kashmir",
+    "district": "Pulwama",
+    "lat": 34.031606,
+    "lon": 75.009712,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rajbagh_srinagar_jkpcc_1bad39": {
+    "station": "Rajbagh, Srinagar - JKPCC",
+    "station_id": "CPCB_LIVE_rajbagh_srinagar_jkpcc_1bad39",
+    "dataset_state": "Jammu and Kashmir",
+    "adm1_state": "Jammu And Kashmir",
+    "district": "Srinagar",
+    "lat": 34.066206,
+    "lon": 74.81982,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_khunmoh_srinagar_jkpcc_1f3e9b": {
+    "station": "Khunmoh, Srinagar - JKPCC",
+    "station_id": "CPCB_LIVE_khunmoh_srinagar_jkpcc_1f3e9b",
+    "dataset_state": "Jammu and Kashmir",
+    "adm1_state": "Jammu And Kashmir",
+    "district": "Srinagar",
+    "lat": 34.06313,
+    "lon": 74.96017,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sardar_patel_nagar_dhanbad_jspcb_3f69a3": {
+    "station": "Sardar Patel Nagar, Dhanbad - JSPCB",
+    "station_id": "CPCB_LIVE_sardar_patel_nagar_dhanbad_jspcb_3f69a3",
+    "dataset_state": "Jharkhand",
+    "adm1_state": "Jharkhand",
+    "district": "Dhanbad",
+    "lat": 23.80569,
+    "lon": 86.44268,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shri_shivaji_science_college_amravati_mp_dc1f97": {
+    "station": "Shri Shivaji Science College, Amravati - MPCB",
+    "station_id": "CPCB_LIVE_shri_shivaji_science_college_amravati_mp_dc1f97",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Amravati",
+    "lat": 20.939198,
+    "lon": 77.765701,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shivneri_colony_amravati_mpcb_a2bc38": {
+    "station": "Shivneri Colony, Amravati - MPCB",
+    "station_id": "CPCB_LIVE_shivneri_colony_amravati_mpcb_a2bc38",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Amravati",
+    "lat": 20.9402359,
+    "lon": 77.7895248,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_midc_chilkalthana_aurangabad_mpcb_0874e1": {
+    "station": "MIDC Chilkalthana, Aurangabad - MPCB",
+    "station_id": "CPCB_LIVE_midc_chilkalthana_aurangabad_mpcb_0874e1",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Chhatrapati Sambhajinagar",
+    "lat": 19.87562,
+    "lon": 75.38731,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_more_chowk_waluj_aurangabad_mpcb_576761": {
+    "station": "More Chowk Waluj, Aurangabad - MPCB",
+    "station_id": "CPCB_LIVE_more_chowk_waluj_aurangabad_mpcb_576761",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Chhatrapati Sambhajinagar",
+    "lat": 19.8389439,
+    "lon": 75.244448,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rachnakar_colony_aurangabad_mpcb_334575": {
+    "station": "Rachnakar Colony, Aurangabad - MPCB",
+    "station_id": "CPCB_LIVE_rachnakar_colony_aurangabad_mpcb_334575",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Chhatrapati Sambhajinagar",
+    "lat": 19.863756,
+    "lon": 75.321188,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_katrap_badlapur_mpcb_f7e811": {
+    "station": "Katrap, Badlapur - MPCB",
+    "station_id": "CPCB_LIVE_katrap_badlapur_mpcb_f7e811",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.16485,
+    "lon": 73.23409,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bir_beed_mpcb_2dec6d": {
+    "station": "Bir, Beed - MPCB",
+    "station_id": "CPCB_LIVE_bir_beed_mpcb_2dec6d",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Beed",
+    "lat": 18.988474,
+    "lon": 75.753873,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_cbd_belapur_belapur_mpcb_1b64cf": {
+    "station": "CBD Belapur, Belapur - MPCB",
+    "station_id": "CPCB_LIVE_cbd_belapur_belapur_mpcb_1b64cf",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.0243902,
+    "lon": 73.0406721,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_chauhan_colony_chandrapur_mpcb_d9ec56": {
+    "station": "Chauhan Colony, Chandrapur - MPCB",
+    "station_id": "CPCB_LIVE_chauhan_colony_chandrapur_mpcb_d9ec56",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Chandrapur",
+    "lat": 19.9629,
+    "lon": 79.298714,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_midc_khutala_chandrapur_mpcb_0bfd36": {
+    "station": "MIDC Khutala, Chandrapur - MPCB",
+    "station_id": "CPCB_LIVE_midc_khutala_chandrapur_mpcb_0bfd36",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Chandrapur",
+    "lat": 19.9775302,
+    "lon": 79.2337086,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_deopur_dhule_mpcb_044c1b": {
+    "station": "Deopur, Dhule - MPCB",
+    "station_id": "CPCB_LIVE_deopur_dhule_mpcb_044c1b",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Dhule",
+    "lat": 20.918946,
+    "lon": 74.776388,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_2_industrial_area_pithampur_mppcb_59c223": {
+    "station": "Sector-2 Industrial Area, Pithampur - MPPCB",
+    "station_id": "CPCB_LIVE_sector_2_industrial_area_pithampur_mppcb_59c223",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Dhar",
+    "lat": 22.624758,
+    "lon": 75.675238,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shasthri_nagar_ratlam_ipca_lab_5e30b2": {
+    "station": "Shasthri Nagar, Ratlam - IPCA Lab",
+    "station_id": "CPCB_LIVE_shasthri_nagar_ratlam_ipca_lab_5e30b2",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Ratlam",
+    "lat": 23.331731,
+    "lon": 75.045981,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_civil_lines_sagar_mppcb_6ec275": {
+    "station": "Civil Lines, Sagar - MPPCB",
+    "station_id": "CPCB_LIVE_civil_lines_sagar_mppcb_6ec275",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Sagar",
+    "lat": 23.838586,
+    "lon": 78.759431,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bandhavgar_colony_satna_birla_cement_375e9f": {
+    "station": "Bandhavgar Colony, Satna - Birla Cement",
+    "station_id": "CPCB_LIVE_bandhavgar_colony_satna_birla_cement_375e9f",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Satna",
+    "lat": 24.58434363,
+    "lon": 80.8549414,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mahashweta_nagar_ujjain_mppcb_f7cf87": {
+    "station": "Mahashweta Nagar, Ujjain - MPPCB",
+    "station_id": "CPCB_LIVE_mahashweta_nagar_ujjain_mppcb_f7cf87",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Ujjain",
+    "lat": 23.1633321,
+    "lon": 75.800225,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_tarakpur_ahmednagar_mpcb_0fac7f": {
+    "station": "Tarakpur, Ahmednagar - MPCB",
+    "station_id": "CPCB_LIVE_tarakpur_ahmednagar_mpcb_0fac7f",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Ahmednagar",
+    "lat": 19.10122,
+    "lon": 74.73339,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ramdaspeth_akola_mpcb_521d7c": {
+    "station": "Ramdaspeth, Akola - MPCB",
+    "station_id": "CPCB_LIVE_ramdaspeth_akola_mpcb_521d7c",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Akola",
+    "lat": 20.719516,
+    "lon": 77.000253,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_chinchpada_ambernath_mpcb_62e9c0": {
+    "station": "Chinchpada, Ambernath - MPCB",
+    "station_id": "CPCB_LIVE_chinchpada_ambernath_mpcb_62e9c0",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.215784,
+    "lon": 73.199781,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_regional_park_indore_imc_1b815d": {
+    "station": "Regional Park, Indore - IMC",
+    "station_id": "CPCB_LIVE_regional_park_indore_imc_1b815d",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Indore",
+    "lat": 22.678,
+    "lon": 75.8559,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_chhoti_gwaltoli_indore_mppcb_d2ac5b": {
+    "station": "Chhoti Gwaltoli, Indore - MPPCB",
+    "station_id": "CPCB_LIVE_chhoti_gwaltoli_indore_mppcb_d2ac5b",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Dhar",
+    "lat": 22.431,
+    "lon": 75.5213,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_maguda_nagar_indore_imc_fc7ef4": {
+    "station": "Maguda Nagar, Indore - IMC",
+    "station_id": "CPCB_LIVE_maguda_nagar_indore_imc_fc7ef4",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Indore",
+    "lat": 22.7524,
+    "lon": 75.8872,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_marhatal_jabalpur_mppcb_711ddc": {
+    "station": "Marhatal, Jabalpur - MPPCB",
+    "station_id": "CPCB_LIVE_marhatal_jabalpur_mppcb_711ddc",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Jabalpur",
+    "lat": 23.168606,
+    "lon": 79.932247,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_govindh_bhavan_colony_jabalpur_jmc_6e44a5": {
+    "station": "Govindh Bhavan Colony, Jabalpur - JMC",
+    "station_id": "CPCB_LIVE_govindh_bhavan_colony_jabalpur_jmc_6e44a5",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Jabalpur",
+    "lat": 23.163174,
+    "lon": 79.973061,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_suhagi_jabalpur_jmc_01485e": {
+    "station": "Suhagi, Jabalpur - JMC",
+    "station_id": "CPCB_LIVE_suhagi_jabalpur_jmc_01485e",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Jabalpur",
+    "lat": 23.218135,
+    "lon": 79.95777,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_gole_bazar_katni_mppcb_a1f27f": {
+    "station": "Gole Bazar, Katni - MPPCB",
+    "station_id": "CPCB_LIVE_gole_bazar_katni_mppcb_a1f27f",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Katni",
+    "lat": 23.50016,
+    "lon": 80.23284,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sahilara_maihar_kjs_cements_d9f812": {
+    "station": "Sahilara, Maihar - KJS Cements",
+    "station_id": "CPCB_LIVE_sahilara_maihar_kjs_cements_d9f812",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Satna",
+    "lat": 24.2613009,
+    "lon": 80.7231783,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_d_industrial_area_mandideep_mppcb_94c58a": {
+    "station": "Sector-D Industrial Area, Mandideep - MPPCB",
+    "station_id": "CPCB_LIVE_sector_d_industrial_area_mandideep_mppcb_94c58a",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Raisen",
+    "lat": 23.10844,
+    "lon": 77.511428,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_chikkaballapur_rural_chikkaballapur_kspc_192e1b": {
+    "station": "Chikkaballapur Rural, Chikkaballapur - KSPCB",
+    "station_id": "CPCB_LIVE_chikkaballapur_rural_chikkaballapur_kspc_192e1b",
+    "dataset_state": "Karnataka",
+    "adm1_state": "Karnataka",
+    "district": "Chikkaballapura",
+    "lat": 13.428828,
+    "lon": 77.731418,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_panchal_nagar_gadag_kspcb_7624cd": {
+    "station": "Panchal Nagar, Gadag - KSPCB",
+    "station_id": "CPCB_LIVE_panchal_nagar_gadag_kspcb_7624cd",
+    "dataset_state": "Karnataka",
+    "adm1_state": "Karnataka",
+    "district": "Gadag",
+    "lat": 15.411456,
+    "lon": 75.638133,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_lingaraj_nagar_hubballi_kspcb_ef0e7c": {
+    "station": "Lingaraj Nagar, Hubballi - KSPCB",
+    "station_id": "CPCB_LIVE_lingaraj_nagar_hubballi_kspcb_ef0e7c",
+    "dataset_state": "Karnataka",
+    "adm1_state": "Karnataka",
+    "district": "Dharwad",
+    "lat": 15.3714823,
+    "lon": 75.1160168,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mahatma_basaveswar_colony_kalaburgi_kspc_f3909d": {
+    "station": "Mahatma Basaveswar Colony, Kalaburgi - KSPCB",
+    "station_id": "CPCB_LIVE_mahatma_basaveswar_colony_kalaburgi_kspc_f3909d",
+    "dataset_state": "Karnataka",
+    "adm1_state": "Karnataka",
+    "district": "Kalaburagi",
+    "lat": 17.336318,
+    "lon": 76.847397,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_stuart_hill_madikeri_kspcb_b17021": {
+    "station": "Stuart Hill, Madikeri - KSPCB",
+    "station_id": "CPCB_LIVE_stuart_hill_madikeri_kspcb_b17021",
+    "dataset_state": "Karnataka",
+    "adm1_state": "Karnataka",
+    "district": "Kodagu",
+    "lat": 12.415911,
+    "lon": 75.73505,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_hebbal_1st_stage_mysuru_kspcb_f51ed8": {
+    "station": "Hebbal 1st Stage, Mysuru - KSPCB",
+    "station_id": "CPCB_LIVE_hebbal_1st_stage_mysuru_kspcb_f51ed8",
+    "dataset_state": "Karnataka",
+    "adm1_state": "Karnataka",
+    "district": "Mysuru",
+    "lat": 12.21041,
+    "lon": 76.37376,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_vijay_nagar_ramanagara_kspcb_9e81a7": {
+    "station": "Vijay Nagar, Ramanagara - KSPCB",
+    "station_id": "CPCB_LIVE_vijay_nagar_ramanagara_kspcb_9e81a7",
+    "dataset_state": "Karnataka",
+    "adm1_state": "Karnataka",
+    "district": "Ramanagara",
+    "lat": 12.733409,
+    "lon": 77.298051,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_collector_office_yadgir_kspcb_e1cd72": {
+    "station": "Collector Office, Yadgir - KSPCB",
+    "station_id": "CPCB_LIVE_collector_office_yadgir_kspcb_e1cd72",
+    "dataset_state": "Karnataka",
+    "adm1_state": "Karnataka",
+    "district": "Yadgir",
+    "lat": 16.7602,
+    "lon": 77.1428,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_udyogamandal_eloor_kerala_pcb_0befc9": {
+    "station": "Udyogamandal, Eloor - Kerala PCB",
+    "station_id": "CPCB_LIVE_udyogamandal_eloor_kerala_pcb_0befc9",
+    "dataset_state": "Kerala",
+    "adm1_state": "Kerala",
+    "district": "Ernakulam",
+    "lat": 10.073232,
+    "lon": 76.302765,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kalu_nagar_dombivli_mpcb_fa38a8": {
+    "station": "Kalu Nagar, Dombivli - MPCB",
+    "station_id": "CPCB_LIVE_kalu_nagar_dombivli_mpcb_fa38a8",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.2268427,
+    "lon": 73.0788456,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_prabhat_colony_jalgaon_mpcb_8c69e8": {
+    "station": "Prabhat Colony, Jalgaon - MPCB",
+    "station_id": "CPCB_LIVE_prabhat_colony_jalgaon_mpcb_8c69e8",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Jalgaon",
+    "lat": 21.001264,
+    "lon": 75.565602,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_pimpleshwar_mandir_kalyan_mpcb_6ad989": {
+    "station": "Pimpleshwar Mandir, Kalyan - MPCB",
+    "station_id": "CPCB_LIVE_pimpleshwar_mandir_kalyan_mpcb_6ad989",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.192056,
+    "lon": 72.9585188,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sinchan_bhavan_kolhapur_mpcb_46acf8": {
+    "station": "Sinchan Bhavan, Kolhapur - MPCB",
+    "station_id": "CPCB_LIVE_sinchan_bhavan_kolhapur_mpcb_46acf8",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Kolhapur",
+    "lat": 16.7143745,
+    "lon": 74.2426398,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sawe_wadi_latur_mpcb_6bbe1f": {
+    "station": "Sawe Wadi, Latur - MPCB",
+    "station_id": "CPCB_LIVE_sawe_wadi_latur_mpcb_6bbe1f",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Latur",
+    "lat": 18.39963,
+    "lon": 76.57452,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kamble_tarf_birwadi_mahad_mpcb_28ca3a": {
+    "station": "Kamble Tarf Birwadi, Mahad - MPCB",
+    "station_id": "CPCB_LIVE_kamble_tarf_birwadi_mahad_mpcb_28ca3a",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Raigad",
+    "lat": 18.1023399,
+    "lon": 73.4783687,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mahesh_nagar_malegaon_mpcb_551991": {
+    "station": "Mahesh Nagar, Malegaon - MPCB",
+    "station_id": "CPCB_LIVE_mahesh_nagar_malegaon_mpcb_551991",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Nashik",
+    "lat": 20.555712,
+    "lon": 74.529236,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bhayandar_west_mira_bhayandar_mpcb_39e04b": {
+    "station": "Bhayandar West, Mira-Bhayandar - MPCB",
+    "station_id": "CPCB_LIVE_bhayandar_west_mira_bhayandar_mpcb_39e04b",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.296481,
+    "lon": 72.840923,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shivapura_peenya_bengaluru_kspcb_d59d6d": {
+    "station": "Shivapura_Peenya, Bengaluru - KSPCB",
+    "station_id": "CPCB_LIVE_shivapura_peenya_bengaluru_kspcb_d59d6d",
+    "dataset_state": "Karnataka",
+    "adm1_state": "Karnataka",
+    "district": "Bengaluru Urban",
+    "lat": 13.0246342,
+    "lon": 77.5080115,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_thavakkara_kannur_kerala_pcb_70c7ee": {
+    "station": "Thavakkara, Kannur - Kerala PCB",
+    "station_id": "CPCB_LIVE_thavakkara_kannur_kerala_pcb_70c7ee",
+    "dataset_state": "Kerala",
+    "adm1_state": "Kerala",
+    "district": "Kannur",
+    "lat": 11.875,
+    "lon": 75.3732,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_corporation_ground_thrissur_kerala_pcb_69a970": {
+    "station": "Corporation Ground, Thrissur - Kerala PCB",
+    "station_id": "CPCB_LIVE_corporation_ground_thrissur_kerala_pcb_69a970",
+    "dataset_state": "Kerala",
+    "adm1_state": "Kerala",
+    "district": "Thrissur",
+    "lat": 10.5324,
+    "lon": 76.2159,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_skara_yokma_leh_lpcc_48b236": {
+    "station": "Skara Yokma, Leh - LPCC",
+    "station_id": "CPCB_LIVE_skara_yokma_leh_lpcc_48b236",
+    "dataset_state": "Ladakh",
+    "adm1_state": "Ladakh",
+    "district": "Leh Ladakh",
+    "lat": 34.147096,
+    "lon": 77.55709,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_idgah_hills_bhopal_mppcb_9af05d": {
+    "station": "Idgah Hills, Bhopal - MPPCB",
+    "station_id": "CPCB_LIVE_idgah_hills_bhopal_mppcb_9af05d",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "lat": 23.264759,
+    "lon": 77.381568,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shrivastav_colony_damoh_mppcb_e413e9": {
+    "station": "Shrivastav Colony, Damoh - MPPCB",
+    "station_id": "CPCB_LIVE_shrivastav_colony_damoh_mppcb_e413e9",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Damoh",
+    "lat": 23.81748678,
+    "lon": 79.446246,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bhopal_chauraha_dewas_mppcb_0677b9": {
+    "station": "Bhopal Chauraha, Dewas - MPPCB",
+    "station_id": "CPCB_LIVE_bhopal_chauraha_dewas_mppcb_0677b9",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Dewas",
+    "lat": 22.9682591,
+    "lon": 76.064118,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_city_center_gwalior_mppcb_c0799d": {
+    "station": "City Center, Gwalior - MPPCB",
+    "station_id": "CPCB_LIVE_city_center_gwalior_mppcb_c0799d",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Gwalior",
+    "lat": 26.203442,
+    "lon": 78.193251,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_vijay_nagar_sangli_mpcb_5329a3": {
+    "station": "Vijay Nagar, Sangli - MPCB",
+    "station_id": "CPCB_LIVE_vijay_nagar_sangli_mpcb_5329a3",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Karnataka",
+    "district": null,
+    "lat": 16.5038,
+    "lon": 74.3623,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_koyana_nagar_satara_mpcb_03098b": {
+    "station": "Koyana Nagar, Satara - MPCB",
+    "station_id": "CPCB_LIVE_koyana_nagar_satara_mpcb_03098b",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Satara",
+    "lat": 17.696651,
+    "lon": 74.003387,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ratandeep_housing_society_solapur_mpcb_86f879": {
+    "station": "Ratandeep Housing Society, Solapur - MPCB",
+    "station_id": "CPCB_LIVE_ratandeep_housing_society_solapur_mpcb_86f879",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Solapur",
+    "lat": 17.65439,
+    "lon": 75.90649,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_dnyaneshwar_nagar_solapur_mpcb_eb8fad": {
+    "station": "Dnyaneshwar Nagar, Solapur - MPCB",
+    "station_id": "CPCB_LIVE_dnyaneshwar_nagar_solapur_mpcb_eb8fad",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Solapur",
+    "lat": 17.6336264,
+    "lon": 75.9132495,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kasarvadavali_thane_mpcb_0d0a9b": {
+    "station": "Kasarvadavali, Thane - MPCB",
+    "station_id": "CPCB_LIVE_kasarvadavali_thane_mpcb_0d0a9b",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.26777,
+    "lon": 72.97182,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_upvan_fort_thane_mpcb_9cf960": {
+    "station": "Upvan Fort, Thane - MPCB",
+    "station_id": "CPCB_LIVE_upvan_fort_thane_mpcb_9cf960",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.222279,
+    "lon": 72.957979,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sidhi_vinayak_nagar_ulhasnagar_mpcb_bb4d14": {
+    "station": "Sidhi Vinayak Nagar, Ulhasnagar - MPCB",
+    "station_id": "CPCB_LIVE_sidhi_vinayak_nagar_ulhasnagar_mpcb_bb4d14",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.235581,
+    "lon": 73.159121,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_vithalwadi_ulhasnagar_mpcb_1247e1": {
+    "station": "Vithalwadi, Ulhasnagar - MPCB",
+    "station_id": "CPCB_LIVE_vithalwadi_ulhasnagar_mpcb_1247e1",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.2307571,
+    "lon": 73.155192,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bolinj_virar_mpcb_7d266a": {
+    "station": "Bolinj, Virar - MPCB",
+    "station_id": "CPCB_LIVE_bolinj_virar_mpcb_7d266a",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Palghar",
+    "lat": 19.445821,
+    "lon": 72.7988231,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_15th_mile_nongthymmai_byrnihat_meghalaya_7293cf": {
+    "station": "15th Mile-Nongthymmai, Byrnihat -Meghalaya PCB",
+    "station_id": "CPCB_LIVE_15th_mile_nongthymmai_byrnihat_meghalaya_7293cf",
+    "dataset_state": "Meghalaya",
+    "adm1_state": "Meghalaya",
+    "district": "Ri Bhoi",
+    "lat": 26.079047,
+    "lon": 91.875185,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_pwd_junction_kohima_npcb_a31697": {
+    "station": "PWD Junction, Kohima - NPCB",
+    "station_id": "CPCB_LIVE_pwd_junction_kohima_npcb_a31697",
+    "dataset_state": "Nagaland",
+    "adm1_state": "Nagaland",
+    "district": "Kohima",
+    "lat": 25.6635413,
+    "lon": 94.0989878,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kalidaspur_balasore_ospcb_383831": {
+    "station": "Kalidaspur, Balasore - OSPCB",
+    "station_id": "CPCB_LIVE_kalidaspur_balasore_ospcb_383831",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Baleshwar",
+    "lat": 21.51161,
+    "lon": 86.89088,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_forest_office_barbil_ospcb_1664d2": {
+    "station": "Forest Office, Barbil - OSPCB",
+    "station_id": "CPCB_LIVE_forest_office_barbil_ospcb_1664d2",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Kendujhar",
+    "lat": 22.1166054,
+    "lon": 85.3945546,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_meher_colony_baripada_ospcb_fdeb41": {
+    "station": "Meher Colony, Baripada - OSPCB",
+    "station_id": "CPCB_LIVE_meher_colony_baripada_ospcb_fdeb41",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Mayurbhanj",
+    "lat": 21.941841,
+    "lon": 86.728318,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_lingraj_mandir_bhubaneswar_ospcb_1c8544": {
+    "station": "Lingraj Mandir, Bhubaneswar - OSPCB",
+    "station_id": "CPCB_LIVE_lingraj_mandir_bhubaneswar_ospcb_1c8544",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Khordha",
+    "lat": 20.24079,
+    "lon": 85.836784,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_patia_bhubaneswar_ospcb_1905a0": {
+    "station": "Patia, Bhubaneswar - OSPCB",
+    "station_id": "CPCB_LIVE_patia_bhubaneswar_ospcb_1905a0",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Khordha",
+    "lat": 20.34652,
+    "lon": 85.8163,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ferro_chrome_colony_byasanagar_ospcb_87f9ce": {
+    "station": "Ferro Chrome Colony, Byasanagar - OSPCB",
+    "station_id": "CPCB_LIVE_ferro_chrome_colony_byasanagar_ospcb_87f9ce",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Jajapur",
+    "lat": 20.94185,
+    "lon": 86.1151,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_cda_area_cuttack_ospcb_0d5d9a": {
+    "station": "CDA Area, Cuttack - OSPCB",
+    "station_id": "CPCB_LIVE_cda_area_cuttack_ospcb_0d5d9a",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Cuttack",
+    "lat": 20.48891,
+    "lon": 85.84768,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_jagamohanpur_keonjhar_ospcb_548271": {
+    "station": "Jagamohanpur, Keonjhar - OSPCB",
+    "station_id": "CPCB_LIVE_jagamohanpur_keonjhar_ospcb_548271",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Kendujhar",
+    "lat": 21.6439,
+    "lon": 85.599355,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_nua_sandhakuda_paradeep_ospcb_27455f": {
+    "station": "Nua Sandhakuda, Paradeep - OSPCB",
+    "station_id": "CPCB_LIVE_nua_sandhakuda_paradeep_ospcb_27455f",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Jagatsinghapur",
+    "lat": 20.258828,
+    "lon": 86.665185,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_divisional_forest_office_rairangpur_ospc_8c4aed": {
+    "station": "Divisional Forest Office, Rairangpur - OSPCB",
+    "station_id": "CPCB_LIVE_divisional_forest_office_rairangpur_ospc_8c4aed",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Mayurbhanj",
+    "lat": 22.265816,
+    "lon": 86.174829,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_fertilizer_township_rourkela_ospcb_115f00": {
+    "station": "Fertilizer Township, Rourkela - OSPCB",
+    "station_id": "CPCB_LIVE_fertilizer_township_rourkela_ospcb_115f00",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Sundargarh",
+    "lat": 22.18972222,
+    "lon": 84.86277778,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_raghunathpali_rourkela_ospcb_c34f81": {
+    "station": "Raghunathpali, Rourkela - OSPCB",
+    "station_id": "CPCB_LIVE_raghunathpali_rourkela_ospcb_c34f81",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Sundargarh",
+    "lat": 22.220833,
+    "lon": 84.809444,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_2_rourkela_ospcb_04a5f2": {
+    "station": "Sector-2, Rourkela - OSPCB",
+    "station_id": "CPCB_LIVE_sector_2_rourkela_ospcb_04a5f2",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Sundargarh",
+    "lat": 22.245,
+    "lon": 84.88111111,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_jawahar_nagar_puducherry_ppcc_960f4e": {
+    "station": "Jawahar Nagar, Puducherry - PPCC",
+    "station_id": "CPCB_LIVE_jawahar_nagar_puducherry_ppcc_960f4e",
+    "dataset_state": "Puducherry",
+    "adm1_state": "Puducherry",
+    "district": "Puducherry",
+    "lat": 11.9309,
+    "lon": 79.8027,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_hardev_nagar_bathinda_ppcb_3a4466": {
+    "station": "Hardev Nagar, Bathinda - PPCB",
+    "station_id": "CPCB_LIVE_hardev_nagar_bathinda_ppcb_3a4466",
+    "dataset_state": "Punjab",
+    "adm1_state": "Punjab",
+    "district": "Bathinda",
+    "lat": 30.233011,
+    "lon": 74.907758,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_civil_line_jalandhar_ppcb_b311aa": {
+    "station": "Civil Line, Jalandhar - PPCB",
+    "station_id": "CPCB_LIVE_civil_line_jalandhar_ppcb_b311aa",
+    "dataset_state": "Punjab",
+    "adm1_state": "Punjab",
+    "district": "Jalandhar",
+    "lat": 31.321907,
+    "lon": 75.578914,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kalal_majra_khanna_ppcb_34a8fa": {
+    "station": "Kalal Majra, Khanna - PPCB",
+    "station_id": "CPCB_LIVE_kalal_majra_khanna_ppcb_34a8fa",
+    "dataset_state": "Punjab",
+    "adm1_state": "Punjab",
+    "district": "Ludhiana",
+    "lat": 30.736056,
+    "lon": 76.209694,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_model_town_patiala_ppcb_1648ff": {
+    "station": "Model Town, Patiala - PPCB",
+    "station_id": "CPCB_LIVE_model_town_patiala_ppcb_1648ff",
+    "dataset_state": "Punjab",
+    "adm1_state": "Punjab",
+    "district": "Patiala",
+    "lat": 30.349388,
+    "lon": 76.366642,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_nerul_navi_mumbai_mpcb_d4fbd4": {
+    "station": "Nerul, Navi Mumbai - MPCB",
+    "station_id": "CPCB_LIVE_nerul_navi_mumbai_mpcb_d4fbd4",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.008751,
+    "lon": 73.01662,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_tondare_taloja_navi_mumbai_mpcb_eab38c": {
+    "station": "Tondare-Taloja, Navi Mumbai - MPCB",
+    "station_id": "CPCB_LIVE_tondare_taloja_navi_mumbai_mpcb_eab38c",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Raigad",
+    "lat": 19.063,
+    "lon": 73.1209,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_2e_kalamboli_navi_mumbai_mpcb_397d3c": {
+    "station": "Sector-2E Kalamboli, Navi Mumbai - MPCB",
+    "station_id": "CPCB_LIVE_sector_2e_kalamboli_navi_mumbai_mpcb_397d3c",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Raigad",
+    "lat": 19.02579,
+    "lon": 73.10297,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sanpada_navi_mumbai_mpcb_bb100b": {
+    "station": "Sanpada, Navi Mumbai - MPCB",
+    "station_id": "CPCB_LIVE_sanpada_navi_mumbai_mpcb_bb100b",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.0575752,
+    "lon": 73.0151367,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mahape_navi_mumbai_mpcb_bb84eb": {
+    "station": "Mahape, Navi Mumbai - MPCB",
+    "station_id": "CPCB_LIVE_mahape_navi_mumbai_mpcb_bb84eb",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.1135051,
+    "lon": 73.008978,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_masoom_colony_parbhani_mpcb_5f0de6": {
+    "station": "Masoom Colony, Parbhani - MPCB",
+    "station_id": "CPCB_LIVE_masoom_colony_parbhani_mpcb_5f0de6",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Parbhani",
+    "lat": 19.265594,
+    "lon": 76.761463,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_gavalinagar_pimpri_chinchwad_mpcb_b76cc5": {
+    "station": "Gavalinagar, Pimpri Chinchwad - MPCB",
+    "station_id": "CPCB_LIVE_gavalinagar_pimpri_chinchwad_mpcb_b76cc5",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.63673,
+    "lon": 73.82487,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bhumkar_nagar_pune_iitm_977b12": {
+    "station": "Bhumkar Nagar, Pune - IITM",
+    "station_id": "CPCB_LIVE_bhumkar_nagar_pune_iitm_977b12",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.60577,
+    "lon": 73.749976,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_park_street_wakad_pimpri_chinchwad_mpcb_62b249": {
+    "station": "Park Street Wakad, Pimpri Chinchwad - MPCB",
+    "station_id": "CPCB_LIVE_park_street_wakad_pimpri_chinchwad_mpcb_62b249",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.59051,
+    "lon": 73.77946,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_thergaon_pimpri_chinchwad_mpcb_536569": {
+    "station": "Thergaon, Pimpri Chinchwad - MPCB",
+    "station_id": "CPCB_LIVE_thergaon_pimpri_chinchwad_mpcb_536569",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.616318,
+    "lon": 73.765797,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_panchawati_pashan_pune_iitm_bf5ede": {
+    "station": "Panchawati_Pashan, Pune - IITM",
+    "station_id": "CPCB_LIVE_panchawati_pashan_pune_iitm_bf5ede",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.536457,
+    "lon": 73.805454,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_savitribai_phule_pune_university_pune_mp_70728d": {
+    "station": "Savitribai Phule Pune University, Pune - MPCB",
+    "station_id": "CPCB_LIVE_savitribai_phule_pune_university_pune_mp_70728d",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.547056,
+    "lon": 73.826908,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_deonar_mumbai_iitm_d7fb1d": {
+    "station": "Deonar, Mumbai - IITM",
+    "station_id": "CPCB_LIVE_deonar_mumbai_iitm_d7fb1d",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "lat": 19.04946,
+    "lon": 72.923,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_malad_west_mumbai_iitm_1243b9": {
+    "station": "Malad West, Mumbai - IITM",
+    "station_id": "CPCB_LIVE_malad_west_mumbai_iitm_1243b9",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "lat": 19.19709,
+    "lon": 72.82204,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mahal_nagpur_mpcb_aadfd4": {
+    "station": "Mahal, Nagpur - MPCB",
+    "station_id": "CPCB_LIVE_mahal_nagpur_mpcb_aadfd4",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Nagpur",
+    "lat": 21.14472,
+    "lon": 79.107595,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_opp_gpo_civil_lines_nagpur_mpcb_2d1516": {
+    "station": "Opp GPO Civil Lines, Nagpur - MPCB",
+    "station_id": "CPCB_LIVE_opp_gpo_civil_lines_nagpur_mpcb_2d1516",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Nagpur",
+    "lat": 21.152875,
+    "lon": 79.0517531,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ambazari_nagpur_mpcb_6c8f00": {
+    "station": "Ambazari, Nagpur - MPCB",
+    "station_id": "CPCB_LIVE_ambazari_nagpur_mpcb_6c8f00",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Nagpur",
+    "lat": 21.121801,
+    "lon": 79.04952,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sneh_nagar_nanded_mpcb_f041ab": {
+    "station": "Sneh Nagar, Nanded - MPCB",
+    "station_id": "CPCB_LIVE_sneh_nagar_nanded_mpcb_f041ab",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Nanded",
+    "lat": 19.173852,
+    "lon": 77.296291,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_gangapur_road_nashik_mpcb_95327b": {
+    "station": "Gangapur Road, Nashik - MPCB",
+    "station_id": "CPCB_LIVE_gangapur_road_nashik_mpcb_95327b",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Nashik",
+    "lat": 20.0073285,
+    "lon": 73.7762427,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bandra_kurla_complex_mumbai_iitm_f33793": {
+    "station": "Bandra Kurla Complex, Mumbai - IITM",
+    "station_id": "CPCB_LIVE_bandra_kurla_complex_mumbai_iitm_f33793",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "lat": 19.053536,
+    "lon": 72.84643,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kherwadi_bandra_east_mumbai_mpcb_2a7720": {
+    "station": "Kherwadi_Bandra East, Mumbai - MPCB",
+    "station_id": "CPCB_LIVE_kherwadi_bandra_east_mumbai_mpcb_2a7720",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "lat": 19.0632143,
+    "lon": 72.8456324,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_borivali_east_mumbai_iitm_ac8504": {
+    "station": "Borivali East, Mumbai - IITM",
+    "station_id": "CPCB_LIVE_borivali_east_mumbai_iitm_ac8504",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "lat": 19.23241,
+    "lon": 72.86895,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_siddharth_nagar_worli_mumbai_iitm_83e5e7": {
+    "station": "Siddharth Nagar-Worli, Mumbai - IITM",
+    "station_id": "CPCB_LIVE_siddharth_nagar_worli_mumbai_iitm_83e5e7",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai",
+    "lat": 19.000083,
+    "lon": 72.813993,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mazgaon_mumbai_iitm_8a7729": {
+    "station": "Mazgaon, Mumbai - IITM",
+    "station_id": "CPCB_LIVE_mazgaon_mumbai_iitm_8a7729",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai",
+    "lat": 18.96702,
+    "lon": 72.84214,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ghatkopar_mumbai_bmc_2106da": {
+    "station": "Ghatkopar, Mumbai - BMC",
+    "station_id": "CPCB_LIVE_ghatkopar_mumbai_bmc_2106da",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "lat": 19.083694,
+    "lon": 72.920967,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_navy_nagar_colaba_mumbai_iitm_38aaa7": {
+    "station": "Navy Nagar-Colaba, Mumbai - IITM",
+    "station_id": "CPCB_LIVE_navy_nagar_colaba_mumbai_iitm_38aaa7",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai",
+    "lat": 18.897756,
+    "lon": 72.81332,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shivaji_nagar_mumbai_bmc_8523f0": {
+    "station": "Shivaji Nagar, Mumbai - BMC",
+    "station_id": "CPCB_LIVE_shivaji_nagar_mumbai_bmc_8523f0",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "lat": 19.060498,
+    "lon": 72.923356,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_khindipada_bhandup_west_mumbai_iitm_ae2096": {
+    "station": "Khindipada-Bhandup West, Mumbai - IITM",
+    "station_id": "CPCB_LIVE_khindipada_bhandup_west_mumbai_iitm_ae2096",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "lat": 19.1653323,
+    "lon": 72.922099,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_dhoinda_rajsamand_rspcb_6e9b55": {
+    "station": "Dhoinda, Rajsamand - RSPCB",
+    "station_id": "CPCB_LIVE_dhoinda_rajsamand_rspcb_6e9b55",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Rajsamand",
+    "lat": 25.03636,
+    "lon": 73.883502,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sahu_nagar_sawai_madhopur_rspcb_d6210d": {
+    "station": "Sahu Nagar, Sawai Madhopur - RSPCB",
+    "station_id": "CPCB_LIVE_sahu_nagar_sawai_madhopur_rspcb_d6210d",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Sawai Madhopur",
+    "lat": 26.031443,
+    "lon": 76.359327,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_radhakishan_pura_sikar_rspcb_0ed767": {
+    "station": "Radhakishan Pura, Sikar - RSPCB",
+    "station_id": "CPCB_LIVE_radhakishan_pura_sikar_rspcb_0ed767",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Sikar",
+    "lat": 27.608912,
+    "lon": 75.153302,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_vedhaynath_colony_sirohi_rspcb_f91b04": {
+    "station": "Vedhaynath Colony, Sirohi - RSPCB",
+    "station_id": "CPCB_LIVE_vedhaynath_colony_sirohi_rspcb_f91b04",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Sirohi",
+    "lat": 24.885261,
+    "lon": 72.857549,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_old_city_sri_ganganagar_rspcb_3f2426": {
+    "station": "Old City, Sri Ganganagar - RSPCB",
+    "station_id": "CPCB_LIVE_old_city_sri_ganganagar_rspcb_3f2426",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Ganganagar",
+    "lat": 29.931624,
+    "lon": 73.864511,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shastri_nagar_tonk_rspcb_b3c739": {
+    "station": "Shastri Nagar, Tonk - RSPCB",
+    "station_id": "CPCB_LIVE_shastri_nagar_tonk_rspcb_b3c739",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Tonk",
+    "lat": 26.159933,
+    "lon": 75.780517,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ashok_nagar_udaipur_rspcb_6220bf": {
+    "station": "Ashok Nagar, Udaipur - RSPCB",
+    "station_id": "CPCB_LIVE_ashok_nagar_udaipur_rspcb_6220bf",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Udaipur",
+    "lat": 24.5886166,
+    "lon": 73.6321397,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mansarovar_sector_12_jaipur_rspcb_da255e": {
+    "station": "Mansarovar Sector-12, Jaipur - RSPCB",
+    "station_id": "CPCB_LIVE_mansarovar_sector_12_jaipur_rspcb_da255e",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Jaipur",
+    "lat": 26.843698,
+    "lon": 75.766894,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_2_murlipura_jaipur_rspcb_bf1a7a": {
+    "station": "Sector-2 Murlipura, Jaipur - RSPCB",
+    "station_id": "CPCB_LIVE_sector_2_murlipura_jaipur_rspcb_bf1a7a",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Jaipur",
+    "lat": 26.960669,
+    "lon": 75.771817,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_riico_sitapura_jaipur_rspcb_e11ac1": {
+    "station": "RIICO Sitapura, Jaipur - RSPCB",
+    "station_id": "CPCB_LIVE_riico_sitapura_jaipur_rspcb_e11ac1",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Jaipur",
+    "lat": 26.786682,
+    "lon": 75.827928,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sadar_bazar_jaisalmer_rspcb_a036c4": {
+    "station": "Sadar Bazar, Jaisalmer - RSPCB",
+    "station_id": "CPCB_LIVE_sadar_bazar_jaisalmer_rspcb_a036c4",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Jaisalmer",
+    "lat": 26.912329,
+    "lon": 70.909168,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mudtra_sili_jalore_rspcb_2ad82c": {
+    "station": "Mudtra Sili, Jalore - RSPCB",
+    "station_id": "CPCB_LIVE_mudtra_sili_jalore_rspcb_2ad82c",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Jalore",
+    "lat": 25.344694,
+    "lon": 72.626208,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rajlaxmi_nagar_jhalawar_rspcb_8856bc": {
+    "station": "Rajlaxmi Nagar, Jhalawar - RSPCB",
+    "station_id": "CPCB_LIVE_rajlaxmi_nagar_jhalawar_rspcb_8856bc",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Jhalawar",
+    "lat": 24.588397,
+    "lon": 76.172782,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_collectorate_jodhpur_rspcb_b07e68": {
+    "station": "Collectorate, Jodhpur - RSPCB",
+    "station_id": "CPCB_LIVE_collectorate_jodhpur_rspcb_b07e68",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Jodhpur",
+    "lat": 26.268249,
+    "lon": 73.0193853,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_jhalamand_jodhpur_rspcb_c9aff6": {
+    "station": "Jhalamand, Jodhpur - RSPCB",
+    "station_id": "CPCB_LIVE_jhalamand_jodhpur_rspcb_c9aff6",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Jodhpur (Gramin)",
+    "lat": 26.215415,
+    "lon": 73.070156,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_semmandalam_cuddalore_tnpcb_e36530": {
+    "station": "Semmandalam, Cuddalore - TNPCB",
+    "station_id": "CPCB_LIVE_semmandalam_cuddalore_tnpcb_e36530",
+    "dataset_state": "Tamil Nadu",
+    "adm1_state": "Tamil Nadu",
+    "district": "Cuddalore",
+    "lat": 11.7637683,
+    "lon": 79.7499835,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_meelavittan_thoothukudi_tnpcb_20b9e4": {
+    "station": "Meelavittan, Thoothukudi - TNPCB",
+    "station_id": "CPCB_LIVE_meelavittan_thoothukudi_tnpcb_20b9e4",
+    "dataset_state": "Tamil Nadu",
+    "adm1_state": "Tamil Nadu",
+    "district": "Thoothukkudi",
+    "lat": 8.816428,
+    "lon": 78.099039,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kompally_municipal_office_hyderabad_tspc_86f118": {
+    "station": "Kompally Municipal Office, Hyderabad - TSPCB",
+    "station_id": "CPCB_LIVE_kompally_municipal_office_hyderabad_tspc_86f118",
+    "dataset_state": "Telangana",
+    "adm1_state": "Telangana",
+    "district": "Medchal Malkajgiri",
+    "lat": 17.544899,
+    "lon": 78.486949,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ramachandrapuram_hyderabad_tspcb_0f11bc": {
+    "station": "Ramachandrapuram, Hyderabad - TSPCB",
+    "station_id": "CPCB_LIVE_ramachandrapuram_hyderabad_tspcb_0f11bc",
+    "dataset_state": "Telangana",
+    "adm1_state": "Telangana",
+    "district": "Sangareddy",
+    "lat": 17.528544,
+    "lon": 78.286195,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ecil_kapra_hyderabad_tspcb_1314d5": {
+    "station": "ECIL Kapra, Hyderabad - TSPCB",
+    "station_id": "CPCB_LIVE_ecil_kapra_hyderabad_tspcb_1314d5",
+    "dataset_state": "Telangana",
+    "adm1_state": "Telangana",
+    "district": "Medchal Malkajgiri",
+    "lat": 17.470431,
+    "lon": 78.566959,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kokapet_hyderabad_tspcb_dec239": {
+    "station": "Kokapet, Hyderabad - TSPCB",
+    "station_id": "CPCB_LIVE_kokapet_hyderabad_tspcb_dec239",
+    "dataset_state": "Telangana",
+    "adm1_state": "Telangana",
+    "district": "Ranga Reddy",
+    "lat": 17.393559,
+    "lon": 78.339194,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_new_malakpet_hyderabad_tspcb_46e1a3": {
+    "station": "New Malakpet, Hyderabad - TSPCB",
+    "station_id": "CPCB_LIVE_new_malakpet_hyderabad_tspcb_46e1a3",
+    "dataset_state": "Telangana",
+    "adm1_state": "Telangana",
+    "district": "Hyderabad",
+    "lat": 17.37206,
+    "lon": 78.50864,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_3b_avas_vikas_colony_agra_uppcb_9de12a": {
+    "station": "Sector-3B Avas Vikas Colony, Agra - UPPCB",
+    "station_id": "CPCB_LIVE_sector_3b_avas_vikas_colony_agra_uppcb_9de12a",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Agra",
+    "lat": 27.19412,
+    "lon": 77.96237,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_civil_lines_bareilly_uppcb_206fa2": {
+    "station": "Civil Lines, Bareilly - UPPCB",
+    "station_id": "CPCB_LIVE_civil_lines_bareilly_uppcb_206fa2",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Bareilly",
+    "lat": 28.359581,
+    "lon": 79.414455,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rajendra_nagar_bareilly_uppcb_41e57f": {
+    "station": "Rajendra Nagar, Bareilly - UPPCB",
+    "station_id": "CPCB_LIVE_rajendra_nagar_bareilly_uppcb_41e57f",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Bareilly",
+    "lat": 28.38910936,
+    "lon": 79.42963708,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_yamunapuram_bulandshahr_uppcb_e5f0c2": {
+    "station": "Yamunapuram, Bulandshahr - UPPCB",
+    "station_id": "CPCB_LIVE_yamunapuram_bulandshahr_uppcb_e5f0c2",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Bulandshahr",
+    "lat": 28.406963,
+    "lon": 77.849831,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_dadupura_fatehpur_sikri_uppcb_ded744": {
+    "station": "Dadupura, Fatehpur Sikri - UPPCB",
+    "station_id": "CPCB_LIVE_dadupura_fatehpur_sikri_uppcb_ded744",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Agra",
+    "lat": 27.097694,
+    "lon": 77.671335,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_nagla_bhau_firozabad_uppcb_bfd791": {
+    "station": "Nagla Bhau, Firozabad - UPPCB",
+    "station_id": "CPCB_LIVE_nagla_bhau_firozabad_uppcb_bfd791",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Firozabad",
+    "lat": 27.168897,
+    "lon": 78.37696,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rajanpur_gajraula_uppcb_3a2d05": {
+    "station": "Rajanpur, Gajraula - UPPCB",
+    "station_id": "CPCB_LIVE_rajanpur_gajraula_uppcb_3a2d05",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Amroha",
+    "lat": 28.829109,
+    "lon": 78.248796,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_indirapuram_ghaziabad_uppcb_d4fa4d": {
+    "station": "Indirapuram, Ghaziabad - UPPCB",
+    "station_id": "CPCB_LIVE_indirapuram_ghaziabad_uppcb_d4fa4d",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Ghaziabad",
+    "lat": 28.646233,
+    "lon": 77.358075,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mm_ground_bikaner_rspcb_bdcabf": {
+    "station": "MM Ground, Bikaner - RSPCB",
+    "station_id": "CPCB_LIVE_mm_ground_bikaner_rspcb_bdcabf",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Bikaner",
+    "lat": 28.018792,
+    "lon": 73.292658,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_new_colony_bundi_rspcb_150edc": {
+    "station": "New Colony, Bundi - RSPCB",
+    "station_id": "CPCB_LIVE_new_colony_bundi_rspcb_150edc",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Bundi",
+    "lat": 25.435774,
+    "lon": 75.644272,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shastri_nagar_chittorgarh_rspcb_5574c8": {
+    "station": "Shastri Nagar, Chittorgarh - RSPCB",
+    "station_id": "CPCB_LIVE_shastri_nagar_chittorgarh_rspcb_5574c8",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Chittorgarh",
+    "lat": 24.892047,
+    "lon": 74.623527,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_subash_chowk_churu_rspcb_73c958": {
+    "station": "Subash Chowk, Churu - RSPCB",
+    "station_id": "CPCB_LIVE_subash_chowk_churu_rspcb_73c958",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Churu",
+    "lat": 28.296139,
+    "lon": 74.961696,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_khatikan_mohalla_dausa_rspcb_a0d82f": {
+    "station": "Khatikan Mohalla, Dausa - RSPCB",
+    "station_id": "CPCB_LIVE_khatikan_mohalla_dausa_rspcb_a0d82f",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Dausa",
+    "lat": 26.895552,
+    "lon": 76.334753,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bhoiwada_dungarpur_rspcb_ab3d0b": {
+    "station": "Bhoiwada, Dungarpur - RSPCB",
+    "station_id": "CPCB_LIVE_bhoiwada_dungarpur_rspcb_ab3d0b",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Dungarpur",
+    "lat": 23.837789,
+    "lon": 73.714926,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_housing_board_hanumangarh_rspcb_054a94": {
+    "station": "Housing Board, Hanumangarh - RSPCB",
+    "station_id": "CPCB_LIVE_housing_board_hanumangarh_rspcb_054a94",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Hanumangarh",
+    "lat": 29.61075,
+    "lon": 74.283608,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_samrat_ashok_udhyan_jodhpur_rspcb_5f4ab3": {
+    "station": "Samrat Ashok Udhyan, Jodhpur - RSPCB",
+    "station_id": "CPCB_LIVE_samrat_ashok_udhyan_jodhpur_rspcb_5f4ab3",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Jodhpur",
+    "lat": 26.253384,
+    "lon": 72.976571,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mandor_jodhpur_rspcb_fce314": {
+    "station": "Mandor, Jodhpur - RSPCB",
+    "station_id": "CPCB_LIVE_mandor_jodhpur_rspcb_fce314",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Jodhpur",
+    "lat": 26.358805,
+    "lon": 73.047444,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_digari_kalan_jodhpur_rspcb_c4dbe4": {
+    "station": "Digari Kalan, Jodhpur - RSPCB",
+    "station_id": "CPCB_LIVE_digari_kalan_jodhpur_rspcb_c4dbe4",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Jodhpur",
+    "lat": 26.29581,
+    "lon": 73.082283,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_satyawati_vihar_karauli_rspcb_68aaf2": {
+    "station": "Satyawati Vihar, Karauli - RSPCB",
+    "station_id": "CPCB_LIVE_satyawati_vihar_karauli_rspcb_68aaf2",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Karauli",
+    "lat": 26.506177,
+    "lon": 77.025989,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_new_anaj_mandi_khairthal_rspcb_6e18a8": {
+    "station": "New Anaj Mandi, Khairthal - RSPCB",
+    "station_id": "CPCB_LIVE_new_anaj_mandi_khairthal_rspcb_6e18a8",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Khairthal-Tijara",
+    "lat": 27.8015617,
+    "lon": 76.6365217,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shrinath_puram_kota_rspcb_89b1db": {
+    "station": "Shrinath Puram, Kota - RSPCB",
+    "station_id": "CPCB_LIVE_shrinath_puram_kota_rspcb_89b1db",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Kota",
+    "lat": 25.14389,
+    "lon": 75.821256,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_dhanmandi_kota_rspcb_8855fd": {
+    "station": "Dhanmandi, Kota - RSPCB",
+    "station_id": "CPCB_LIVE_dhanmandi_kota_rspcb_8855fd",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Kota",
+    "lat": 25.16409,
+    "lon": 75.858137,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_karni_colony_nagaur_rspcb_e5a60e": {
+    "station": "Karni Colony, Nagaur - RSPCB",
+    "station_id": "CPCB_LIVE_karni_colony_nagaur_rspcb_e5a60e",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Nagaur",
+    "lat": 27.213494,
+    "lon": 73.734444,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_indira_colony_vistar_pali_rspcb_f1620d": {
+    "station": "Indira Colony Vistar, Pali - RSPCB",
+    "station_id": "CPCB_LIVE_indira_colony_vistar_pali_rspcb_f1620d",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Pali",
+    "lat": 25.771061,
+    "lon": 73.340227,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_iith_kandi_hyderabad_tspcb_e294d6": {
+    "station": "IITH Kandi, Hyderabad - TSPCB",
+    "station_id": "CPCB_LIVE_iith_kandi_hyderabad_tspcb_e294d6",
+    "dataset_state": "Telangana",
+    "adm1_state": "Telangana",
+    "district": "Sangareddy",
+    "lat": 17.585705,
+    "lon": 78.126199,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_nacharam_tsiic_iala_hyderabad_tspcb_49b0a9": {
+    "station": "Nacharam_TSIIC IALA, Hyderabad - TSPCB",
+    "station_id": "CPCB_LIVE_nacharam_tsiic_iala_hyderabad_tspcb_49b0a9",
+    "dataset_state": "Telangana",
+    "adm1_state": "Telangana",
+    "district": "Medchal Malkajgiri",
+    "lat": 17.429398,
+    "lon": 78.569354,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_somajiguda_hyderabad_tspcb_d578f9": {
+    "station": "Somajiguda, Hyderabad - TSPCB",
+    "station_id": "CPCB_LIVE_somajiguda_hyderabad_tspcb_d578f9",
+    "dataset_state": "Telangana",
+    "adm1_state": "Telangana",
+    "district": "Hyderabad",
+    "lat": 17.417094,
+    "lon": 78.457437,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sanjay_palace_agra_uppcb_a5721c": {
+    "station": "Sanjay Palace, Agra - UPPCB",
+    "station_id": "CPCB_LIVE_sanjay_palace_agra_uppcb_a5721c",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Agra",
+    "lat": 27.19865833,
+    "lon": 78.00598056,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shahjahan_garden_agra_uppcb_c765ee": {
+    "station": "Shahjahan Garden, Agra - UPPCB",
+    "station_id": "CPCB_LIVE_shahjahan_garden_agra_uppcb_c765ee",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Agra",
+    "lat": 27.169338,
+    "lon": 78.03582,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rohta_agra_uppcb_88a384": {
+    "station": "Rohta, Agra - UPPCB",
+    "station_id": "CPCB_LIVE_rohta_agra_uppcb_88a384",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Agra",
+    "lat": 27.106972,
+    "lon": 78.000111,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_manoharpur_agra_uppcb_656486": {
+    "station": "Manoharpur, Agra - UPPCB",
+    "station_id": "CPCB_LIVE_manoharpur_agra_uppcb_656486",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Agra",
+    "lat": 27.23711,
+    "lon": 78.01936,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_moti_doongri_alwar_rspcb_fb9a5b": {
+    "station": "Moti Doongri, Alwar - RSPCB",
+    "station_id": "CPCB_LIVE_moti_doongri_alwar_rspcb_fb9a5b",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Alwar",
+    "lat": 27.554793,
+    "lon": 76.611536,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rati_talai_banswara_rspcb_67e326": {
+    "station": "Rati Talai, Banswara - RSPCB",
+    "station_id": "CPCB_LIVE_rati_talai_banswara_rspcb_67e326",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Banswara",
+    "lat": 23.55519,
+    "lon": 74.44001,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bamboliya_baran_rspcb_b59825": {
+    "station": "Bamboliya, Baran - RSPCB",
+    "station_id": "CPCB_LIVE_bamboliya_baran_rspcb_b59825",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Baran",
+    "lat": 25.106006,
+    "lon": 76.469948,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_krishna_nagar_bharatpur_rspcb_8e888a": {
+    "station": "Krishna Nagar, Bharatpur - RSPCB",
+    "station_id": "CPCB_LIVE_krishna_nagar_bharatpur_rspcb_8e888a",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Bharatpur",
+    "lat": 27.215415,
+    "lon": 77.50873,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_pratap_nagar_bhilwara_rspcb_d4c986": {
+    "station": "Pratap Nagar, Bhilwara - RSPCB",
+    "station_id": "CPCB_LIVE_pratap_nagar_bhilwara_rspcb_d4c986",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Bhilwara",
+    "lat": 25.339605,
+    "lon": 74.618883,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_vasundhara_nagar_uit_bhiwadi_rspcb_b12d80": {
+    "station": "Vasundhara Nagar_UIT, Bhiwadi - RSPCB",
+    "station_id": "CPCB_LIVE_vasundhara_nagar_uit_bhiwadi_rspcb_b12d80",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Khairthal-Tijara",
+    "lat": 28.207266,
+    "lon": 76.829265,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_riico_ind_area_iii_bhiwadi_rspcb_2ee910": {
+    "station": "RIICO Ind. Area III, Bhiwadi - RSPCB",
+    "station_id": "CPCB_LIVE_riico_ind_area_iii_bhiwadi_rspcb_2ee910",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Khairthal-Tijara",
+    "lat": 28.194909,
+    "lon": 76.862296,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_govindpuram_ghaziabad_uppcb_e19c7c": {
+    "station": "Govindpuram, Ghaziabad - UPPCB",
+    "station_id": "CPCB_LIVE_govindpuram_ghaziabad_uppcb_e19c7c",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Ghaziabad",
+    "lat": 28.694528,
+    "lon": 77.494705,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sanjay_nagar_ghaziabad_uppcb_d78bdd": {
+    "station": "Sanjay Nagar, Ghaziabad - UPPCB",
+    "station_id": "CPCB_LIVE_sanjay_nagar_ghaziabad_uppcb_d78bdd",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Ghaziabad",
+    "lat": 28.685382,
+    "lon": 77.453839,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_madan_mohan_malaviya_university_of_techn_ac3fba": {
+    "station": "Madan Mohan Malaviya University of Technology, Gorakhpur - UPPCB",
+    "station_id": "CPCB_LIVE_madan_mohan_malaviya_university_of_techn_ac3fba",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Gorakhpur",
+    "lat": 26.730136,
+    "lon": 83.433859,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_knowledge_park_v_greater_noida_uppcb_67a4fc": {
+    "station": "Knowledge Park - V, Greater Noida - UPPCB",
+    "station_id": "CPCB_LIVE_knowledge_park_v_greater_noida_uppcb_67a4fc",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar",
+    "lat": 28.557054,
+    "lon": 77.453663,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_knowledge_park_iii_greater_noida_uppcb_ffc437": {
+    "station": "Knowledge Park - III, Greater Noida - UPPCB",
+    "station_id": "CPCB_LIVE_knowledge_park_iii_greater_noida_uppcb_ffc437",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar",
+    "lat": 28.47272,
+    "lon": 77.482,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_anand_vihar_hapur_uppcb_ffa103": {
+    "station": "Anand Vihar, Hapur - UPPCB",
+    "station_id": "CPCB_LIVE_anand_vihar_hapur_uppcb_ffa103",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Hapur",
+    "lat": 28.725645,
+    "lon": 77.749675,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shivaji_nagar_jhansi_uppcb_a8bbe3": {
+    "station": "Shivaji Nagar, Jhansi - UPPCB",
+    "station_id": "CPCB_LIVE_shivaji_nagar_jhansi_uppcb_a8bbe3",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Jhansi",
+    "lat": 25.4547,
+    "lon": 78.6039,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_fti_kidwai_nagar_kanpur_uppcb_7808ba": {
+    "station": "FTI Kidwai Nagar, Kanpur - UPPCB",
+    "station_id": "CPCB_LIVE_fti_kidwai_nagar_kanpur_uppcb_7808ba",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Kanpur Nagar",
+    "lat": 26.428282,
+    "lon": 80.327067,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_nsi_kalyanpur_kanpur_uppcb_8b4aa0": {
+    "station": "NSI Kalyanpur, Kanpur - UPPCB",
+    "station_id": "CPCB_LIVE_nsi_kalyanpur_kanpur_uppcb_8b4aa0",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Kanpur Nagar",
+    "lat": 26.509954,
+    "lon": 80.249612,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_nehru_nagar_kanpur_uppcb_446592": {
+    "station": "Nehru Nagar, Kanpur - UPPCB",
+    "station_id": "CPCB_LIVE_nehru_nagar_kanpur_uppcb_446592",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Kanpur Nagar",
+    "lat": 26.4703136,
+    "lon": 80.3229863,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kalindi_kunj_khurja_uppcb_e686d3": {
+    "station": "Kalindi Kunj, Khurja - UPPCB",
+    "station_id": "CPCB_LIVE_kalindi_kunj_khurja_uppcb_e686d3",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Bulandshahr",
+    "lat": 28.2348927,
+    "lon": 77.8683002,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kukrail_picnic_spot_1_lucknow_uppcb_41d3d7": {
+    "station": "Kukrail Picnic Spot-1, Lucknow - UPPCB",
+    "station_id": "CPCB_LIVE_kukrail_picnic_spot_1_lucknow_uppcb_41d3d7",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "lat": 26.90723,
+    "lon": 80.98579,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_pali_dungra_mathura_uppcb_fefc84": {
+    "station": "Pali Dungra, Mathura - UPPCB",
+    "station_id": "CPCB_LIVE_pali_dungra_mathura_uppcb_fefc84",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Mathura",
+    "lat": 27.410954,
+    "lon": 77.550619,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_pallavpuram_phase_2_meerut_uppcb_a3cf24": {
+    "station": "Pallavpuram Phase 2, Meerut - UPPCB",
+    "station_id": "CPCB_LIVE_pallavpuram_phase_2_meerut_uppcb_a3cf24",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Meerut",
+    "lat": 29.06351,
+    "lon": 77.709723,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ganga_nagar_meerut_uppcb_bf653f": {
+    "station": "Ganga Nagar, Meerut - UPPCB",
+    "station_id": "CPCB_LIVE_ganga_nagar_meerut_uppcb_bf653f",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Meerut",
+    "lat": 28.999264,
+    "lon": 77.7590354,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_miet_college_meerut_uppcb_9dd0fa": {
+    "station": "MIET College, Meerut - UPPCB",
+    "station_id": "CPCB_LIVE_miet_college_meerut_uppcb_9dd0fa",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Meerut",
+    "lat": 28.972677,
+    "lon": 77.641018,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_jai_bhim_nagar_meerut_uppcb_749669": {
+    "station": "Jai Bhim Nagar, Meerut - UPPCB",
+    "station_id": "CPCB_LIVE_jai_bhim_nagar_meerut_uppcb_749669",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Meerut",
+    "lat": 28.9535882,
+    "lon": 77.7622941,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_srm_university_modinagar_uppcb_98fb87": {
+    "station": "SRM University, Modinagar - UPPCB",
+    "station_id": "CPCB_LIVE_srm_university_modinagar_uppcb_98fb87",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Ghaziabad",
+    "lat": 28.798171,
+    "lon": 77.540243,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_eco_herbal_park_moradabad_uppcb_24595c": {
+    "station": "Eco Herbal Park, Moradabad - UPPCB",
+    "station_id": "CPCB_LIVE_eco_herbal_park_moradabad_uppcb_24595c",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Moradabad",
+    "lat": 28.840739,
+    "lon": 78.697531,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kashiram_nagar_moradabad_uppcb_558bc1": {
+    "station": "Kashiram Nagar, Moradabad - UPPCB",
+    "station_id": "CPCB_LIVE_kashiram_nagar_moradabad_uppcb_558bc1",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Moradabad",
+    "lat": 28.849399,
+    "lon": 78.742362,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_transport_nagar_moradabad_uppcb_302fc8": {
+    "station": "Transport Nagar, Moradabad - UPPCB",
+    "station_id": "CPCB_LIVE_transport_nagar_moradabad_uppcb_302fc8",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Moradabad",
+    "lat": 28.802625,
+    "lon": 78.753728,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_employment_office_moradabad_uppcb_3fff7b": {
+    "station": "Employment Office, Moradabad - UPPCB",
+    "station_id": "CPCB_LIVE_employment_office_moradabad_uppcb_3fff7b",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Moradabad",
+    "lat": 28.88528,
+    "lon": 78.7388,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_buddhi_vihar_moradabad_uppcb_eb2534": {
+    "station": "Buddhi Vihar, Moradabad - UPPCB",
+    "station_id": "CPCB_LIVE_buddhi_vihar_moradabad_uppcb_eb2534",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Moradabad",
+    "lat": 28.83526,
+    "lon": 78.7446,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_jigar_colony_moradabad_uppcb_3eb8d5": {
+    "station": "Jigar Colony, Moradabad - UPPCB",
+    "station_id": "CPCB_LIVE_jigar_colony_moradabad_uppcb_3eb8d5",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Moradabad",
+    "lat": 28.856664,
+    "lon": 78.772638,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_new_mandi_muzaffarnagar_uppcb_e46eee": {
+    "station": "New Mandi, Muzaffarnagar - UPPCB",
+    "station_id": "CPCB_LIVE_new_mandi_muzaffarnagar_uppcb_e46eee",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Muzaffarnagar",
+    "lat": 29.4723508,
+    "lon": 77.7194031,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_62_noida_iitm_88cde9": {
+    "station": "Sector - 62, Noida - IITM",
+    "station_id": "CPCB_LIVE_sector_62_noida_iitm_88cde9",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Ghaziabad",
+    "lat": 28.6245479,
+    "lon": 77.3577104,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_1_noida_uppcb_5da760": {
+    "station": "Sector-1, Noida - UPPCB",
+    "station_id": "CPCB_LIVE_sector_1_noida_uppcb_5da760",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar",
+    "lat": 28.5898,
+    "lon": 77.3101,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_116_noida_uppcb_e09509": {
+    "station": "Sector-116, Noida - UPPCB",
+    "station_id": "CPCB_LIVE_sector_116_noida_uppcb_e09509",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar",
+    "lat": 28.56923,
+    "lon": 77.393848,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_nagar_nigam_prayagraj_uppcb_4b4744": {
+    "station": "Nagar Nigam, Prayagraj - UPPCB",
+    "station_id": "CPCB_LIVE_nagar_nigam_prayagraj_uppcb_4b4744",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Prayagraj",
+    "lat": 25.44919916,
+    "lon": 81.82735986,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_jhunsi_prayagraj_uppcb_58530a": {
+    "station": "Jhunsi, Prayagraj - UPPCB",
+    "station_id": "CPCB_LIVE_jhunsi_prayagraj_uppcb_58530a",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Prayagraj",
+    "lat": 25.425602,
+    "lon": 81.917152,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_anand_nagar_raebareli_uppcb_9e8670": {
+    "station": "Anand Nagar, Raebareli - UPPCB",
+    "station_id": "CPCB_LIVE_anand_nagar_raebareli_uppcb_9e8670",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Rae Bareli",
+    "lat": 26.219512,
+    "lon": 81.237648,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_new_tehsil_shamli_uppcb_65eb1d": {
+    "station": "New Tehsil, Shamli - UPPCB",
+    "station_id": "CPCB_LIVE_new_tehsil_shamli_uppcb_65eb1d",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Shamli",
+    "lat": 29.4603683,
+    "lon": 77.3410291,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_maldahiya_varanasi_uppcb_d8a17c": {
+    "station": "Maldahiya, Varanasi - UPPCB",
+    "station_id": "CPCB_LIVE_maldahiya_varanasi_uppcb_d8a17c",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "lat": 25.32393,
+    "lon": 82.99687,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ardhali_bazar_varanasi_uppcb_2a7fa8": {
+    "station": "Ardhali Bazar, Varanasi - UPPCB",
+    "station_id": "CPCB_LIVE_ardhali_bazar_varanasi_uppcb_2a7fa8",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "lat": 25.3505986,
+    "lon": 82.9083074,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_iesd_banaras_hindu_university_varanasi_u_17534f": {
+    "station": "IESD Banaras Hindu University, Varanasi - UPPCB",
+    "station_id": "CPCB_LIVE_iesd_banaras_hindu_university_varanasi_u_17534f",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "lat": 25.262326,
+    "lon": 82.995408,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_omex_eternity_vrindavan_uppcb_32aca4": {
+    "station": "Omex Eternity, Vrindavan - UPPCB",
+    "station_id": "CPCB_LIVE_omex_eternity_vrindavan_uppcb_32aca4",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Mathura",
+    "lat": 27.571409,
+    "lon": 77.655757,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_chhatikara_vrindavan_uppcb_2c52d2": {
+    "station": "Chhatikara, Vrindavan - UPPCB",
+    "station_id": "CPCB_LIVE_chhatikara_vrindavan_uppcb_2c52d2",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Mathura",
+    "lat": 27.57194,
+    "lon": 77.62346,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_doon_university_dehradun_ukpcb_9d0718": {
+    "station": "Doon University, Dehradun - UKPCB",
+    "station_id": "CPCB_LIVE_doon_university_dehradun_ukpcb_9d0718",
+    "dataset_state": "Uttarakhand",
+    "adm1_state": "Uttarakhand",
+    "district": "Dehradun",
+    "lat": 30.269444,
+    "lon": 78.044167,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_trivenidevi_bhalotia_college_asansol_wbp_5d8c28": {
+    "station": "Trivenidevi Bhalotia College, Asansol - WBPCB",
+    "station_id": "CPCB_LIVE_trivenidevi_bhalotia_college_asansol_wbp_5d8c28",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Paschim Bardhaman",
+    "lat": 23.616515,
+    "lon": 87.119133,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mahabir_colliery_asansol_wbpcb_b6de97": {
+    "station": "Mahabir Colliery, Asansol - WBPCB",
+    "station_id": "CPCB_LIVE_mahabir_colliery_asansol_wbpcb_b6de97",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Paschim Bardhaman",
+    "lat": 23.618183,
+    "lon": 87.105718,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_asansol_court_area_asansol_wbpcb_eaab4c": {
+    "station": "Asansol Court Area, Asansol - WBPCB",
+    "station_id": "CPCB_LIVE_asansol_court_area_asansol_wbpcb_eaab4c",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Paschim Bardhaman",
+    "lat": 23.685297,
+    "lon": 86.945968,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_evelyn_lodge_asansol_wbpcb_53a9ec": {
+    "station": "Evelyn Lodge, Asansol - WBPCB",
+    "station_id": "CPCB_LIVE_evelyn_lodge_asansol_wbpcb_53a9ec",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Paschim Bardhaman",
+    "lat": 23.697936,
+    "lon": 86.944395,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_svspa_campus_barrackpore_wbpcb_042a8b": {
+    "station": "SVSPA Campus, Barrackpore - WBPCB",
+    "station_id": "CPCB_LIVE_svspa_campus_barrackpore_wbpcb_042a8b",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "North 24 Parganas",
+    "lat": 22.7605581,
+    "lon": 88.3617589,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_pcbl_residential_complex_durgapur_wbpcb_b6b35c": {
+    "station": "PCBL Residential Complex, Durgapur - WBPCB",
+    "station_id": "CPCB_LIVE_pcbl_residential_complex_durgapur_wbpcb_b6b35c",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Paschim Bardhaman",
+    "lat": 23.508764,
+    "lon": 87.35444,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mahishkapur_road_b_zone_durgapur_wbpcb_dc6cc4": {
+    "station": "Mahishkapur Road_B-Zone, Durgapur - WBPCB",
+    "station_id": "CPCB_LIVE_mahishkapur_road_b_zone_durgapur_wbpcb_dc6cc4",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Paschim Bardhaman",
+    "lat": 23.567923,
+    "lon": 87.306843,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_womens_college_city_center_durgapur_wbpc_0fb4c2": {
+    "station": "Womens College_City Center, Durgapur - WBPCB",
+    "station_id": "CPCB_LIVE_womens_college_city_center_durgapur_wbpc_0fb4c2",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Paschim Bardhaman",
+    "lat": 23.549395,
+    "lon": 87.300496,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_priyambada_housing_estate_haldia_wbpcb_060413": {
+    "station": "Priyambada Housing Estate, Haldia - WBPCB",
+    "station_id": "CPCB_LIVE_priyambada_housing_estate_haldia_wbpcb_060413",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Purba Medinipur",
+    "lat": 22.06047,
+    "lon": 88.109737,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ghusuri_howrah_wbpcb_f8f453": {
+    "station": "Ghusuri, Howrah - WBPCB",
+    "station_id": "CPCB_LIVE_ghusuri_howrah_wbpcb_f8f453",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Howrah",
+    "lat": 22.611968,
+    "lon": 88.347422,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_belur_math_howrah_wbpcb_c8f8e5": {
+    "station": "Belur Math, Howrah - WBPCB",
+    "station_id": "CPCB_LIVE_belur_math_howrah_wbpcb_c8f8e5",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Howrah",
+    "lat": 22.629801,
+    "lon": 88.352017,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_dasnagar_howrah_wbpcb_274e85": {
+    "station": "Dasnagar, Howrah - WBPCB",
+    "station_id": "CPCB_LIVE_dasnagar_howrah_wbpcb_274e85",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Howrah",
+    "lat": 22.6025571,
+    "lon": 88.3105664,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_padmapukur_howrah_wbpcb_dc325c": {
+    "station": "Padmapukur, Howrah - WBPCB",
+    "station_id": "CPCB_LIVE_padmapukur_howrah_wbpcb_dc325c",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Howrah",
+    "lat": 22.5687319,
+    "lon": 88.2797276,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_botanical_garden_howrah_wbpcb_72c5a5": {
+    "station": "Botanical Garden, Howrah - WBPCB",
+    "station_id": "CPCB_LIVE_botanical_garden_howrah_wbpcb_72c5a5",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Howrah",
+    "lat": 22.554954,
+    "lon": 88.292568,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_police_line_saharsa_bspcb_fab983": {
+    "station": "Police Line, Saharsa - BSPCB",
+    "station_id": "CPCB_LIVE_police_line_saharsa_bspcb_fab983",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Saharsa",
+    "lat": 25.892357,
+    "lon": 86.590325,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_dm_office_kasipur_samastipur_bspcb_073488": {
+    "station": "DM Office_Kasipur, Samastipur - BSPCB",
+    "station_id": "CPCB_LIVE_dm_office_kasipur_samastipur_bspcb_073488",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Samastipur",
+    "lat": 25.859655,
+    "lon": 85.77944,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_32bungalows_bhilai_cecb_f015dc": {
+    "station": "32Bungalows, Bhilai - CECB",
+    "station_id": "CPCB_LIVE_32bungalows_bhilai_cecb_f015dc",
+    "dataset_state": "Chhattisgarh",
+    "adm1_state": "Chhattisgarh",
+    "district": "Durg",
+    "lat": 21.194815,
+    "lon": 81.31477,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sfti_kusdihra_gaya_bspcb_d4de11": {
+    "station": "SFTI Kusdihra, Gaya - BSPCB",
+    "station_id": "CPCB_LIVE_sfti_kusdihra_gaya_bspcb_d4de11",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Gaya",
+    "lat": 24.762518,
+    "lon": 84.982348,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_toll_gate_tirumala_appcb_8f1d2a": {
+    "station": "Toll Gate, Tirumala - APPCB",
+    "station_id": "CPCB_LIVE_toll_gate_tirumala_appcb_8f1d2a",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Tirupati",
+    "lat": 13.67,
+    "lon": 79.35,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_vaikuntapuram_tirupati_appcb_4c632a": {
+    "station": "Vaikuntapuram, Tirupati - APPCB",
+    "station_id": "CPCB_LIVE_vaikuntapuram_tirupati_appcb_4c632a",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Tirupati",
+    "lat": 13.615387,
+    "lon": 79.40923,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mayaganj_bhagalpur_bspcb_357a66": {
+    "station": "Mayaganj, Bhagalpur - BSPCB",
+    "station_id": "CPCB_LIVE_mayaganj_bhagalpur_bspcb_357a66",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Bhagalpur",
+    "lat": 25.265194,
+    "lon": 87.012947,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_dm_office_kachari_chowk_bhagalpur_bspcb_4c37c8": {
+    "station": "DM Office_Kachari Chowk, Bhagalpur - BSPCB",
+    "station_id": "CPCB_LIVE_dm_office_kachari_chowk_bhagalpur_bspcb_4c37c8",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Bhagalpur",
+    "lat": 25.251013,
+    "lon": 86.989001,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kareemganj_gaya_bspcb_d9eec7": {
+    "station": "Kareemganj, Gaya - BSPCB",
+    "station_id": "CPCB_LIVE_kareemganj_gaya_bspcb_d9eec7",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Gaya",
+    "lat": 24.792403,
+    "lon": 84.992416,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_christianpatty_nagaon_pcba_4227e1": {
+    "station": "Christianpatty, Nagaon - PCBA",
+    "station_id": "CPCB_LIVE_christianpatty_nagaon_pcba_4227e1",
+    "dataset_state": "Assam",
+    "adm1_state": "Assam",
+    "district": "Nagaon",
+    "lat": 26.349082,
+    "lon": 92.68449,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_girls_college_sivasagar_pcba_04cf44": {
+    "station": "Girls College, Sivasagar - PCBA",
+    "station_id": "CPCB_LIVE_girls_college_sivasagar_pcba_04cf44",
+    "dataset_state": "Assam",
+    "adm1_state": "Assam",
+    "district": "Sivasagar",
+    "lat": 26.987634,
+    "lon": 94.636574,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rajiv_nagar_vijayawada_appcb_c8845d": {
+    "station": "Rajiv Nagar, Vijayawada - APPCB",
+    "station_id": "CPCB_LIVE_rajiv_nagar_vijayawada_appcb_c8845d",
+    "dataset_state": "Andhra Pradesh",
+    "adm1_state": "Andhra Pradesh",
+    "district": "Ntr",
+    "lat": 16.554731,
+    "lon": 80.64911,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_railway_colony_guwahati_pcba_2cde30": {
+    "station": "Railway Colony, Guwahati - PCBA",
+    "station_id": "CPCB_LIVE_railway_colony_guwahati_pcba_2cde30",
+    "dataset_state": "Assam",
+    "adm1_state": "Assam",
+    "district": "Kamrup Metro",
+    "lat": 26.181742,
+    "lon": 91.78063,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_h_b_colony_bhiwani_hspcb_01949d": {
+    "station": "H.B. Colony, Bhiwani - HSPCB",
+    "station_id": "CPCB_LIVE_h_b_colony_bhiwani_hspcb_01949d",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Bhiwani",
+    "lat": 28.806223,
+    "lon": 76.141105,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_30_faridabad_hspcb_2fa9df": {
+    "station": "Sector 30, Faridabad - HSPCB",
+    "station_id": "CPCB_LIVE_sector_30_faridabad_hspcb_2fa9df",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Faridabad",
+    "lat": 28.4417,
+    "lon": 77.3217,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_huda_sector_fatehabad_hspcb_9801e9": {
+    "station": "Huda Sector, Fatehabad - HSPCB",
+    "station_id": "CPCB_LIVE_huda_sector_fatehabad_hspcb_9801e9",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Fatehabad",
+    "lat": 29.503664,
+    "lon": 75.467934,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_gyaspur_ahmedabad_iitm_4ecdfb": {
+    "station": "Gyaspur, Ahmedabad - IITM",
+    "station_id": "CPCB_LIVE_gyaspur_ahmedabad_iitm_4ecdfb",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Ahmedabad",
+    "lat": 22.977134,
+    "lon": 72.553024,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_katargam_surat_nexteng_enviro_43dbac": {
+    "station": "Katargam, Surat - Nexteng Enviro",
+    "station_id": "CPCB_LIVE_katargam_surat_nexteng_enviro_43dbac",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Surat",
+    "lat": 21.217779,
+    "lon": 72.834787,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_nathu_colony_ballabgarh_hspcb_662b9c": {
+    "station": "Nathu Colony, Ballabgarh - HSPCB",
+    "station_id": "CPCB_LIVE_nathu_colony_ballabgarh_hspcb_662b9c",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Faridabad",
+    "lat": 28.3419248,
+    "lon": 77.319699,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_imd_lodhi_road_delhi_iitm_a7ee75": {
+    "station": "IMD Lodhi Road, Delhi - IITM",
+    "station_id": "CPCB_LIVE_imd_lodhi_road_delhi_iitm_a7ee75",
+    "dataset_state": "Delhi",
+    "adm1_state": "Delhi",
+    "district": "New Delhi",
+    "lat": 28.5918245,
+    "lon": 77.2273074,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_jnu_delhi_dpcc_805f48": {
+    "station": "JNU, Delhi - DPCC",
+    "station_id": "CPCB_LIVE_jnu_delhi_dpcc_805f48",
+    "dataset_state": "Delhi",
+    "adm1_state": "Delhi",
+    "district": "New Delhi",
+    "lat": 28.540721,
+    "lon": 77.168544,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_crri_mathura_road_delhi_iitm_223fac": {
+    "station": "CRRI Mathura Road, Delhi - IITM",
+    "station_id": "CPCB_LIVE_crri_mathura_road_delhi_iitm_223fac",
+    "dataset_state": "Delhi",
+    "adm1_state": "Delhi",
+    "district": "South East",
+    "lat": 28.5512005,
+    "lon": 77.2735737,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kalabhavan_dharwad_kspcb_0bf93f": {
+    "station": "Kalabhavan, Dharwad - KSPCB",
+    "station_id": "CPCB_LIVE_kalabhavan_dharwad_kspcb_0bf93f",
+    "dataset_state": "Karnataka",
+    "adm1_state": "Karnataka",
+    "district": "Dharwad",
+    "lat": 15.459706,
+    "lon": 75.008381,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_vinoba_nagara_shivamogga_kspcb_1e4d84": {
+    "station": "Vinoba Nagara, Shivamogga - KSPCB",
+    "station_id": "CPCB_LIVE_vinoba_nagara_shivamogga_kspcb_1e4d84",
+    "dataset_state": "Karnataka",
+    "adm1_state": "Karnataka",
+    "district": "Shivamogga",
+    "lat": 13.94,
+    "lon": 75.555917,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_residency_area_indore_imc_1a84d8": {
+    "station": "Residency Area, Indore - IMC",
+    "station_id": "CPCB_LIVE_residency_area_indore_imc_1a84d8",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Indore",
+    "lat": 22.7084,
+    "lon": 75.8815,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ashta_vinayak_nagar_hingoli_mpcb_f1bcbe": {
+    "station": "Ashta Vinayak Nagar, Hingoli - MPCB",
+    "station_id": "CPCB_LIVE_ashta_vinayak_nagar_hingoli_mpcb_f1bcbe",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Hingoli",
+    "lat": 19.710842,
+    "lon": 77.151824,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shivaji_university_kolhapur_mpcb_b4bbae": {
+    "station": "Shivaji University, Kolhapur - MPCB",
+    "station_id": "CPCB_LIVE_shivaji_university_kolhapur_mpcb_b4bbae",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Kolhapur",
+    "lat": 16.6870449,
+    "lon": 74.2505872,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_urban_chamarajanagar_kspcb_17f99d": {
+    "station": "Urban, Chamarajanagar - KSPCB",
+    "station_id": "CPCB_LIVE_urban_chamarajanagar_kspcb_17f99d",
+    "dataset_state": "Karnataka",
+    "adm1_state": "Tamil Nadu",
+    "district": null,
+    "lat": 11.55358,
+    "lon": 76.55521,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_maharaj_bada_gwalior_mppcb_dbc8cf": {
+    "station": "Maharaj Bada, Gwalior - MPPCB",
+    "station_id": "CPCB_LIVE_maharaj_bada_gwalior_mppcb_dbc8cf",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Gwalior",
+    "lat": 26.200388,
+    "lon": 78.147714,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_deen_dayal_nagar_gwalior_mppcb_b26d12": {
+    "station": "Deen Dayal Nagar, Gwalior - MPPCB",
+    "station_id": "CPCB_LIVE_deen_dayal_nagar_gwalior_mppcb_b26d12",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Gwalior",
+    "lat": 26.259242,
+    "lon": 78.216432,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_transport_nagar_nigdi_pune_iitm_d99a32": {
+    "station": "Transport Nagar-Nigdi, Pune - IITM",
+    "station_id": "CPCB_LIVE_transport_nagar_nigdi_pune_iitm_d99a32",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.664282,
+    "lon": 73.763966,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_katraj_dairy_pune_mpcb_733d05": {
+    "station": "Katraj Dairy, Pune - MPCB",
+    "station_id": "CPCB_LIVE_katraj_dairy_pune_mpcb_733d05",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.45445,
+    "lon": 73.854155,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_revenue_colony_shivajinagar_pune_iitm_54c437": {
+    "station": "Revenue Colony-Shivajinagar, Pune - IITM",
+    "station_id": "CPCB_LIVE_revenue_colony_shivajinagar_pune_iitm_54c437",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.530085,
+    "lon": 73.849598,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mhada_colony_pune_iitm_752ec2": {
+    "station": "Mhada Colony, Pune - IITM",
+    "station_id": "CPCB_LIVE_mhada_colony_pune_iitm_752ec2",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.57304,
+    "lon": 73.927715,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_dhankawadi_pune_iitm_0d54de": {
+    "station": "Dhankawadi, Pune - IITM",
+    "station_id": "CPCB_LIVE_dhankawadi_pune_iitm_0d54de",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.459883,
+    "lon": 73.852193,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_byculla_mumbai_bmc_21e80e": {
+    "station": "Byculla, Mumbai - BMC",
+    "station_id": "CPCB_LIVE_byculla_mumbai_bmc_21e80e",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai",
+    "lat": 18.9767,
+    "lon": 72.838,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mindspace_malad_west_mumbai_mpcb_bcf153": {
+    "station": "Mindspace-Malad West, Mumbai - MPCB",
+    "station_id": "CPCB_LIVE_mindspace_malad_west_mumbai_mpcb_bcf153",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "lat": 19.1878657,
+    "lon": 72.8304069,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ram_nagar_nagpur_mpcb_6449e3": {
+    "station": "Ram Nagar, Nagpur - MPCB",
+    "station_id": "CPCB_LIVE_ram_nagar_nagpur_mpcb_6449e3",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Nagpur",
+    "lat": 21.143383,
+    "lon": 79.048912,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mulund_west_mumbai_mpcb_91a61c": {
+    "station": "Mulund West, Mumbai - MPCB",
+    "station_id": "CPCB_LIVE_mulund_west_mumbai_mpcb_91a61c",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "lat": 19.175,
+    "lon": 72.9419,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bandra_kurla_complex_mumbai_mpcb_53cf86": {
+    "station": "Bandra Kurla Complex, Mumbai - MPCB",
+    "station_id": "CPCB_LIVE_bandra_kurla_complex_mumbai_mpcb_53cf86",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "lat": 19.065931,
+    "lon": 72.862131,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sewri_mumbai_bmc_4eb1ab": {
+    "station": "Sewri, Mumbai - BMC",
+    "station_id": "CPCB_LIVE_sewri_mumbai_bmc_4eb1ab",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai",
+    "lat": 19.000084,
+    "lon": 72.85673,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kandivali_west_mumbai_bmc_a28765": {
+    "station": "Kandivali West, Mumbai - BMC",
+    "station_id": "CPCB_LIVE_kandivali_west_mumbai_bmc_a28765",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "lat": 19.215859,
+    "lon": 72.831718,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_chakala_andheri_east_mumbai_iitm_23ec73": {
+    "station": "Chakala-Andheri East, Mumbai - IITM",
+    "station_id": "CPCB_LIVE_chakala_andheri_east_mumbai_iitm_23ec73",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "lat": 19.11074,
+    "lon": 72.86084,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_barsua_iron_ore_mines_tensa_ospcb_2c2cd3": {
+    "station": "Barsua Iron Ore Mines, Tensa - OSPCB",
+    "station_id": "CPCB_LIVE_barsua_iron_ore_mines_tensa_ospcb_2c2cd3",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Sundargarh",
+    "lat": 21.869985,
+    "lon": 85.167016,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_punjab_agricultural_university_ludhiana__139906": {
+    "station": "Punjab Agricultural University, Ludhiana - PPCB",
+    "station_id": "CPCB_LIVE_punjab_agricultural_university_ludhiana__139906",
+    "dataset_state": "Punjab",
+    "adm1_state": "Punjab",
+    "district": "Ludhiana",
+    "lat": 30.9028,
+    "lon": 75.8086,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_rimt_university_mandi_gobindgarh_ppcb_6b1cb8": {
+    "station": "RIMT University, Mandi Gobindgarh - PPCB",
+    "station_id": "CPCB_LIVE_rimt_university_mandi_gobindgarh_ppcb_6b1cb8",
+    "dataset_state": "Punjab",
+    "adm1_state": "Punjab",
+    "district": "Fatehgarh Sahib",
+    "lat": 30.649961,
+    "lon": 76.331442,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ratanpura_rupnagar_ambuja_cements_6bd337": {
+    "station": "Ratanpura, Rupnagar - Ambuja Cements",
+    "station_id": "CPCB_LIVE_ratanpura_rupnagar_ambuja_cements_6bd337",
+    "dataset_state": "Punjab",
+    "adm1_state": "Punjab",
+    "district": "Rupnagar",
+    "lat": 31.0325454,
+    "lon": 76.5623046,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_civil_lines_ajmer_rspcb_0d7185": {
+    "station": "Civil Lines,  Ajmer - RSPCB",
+    "station_id": "CPCB_LIVE_civil_lines_ajmer_rspcb_0d7185",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Ajmer",
+    "lat": 26.470859,
+    "lon": 74.646594,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_railway_colony_barmer_rspcb_c740bf": {
+    "station": "Railway Colony, Barmer - RSPCB",
+    "station_id": "CPCB_LIVE_railway_colony_barmer_rspcb_c740bf",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Barmer",
+    "lat": 25.747299,
+    "lon": 71.393989,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_tata_township_bileipada_ospcb_49f69e": {
+    "station": "Tata Township, Bileipada - OSPCB",
+    "station_id": "CPCB_LIVE_tata_township_bileipada_ospcb_49f69e",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Kendujhar",
+    "lat": 22.06156703,
+    "lon": 85.47409613,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_dabuna_nayagarh_ospcb_599b93": {
+    "station": "Dabuna, Nayagarh - OSPCB",
+    "station_id": "CPCB_LIVE_dabuna_nayagarh_ospcb_599b93",
+    "dataset_state": "Odisha",
+    "adm1_state": "Odisha",
+    "district": "Kendujhar",
+    "lat": 21.847279,
+    "lon": 85.416905,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_pandav_nagari_nashik_mpcb_6dce3a": {
+    "station": "Pandav Nagari, Nashik - MPCB",
+    "station_id": "CPCB_LIVE_pandav_nagari_nashik_mpcb_6dce3a",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Nashik",
+    "lat": 19.9591346,
+    "lon": 73.7788008,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_hirawadi_nashik_mpcb_bae2b5": {
+    "station": "Hirawadi, Nashik - MPCB",
+    "station_id": "CPCB_LIVE_hirawadi_nashik_mpcb_bae2b5",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Nashik",
+    "lat": 20.021503,
+    "lon": 73.813844,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kopripada_vashi_navi_mumbai_mpcb_3d8a6c": {
+    "station": "Kopripada-Vashi, Navi Mumbai - MPCB",
+    "station_id": "CPCB_LIVE_kopripada_vashi_navi_mumbai_mpcb_3d8a6c",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.090337,
+    "lon": 73.014232,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bhosari_pune_iitm_1da12d": {
+    "station": "Bhosari, Pune - IITM",
+    "station_id": "CPCB_LIVE_bhosari_pune_iitm_1da12d",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.640051,
+    "lon": 73.848956,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_nayapura_kota_rspcb_fa5465": {
+    "station": "Nayapura, Kota - RSPCB",
+    "station_id": "CPCB_LIVE_nayapura_kota_rspcb_fa5465",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Kota",
+    "lat": 25.196024,
+    "lon": 75.855668,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_pragati_nagar_pratapgarh_rspcb_fc6313": {
+    "station": "Pragati Nagar, Pratapgarh - RSPCB",
+    "station_id": "CPCB_LIVE_pragati_nagar_pratapgarh_rspcb_fc6313",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Pratapgarh",
+    "lat": 24.041198,
+    "lon": 74.780702,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_indra_nagar_jhunjhunu_rspcb_18b456": {
+    "station": "Indra Nagar, Jhunjhunu - RSPCB",
+    "station_id": "CPCB_LIVE_indra_nagar_jhunjhunu_rspcb_18b456",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Jhunjhunu",
+    "lat": 28.108988,
+    "lon": 75.386577,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_prashant_garden_khora_uppcb_7dad31": {
+    "station": "Prashant Garden, Khora - UPPCB",
+    "station_id": "CPCB_LIVE_prashant_garden_khora_uppcb_7dad31",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Ghaziabad",
+    "lat": 28.61119,
+    "lon": 77.34206,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_b_r_ambedkar_university_lucknow_uppcb_588792": {
+    "station": "B R Ambedkar University, Lucknow - UPPCB",
+    "station_id": "CPCB_LIVE_b_r_ambedkar_university_lucknow_uppcb_588792",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "lat": 26.766433,
+    "lon": 80.927299,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_zero_point_gici_gangtok_sspcb_31a489": {
+    "station": "Zero Point GICI, Gangtok - SSPCB",
+    "station_id": "CPCB_LIVE_zero_point_gici_gangtok_sspcb_31a489",
+    "dataset_state": "Sikkim",
+    "adm1_state": "Sikkim",
+    "district": "Gangtok",
+    "lat": 27.33853,
+    "lon": 88.614099,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sardar_patel_inter_college_baghpat_uppcb_9c343e": {
+    "station": "Sardar Patel Inter College, Baghpat - UPPCB",
+    "station_id": "CPCB_LIVE_sardar_patel_inter_college_baghpat_uppcb_9c343e",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Baghpat",
+    "lat": 28.964949,
+    "lon": 77.278761,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_vibhab_nagar_firozabad_uppcb_dc0f0b": {
+    "station": "Vibhab Nagar, Firozabad - UPPCB",
+    "station_id": "CPCB_LIVE_vibhab_nagar_firozabad_uppcb_dc0f0b",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Firozabad",
+    "lat": 27.1594,
+    "lon": 78.3953,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ved_vihar_loni_ghaziabad_uppcb_c5d79b": {
+    "station": "Ved Vihar-Loni, Ghaziabad - UPPCB",
+    "station_id": "CPCB_LIVE_ved_vihar_loni_ghaziabad_uppcb_c5d79b",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Ghaziabad",
+    "lat": 28.739153,
+    "lon": 77.273668,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_wave_city_ghaziabad_uppcb_da6215": {
+    "station": "Wave City, Ghaziabad - UPPCB",
+    "station_id": "CPCB_LIVE_wave_city_ghaziabad_uppcb_da6215",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Ghaziabad",
+    "lat": 28.646675,
+    "lon": 77.489049,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_loni_ghaziabad_uppcb_cb6af8": {
+    "station": "Loni, Ghaziabad - UPPCB",
+    "station_id": "CPCB_LIVE_loni_ghaziabad_uppcb_cb6af8",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Ghaziabad",
+    "lat": 28.757294,
+    "lon": 77.278792,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_vasundhara_ghaziabad_uppcb_6230d7": {
+    "station": "Vasundhara, Ghaziabad - UPPCB",
+    "station_id": "CPCB_LIVE_vasundhara_ghaziabad_uppcb_6230d7",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Ghaziabad",
+    "lat": 28.6603346,
+    "lon": 77.3572563,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sector_125_noida_uppcb_b2652f": {
+    "station": "Sector - 125, Noida - UPPCB",
+    "station_id": "CPCB_LIVE_sector_125_noida_uppcb_b2652f",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar",
+    "lat": 28.5447608,
+    "lon": 77.3231257,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_indira_nagar_raebareli_ntpc_unchahar_09bdb5": {
+    "station": "Indira Nagar, Raebareli - NTPC Unchahar",
+    "station_id": "CPCB_LIVE_indira_nagar_raebareli_ntpc_unchahar_09bdb5",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Rae Bareli",
+    "lat": 26.207781,
+    "lon": 81.245571,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bhelupur_varanasi_uppcb_ebefd7": {
+    "station": "Bhelupur, Varanasi - UPPCB",
+    "station_id": "CPCB_LIVE_bhelupur_varanasi_uppcb_ebefd7",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "lat": 25.301778,
+    "lon": 82.996789,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_govt_girls_inter_college_kashipur_ukpcb_83849a": {
+    "station": "Govt. Girls Inter College, Kashipur - UKPCB",
+    "station_id": "CPCB_LIVE_govt_girls_inter_college_kashipur_ukpcb_83849a",
+    "dataset_state": "Uttarakhand",
+    "adm1_state": "Uttarakhand",
+    "district": "Udam Singh Nagar",
+    "lat": 29.2124114,
+    "lon": 78.9611753,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_ward_32_bapupara_siliguri_wbpcb_a9dec1": {
+    "station": "Ward-32 Bapupara, Siliguri - WBPCB",
+    "station_id": "CPCB_LIVE_ward_32_bapupara_siliguri_wbpcb_a9dec1",
+    "dataset_state": "West Bengal",
+    "adm1_state": "West Bengal",
+    "district": "Jalpaiguri",
+    "lat": 26.6879226,
+    "lon": 88.4152495,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_mit_daudpur_kothi_muzaffarpur_bspcb_cf30da": {
+    "station": "MIT-Daudpur Kothi, Muzaffarpur - BSPCB",
+    "station_id": "CPCB_LIVE_mit_daudpur_kothi_muzaffarpur_bspcb_cf30da",
+    "dataset_state": "Bihar",
+    "adm1_state": "Bihar",
+    "district": "Muzaffarpur",
+    "lat": 26.1403345,
+    "lon": 85.3650192,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_pusa_delhi_iitm_4d94d2": {
+    "station": "Pusa, Delhi - IITM",
+    "station_id": "CPCB_LIVE_pusa_delhi_iitm_4d94d2",
+    "dataset_state": "Delhi",
+    "adm1_state": "Delhi",
+    "district": "West",
+    "lat": 28.63611,
+    "lon": 77.173332,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_urban_estate_ii_hisar_hspcb_e3d731": {
+    "station": "Urban Estate-II, Hisar - HSPCB",
+    "station_id": "CPCB_LIVE_urban_estate_ii_hisar_hspcb_e3d731",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Hisar",
+    "lat": 29.14056,
+    "lon": 75.744941,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shyam_nagar_palwal_hspcb_ff3e2e": {
+    "station": "Shyam Nagar, Palwal - HSPCB",
+    "station_id": "CPCB_LIVE_shyam_nagar_palwal_hspcb_ff3e2e",
+    "dataset_state": "Haryana",
+    "adm1_state": "Haryana",
+    "district": "Palwal",
+    "lat": 28.1485564,
+    "lon": 77.3320667,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_sadanand_nagar_mehsana_nexteng_enviro_7a7442": {
+    "station": "Sadanand Nagar, Mehsana - Nexteng Enviro",
+    "station_id": "CPCB_LIVE_sadanand_nagar_mehsana_nexteng_enviro_7a7442",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Mahesana",
+    "lat": 23.59315,
+    "lon": 72.372792,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_science_center_surat_smc_2ba407": {
+    "station": "Science Center, Surat - SMC",
+    "station_id": "CPCB_LIVE_science_center_surat_smc_2ba407",
+    "dataset_state": "Gujarat",
+    "adm1_state": "Gujarat",
+    "district": "Surat",
+    "lat": 21.170046,
+    "lon": 72.795405,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_gokul_nagar_bhiwandi_mpcb_a8abb3": {
+    "station": "Gokul Nagar, Bhiwandi - MPCB",
+    "station_id": "CPCB_LIVE_gokul_nagar_bhiwandi_mpcb_a8abb3",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Thane",
+    "lat": 19.309073,
+    "lon": 73.057223,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_paryavaran_parisar_bhopal_mppcb_79469e": {
+    "station": "Paryavaran Parisar, Bhopal - MPPCB",
+    "station_id": "CPCB_LIVE_paryavaran_parisar_bhopal_mppcb_79469e",
+    "dataset_state": "Madhya Pradesh",
+    "adm1_state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "lat": 23.210494,
+    "lon": 77.425409,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_vigyan_nagar_alwar_rspcb_98f20d": {
+    "station": "Vigyan Nagar, Alwar - RSPCB",
+    "station_id": "CPCB_LIVE_vigyan_nagar_alwar_rspcb_98f20d",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Alwar",
+    "lat": 27.598796,
+    "lon": 76.63861,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_midc_ambad_nashik_mpcb_bee040": {
+    "station": "MIDC Ambad, Nashik - MPCB",
+    "station_id": "CPCB_LIVE_midc_ambad_nashik_mpcb_bee040",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Nashik",
+    "lat": 19.95022,
+    "lon": 73.73148,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_savta_mali_nagar_pimpri_chinchwad_iitm_0e5a67": {
+    "station": "Savta Mali Nagar, Pimpri-Chinchwad - IITM",
+    "station_id": "CPCB_LIVE_savta_mali_nagar_pimpri_chinchwad_iitm_0e5a67",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.614767,
+    "lon": 73.799516,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_bardowali_agartala_tripura_spcb_50428f": {
+    "station": "Bardowali, Agartala - Tripura SPCB",
+    "station_id": "CPCB_LIVE_bardowali_agartala_tripura_spcb_50428f",
+    "dataset_state": "Tripura",
+    "adm1_state": "Tripura",
+    "district": "West Tripura",
+    "lat": 23.8175497,
+    "lon": 91.2726974,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_kendriya_vidyalaya_lucknow_cpcb_9e87e3": {
+    "station": "Kendriya Vidyalaya, Lucknow - CPCB",
+    "station_id": "CPCB_LIVE_kendriya_vidyalaya_lucknow_cpcb_9e87e3",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "lat": 26.906111,
+    "lon": 80.948222,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_shastripuram_agra_uppcb_5a1eb6": {
+    "station": "Shastripuram, Agra - UPPCB",
+    "station_id": "CPCB_LIVE_shastripuram_agra_uppcb_5a1eb6",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Agra",
+    "lat": 27.19862,
+    "lon": 77.92066,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_motilal_nehru_nit_prayagraj_uppcb_0e4cff": {
+    "station": "Motilal Nehru NIT, Prayagraj - UPPCB",
+    "station_id": "CPCB_LIVE_motilal_nehru_nit_prayagraj_uppcb_0e4cff",
+    "dataset_state": "Uttar Pradesh",
+    "adm1_state": "Uttar Pradesh",
+    "district": "Prayagraj",
+    "lat": 25.494,
+    "lon": 81.863,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_hadapsar_pune_iitm_d3578b": {
+    "station": "Hadapsar, Pune - IITM",
+    "station_id": "CPCB_LIVE_hadapsar_pune_iitm_d3578b",
+    "dataset_state": "Maharashtra",
+    "adm1_state": "Maharashtra",
+    "district": "Pune",
+    "lat": 18.501793,
+    "lon": 73.927532,
+    "source": "historical"
+  },
+  "station:CPCB_LIVE_raja_ganj_dholpur_rspcb_a8cdbf": {
+    "station": "Raja Ganj, Dholpur - RSPCB",
+    "station_id": "CPCB_LIVE_raja_ganj_dholpur_rspcb_a8cdbf",
+    "dataset_state": "Rajasthan",
+    "adm1_state": "Rajasthan",
+    "district": "Dholpur",
+    "lat": 26.699557,
+    "lon": 77.898881,
+    "source": "historical"
   }
 }
