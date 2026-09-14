@@ -60,6 +60,28 @@ export function ForecastChart({ days = [], height = 260 }) {
   )
 }
 
+export function Forecast24hChart({ hours = [], height = 240 }) {
+  const data = hours.map((h) => ({
+    label: h.hour_label, aqi: h.predicted_AQI,
+    lower: h.lower, span: h.upper != null && h.lower != null ? Math.max(h.upper - h.lower, 0) : 0,
+  }))
+  return (
+    <ResponsiveContainer width="100%" height={height}>
+      <ComposedChart data={data} margin={{ top: 6, right: 12, bottom: 0, left: -12 }} stackOffset="none">
+        <CartesianGrid {...GRID} vertical={false} />
+        <XAxis dataKey="label" {...AX} minTickGap={22} tickLine={false} axisLine={false} />
+        <YAxis {...AX} tickLine={false} axisLine={false} width={40} />
+        <Tooltip {...tip} />
+        <Area type="monotone" dataKey="lower" stackId="band" stroke="none" fill="none" />
+        <Area type="monotone" dataKey="span" stackId="band" stroke="none"
+          fill="#7c3aed" fillOpacity={0.16} name="Uncertainty" />
+        <Line type="monotone" dataKey="aqi" name="Estimated AQI" stroke="#38bdf8"
+          strokeWidth={2.5} dot={{ r: 2.5, fill: '#fff' }} />
+      </ComposedChart>
+    </ResponsiveContainer>
+  )
+}
+
 export function PollutantTrend({ series = [], keys = ['PM25', 'PM10', 'O3'], height = 240 }) {
   const colors = ['#a78bfa', '#f0c030', '#2e9e4f', '#e24b4b', '#38bdf8']
   const data = series.map((d) => ({ ...d, label: fmtDate(d.date) }))

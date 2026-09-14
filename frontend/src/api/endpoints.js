@@ -32,6 +32,9 @@ export const aqi = {
   sourceAnalysis: (state, area) => api.get(`/aqi/source-analysis/${S(state, area)}`),
   impact: (state, area) => api.get(`/aqi/impact/${S(state, area)}`),
   whyChange: (state, area, body = {}) => api.post('/aqi/why-change', { state, area, ...body }),
+  forecast24h: (state, area) => api.get(`/aqi/forecast-24h/${S(state, area)}`),
+  outdoorPlanner: (state, area) => api.get(`/aqi/outdoor-planner/${S(state, area)}`),
+  recovery: (state, area) => api.get(`/aqi/recovery/${S(state, area)}`),
 }
 
 export const health = {
