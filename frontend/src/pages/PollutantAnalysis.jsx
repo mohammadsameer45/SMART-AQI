@@ -45,6 +45,8 @@ export default function PollutantAnalysis() {
 
       <WhyAqiHigh explain={explain} trend={trend} disp={disp} />
 
+      <EventsTimeline state={state} area={area} enabled={enabled} />
+
       <GlassCard className="card" style={{ marginBottom: 18 }}>
         <SectionTitle eyebrow="Interactive 3D" title="Pollutant columns" />
         <div className="canvas-box tall">
@@ -258,5 +260,74 @@ function ImpactBreakdownCard({ impact }) {
     </GlassCard>
   )
 }
+
+function EventsTimeline({ state, area, enabled }) {
+  const [openId, setOpenId] = useState(null)
+  const ev = useApi(() => aqiApi.events(state, area), [state, area], { enabled })
+
+  return (
+    <GlassCard className="card" style={{ marginBottom: 18 }}>
+      <SectionTitle eyebrow="Pollution event engine" title="Recent pollution events" />
+      {ev.loading ? <Loader /> : !ev.data?.available ? (
+        <p className="tiny muted">{ev.data?.reason || 'Unavailable.'}</p>
+      ) : ev.data.count === 0 ? (
+        <p className="tiny muted">No period above AQI {ev.data.threshold} in the last {ev.data.window_days} days.</p>
+      ) : (
+        <>
+          <div className="event-timeline">
+            {ev.data.events.map((e, i) => {
+              const open = openId === e.event_id
+              const b = bandForAqi(e.peak_AQI)
+              return (
+                <div key={e.event_id} className="event-row">
+                  <div className="event-dot" style={{ background: b }} />
+                  <div className="event-body">
+                    <button className="event-head" onClick={() => setOpenId(open ? null : e.event_id)}>
+                      <span>
+                        <strong>Event #{String(ev.data.count - i).padStart(3, '0')}</strong>
+                        {e.ongoing && <span className="src-chip up" style={{ marginLeft: 8 }}>ongoing</span>}
+                      </span>
+                      <span className="tiny muted">{fmtWhen(e.started_at)}</span>
+                    </button>
+                    <div className="tiny muted">
+                      Peak AQI {Math.round(e.peak_AQI)} ({e.peak_bucket}) · {e.duration_hours}h · current {Math.round(e.current_AQI)}
+                    </div>
+                    {open && (
+                      <div className="why-panel">
+                        <div className="kv"><span>Started</span><span>{fmtWhen(e.started_at)}</span></div>
+                        <div className="kv"><span>{e.ongoing ? 'Still ongoing' : 'Ended'}</span><span>{e.ended_at ? fmtWhen(e.ended_at) : '—'}</span></div>
+                        <div className="kv"><span>Peak</span><span>{Math.round(e.peak_AQI)} at {fmtWhen(e.peak_at)}</span></div>
+                        {e.likely_contributors.length > 0 ? (
+                          <>
+                            <div className="why-label">Likely contributors (start → peak)</div>
+                            {e.likely_contributors.map((c) => (
+                              <div key={c.pollutant} className="kv">
+                                <span>{c.pollutant.replace('25', '2.5')}</span>
+                                <span>{c.from} → {c.to} (+{c.delta})</span>
+                              </div>
+                            ))}
+                          </>
+                        ) : <p className="tiny muted">No pollutant-level breakdown available for this event.</p>}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+          <p className="card-note">{ev.data.note}</p>
+        </>
+      )}
+    </GlassCard>
+  )
+}
+
+const AQI_BAND_HEX = [
+  [50, '#2e9e4f'], [100, '#7bb93f'], [200, '#f0c030'], [300, '#f08b24'], [400, '#e24b4b'], [Infinity, '#8b2e8b'],
+]
+const bandForAqi = (aqi) => (AQI_BAND_HEX.find(([hi]) => aqi <= hi) || AQI_BAND_HEX.at(-1))[1]
+const fmtWhen = (iso) => (iso ? new Date(iso).toLocaleString('en-IN', {
+  day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit',
+}) : '—')
 
 const fmt = (v) => (v == null ? '—' : Math.round(v))

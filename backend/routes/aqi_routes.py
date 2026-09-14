@@ -5,6 +5,7 @@ from flask import Blueprint, request
 
 from backend.services import (aqi_service, forecast_service, health_service,
                               pollutant_insight_service as insight,
+                              pollution_event_service as events,
                               weather as weather_service)
 from backend.services.location_service import coverage, resolve_area
 from backend.utils.auth import require_auth
@@ -75,6 +76,18 @@ def aqi_impact(state, area):
 @require_auth
 def dispersion(state, area):
     return ok(insight.dispersion(state, area))
+
+
+@bp.get("/aqi/events/<state>/<area>")
+@require_auth
+def aqi_events(state, area):
+    return ok(events.detect_events(state, area))
+
+
+@bp.get("/aqi/events/<state>/<area>/<event_id>")
+@require_auth
+def aqi_event_detail(state, area, event_id):
+    return ok(events.event_detail(state, area, event_id))
 
 
 @bp.post("/aqi/why-change")
