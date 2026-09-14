@@ -3,7 +3,8 @@ from __future__ import annotations
 
 from flask import Blueprint, request
 
-from backend.services import (aqi_service, forecast_service, health_service,
+from backend.services import (aqi_service, analyst_service, forecast_service,
+                              health_service,
                               pollutant_insight_service as insight,
                               pollution_event_service as events,
                               weather as weather_service)
@@ -100,6 +101,19 @@ def aqi_why_change():
         from backend.utils.responses import ApiError
         raise ApiError("missing_field", "'state' and 'area' are required", 400)
     return ok(insight.why_change(state, area, body.get("from"), body.get("to")))
+
+
+@bp.post("/aqi/analyst")
+@require_auth
+def aqi_analyst():
+    body = request.get_json(silent=True) or {}
+    state = body.get("state")
+    area = body.get("area")
+    question = body.get("question")
+    if not state or not area or not question:
+        from backend.utils.responses import ApiError
+        raise ApiError("missing_field", "'state', 'area' and 'question' are required", 400)
+    return ok(analyst_service.ask(state, area, question))
 
 
 @bp.get("/dashboard/<state>/<area>")

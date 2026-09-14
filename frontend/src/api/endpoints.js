@@ -36,6 +36,7 @@ export const aqi = {
   forecast24h: (state, area) => api.get(`/aqi/forecast-24h/${S(state, area)}`),
   outdoorPlanner: (state, area) => api.get(`/aqi/outdoor-planner/${S(state, area)}`),
   recovery: (state, area) => api.get(`/aqi/recovery/${S(state, area)}`),
+  analyst: (state, area, question) => api.post('/aqi/analyst', { state, area, question }),
 }
 
 export const health = {

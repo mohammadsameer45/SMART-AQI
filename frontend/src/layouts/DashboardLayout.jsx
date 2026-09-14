@@ -3,6 +3,7 @@ import { Link, NavLink, Outlet } from 'react-router-dom'
 import { useAuth } from '../auth/AuthContext'
 import { SelectionProvider } from '../components/SelectionContext'
 import AreaPicker from '../components/AreaPicker'
+import AskAnalyst from '../components/AskAnalyst'
 import { useAlertsWatcher } from '../hooks/useAlertsWatcher'
 import './dashboard.css'
 
@@ -59,6 +60,7 @@ export default function DashboardLayout() {
           </header>
           <div className="dash-content"><Outlet /></div>
         </div>
+        <AskAnalyst />
       </div>
     </SelectionProvider>
   )
