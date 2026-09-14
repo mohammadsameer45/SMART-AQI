@@ -62,3 +62,22 @@
 
 .imp-bar { height: 8px; border-radius: 999px; background: var(--stroke); overflow: hidden; margin-top: 4px; }
 .imp-bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--violet-600), var(--violet-400)); }
+
+/* --- pollutant analysis: change badges, why-button/panel, source chips --- */
+.chg-badge { font-size: 11.5px; font-weight: 600; padding: 3px 8px; border-radius: 999px; }
+.chg-badge.up { color: var(--aqi-verypoor); background: rgba(226,75,75,.14); }
+.chg-badge.down { color: var(--aqi-good); background: rgba(46,158,79,.14); }
+
+.src-chip { font-size: 11px; padding: 3px 9px; border-radius: 999px; background: var(--panel-2);
+  border: 1px solid var(--stroke); color: var(--text-2); }
+.src-chip.up { color: var(--aqi-verypoor); border-color: rgba(226,75,75,.3); }
+
+.why-btn { margin-top: 12px; font-size: 12px; padding: 6px 12px; }
+.why-panel { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--stroke); }
+.why-label { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--text-3);
+  font-weight: 600; margin: 10px 0 6px; }
+.why-item { margin-bottom: 8px; }
+.why-item strong { font-size: 13px; color: var(--text-1); }
+
+.trend-line { display: flex; align-items: baseline; gap: 8px; }
+.spike-alert { color: var(--aqi-poor); font-weight: 600; font-size: 13.5px; }

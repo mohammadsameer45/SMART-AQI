@@ -4,6 +4,7 @@ from __future__ import annotations
 from flask import Blueprint, request
 
 from backend.services import (aqi_service, forecast_service, health_service,
+                              pollutant_insight_service as insight,
                               weather as weather_service)
 from backend.services.location_service import coverage, resolve_area
 from backend.utils.auth import require_auth
@@ -32,6 +33,60 @@ def history(state, area):
 @require_auth
 def pollutants(state, area):
     return ok(aqi_service.pollutants(state, area))
+
+
+@bp.get("/pollutants/<state>/<area>/<pollutant>/why")
+@require_auth
+def pollutant_why(state, area, pollutant):
+    return ok(insight.why_pollutant(state, area, pollutant))
+
+
+@bp.get("/aqi/trend/<state>/<area>")
+@require_auth
+def aqi_trend(state, area):
+    return ok(insight.trend(state, area))
+
+
+@bp.get("/aqi/spike/<state>/<area>")
+@require_auth
+def aqi_spike(state, area):
+    return ok(insight.spike_detection(state, area))
+
+
+@bp.get("/aqi/explanation/<state>/<area>")
+@require_auth
+def aqi_explanation(state, area):
+    return ok(insight.explanation(state, area))
+
+
+@bp.get("/aqi/source-analysis/<state>/<area>")
+@require_auth
+def aqi_source_analysis(state, area):
+    return ok(insight.source_analysis(state, area))
+
+
+@bp.get("/aqi/impact/<state>/<area>")
+@require_auth
+def aqi_impact(state, area):
+    return ok(insight.impact_breakdown(state, area))
+
+
+@bp.get("/dispersion/<state>/<area>")
+@require_auth
+def dispersion(state, area):
+    return ok(insight.dispersion(state, area))
+
+
+@bp.post("/aqi/why-change")
+@require_auth
+def aqi_why_change():
+    body = request.get_json(silent=True) or {}
+    state = body.get("state")
+    area = body.get("area")
+    if not state or not area:
+        from backend.utils.responses import ApiError
+        raise ApiError("missing_field", "'state' and 'area' are required", 400)
+    return ok(insight.why_change(state, area, body.get("from"), body.get("to")))
 
 
 @bp.get("/dashboard/<state>/<area>")

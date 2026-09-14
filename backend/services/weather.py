@@ -19,9 +19,38 @@ from backend.models import mongo_models as M
 from backend.services.location_service import area_record_filter, resolve_area
 
 _CURRENT = ["temperature_2m", "relative_humidity_2m", "wind_speed_10m",
-            "surface_pressure", "precipitation", "weather_code"]
+            "wind_direction_10m", "surface_pressure", "precipitation",
+            "weather_code"]
 _DAILY = ["temperature_2m_max", "temperature_2m_min", "precipitation_sum",
-          "wind_speed_10m_max", "weather_code"]
+          "wind_speed_10m_max", "wind_direction_10m_dominant", "weather_code"]
+
+_COMPASS = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE",
+            "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"]
+
+
+def compass(degrees) -> str | None:
+    try:
+        d = float(degrees) % 360
+    except (TypeError, ValueError):
+        return None
+    return _COMPASS[round(d / 22.5) % 16]
+
+
+def dispersion_condition(wind_speed_ms) -> tuple[str, float] | tuple[None, None]:
+    """Classify dispersion from wind speed. Thresholds follow the Beaufort
+    scale's calm/light-air vs light-breeze boundary (~2 m/s) and a further
+    step at ~5 m/s (moderate breeze) for "High" dispersion. Not the sole
+    determinant of AQI - one contributing factor among several."""
+    try:
+        ws = float(wind_speed_ms)
+    except (TypeError, ValueError):
+        return None, None
+    kmh = round(ws * 3.6, 1)
+    if ws < 2:
+        return "Low", kmh
+    if ws < 5:
+        return "Moderate", kmh
+    return "High", kmh
 
 # condensed WMO weather-code groups
 _WMO = {
@@ -93,12 +122,15 @@ def for_area(state: str, area: str) -> dict:
     daily = raw.get("daily", {})
     days = []
     for i, d in enumerate(daily.get("time", [])):
+        wind_dir_deg = daily.get("wind_direction_10m_dominant", [None] * len(daily["time"]))[i]
         days.append({
             "date": d,
             "t_max": daily["temperature_2m_max"][i],
             "t_min": daily["temperature_2m_min"][i],
             "rain_mm": daily["precipitation_sum"][i],
             "wind_max_ms": daily["wind_speed_10m_max"][i],
+            "wind_direction_deg": wind_dir_deg,
+            "wind_direction": compass(wind_dir_deg),
             "condition": wmo_text(daily["weather_code"][i]),
         })
     return {
@@ -111,11 +143,14 @@ def for_area(state: str, area: str) -> dict:
             "temperature": cur.get("temperature_2m"),
             "humidity": cur.get("relative_humidity_2m"),
             "wind_speed": cur.get("wind_speed_10m"),
+            "wind_direction_deg": cur.get("wind_direction_10m"),
+            "wind_direction": compass(cur.get("wind_direction_10m")),
             "pressure": cur.get("surface_pressure"),
             "rainfall": cur.get("precipitation"),
             "condition": wmo_text(cur.get("weather_code")),
         },
         "units": {"temperature": "°C", "humidity": "%", "wind_speed": "m/s",
+                  "wind_direction": "compass, from true north",
                   "pressure": "hPa", "rainfall": "mm"},
         "daily": days,
         "fetched_at": datetime.now(timezone.utc).isoformat(),

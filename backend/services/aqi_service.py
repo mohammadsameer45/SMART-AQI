@@ -12,6 +12,30 @@ from backend.services.location_service import area_record_filter, resolve_area
 POLLUTANTS = ["PM25", "PM10", "NO", "NO2", "NOx", "NH3", "CO", "SO2", "O3"]
 _PROJ = {"_id": 0}
 
+# The CPCB real-time (data.gov.in) feed only ever publishes these seven - NO
+# and NOx are not sent by the live resource at all (verified against the raw
+# feed), only present in the 2015-2020 historical dataset. Kept in sync with
+# scripts/ingest_cpcb_live.py's own POLLUTANTS list.
+LIVE_PUBLISHED_POLLUTANTS = {"PM25", "PM10", "NO2", "SO2", "CO", "O3", "NH3"}
+
+# General source categories a pollutant is typically associated with - not a
+# claim about the cause of any specific reading. Used for the pollutant-detail
+# cards and as the evidence-free half of the source-analysis ranking.
+POLLUTANT_SOURCE_HINTS: dict[str, list[str]] = {
+    "PM25": ["Traffic", "Construction/dust", "Biomass burning",
+             "Industrial emissions", "Atmospheric conditions (stagnation)"],
+    "PM10": ["Construction/dust", "Traffic", "Industrial emissions",
+             "Atmospheric conditions (stagnation)"],
+    "NO2": ["Traffic", "Industrial emissions"],
+    "NO": ["Traffic", "Industrial emissions"],
+    "NOx": ["Traffic", "Industrial emissions"],
+    "SO2": ["Industrial emissions", "Combustion (power plants, diesel gensets)"],
+    "CO": ["Traffic", "Biomass burning", "Incomplete combustion"],
+    "O3": ["Atmospheric chemistry (sunlight + precursor pollutants)",
+           "Not directly emitted - a secondary pollutant"],
+    "NH3": ["Agricultural activity", "Waste/sewage", "Industrial emissions"],
+}
+
 
 def _mean_by_date(rows: list[dict]) -> list[dict]:
     by_date: dict[str, list[dict]] = {}
@@ -91,6 +115,35 @@ def _live_current(resolved: dict) -> dict | None:
     }
 
 
+def _area_live_series(resolved: dict) -> list[dict]:
+    """Every live CPCB reading for the area, averaged across stations per
+    timestamp and sorted oldest -> newest. Used for 24h-change, trend and
+    spike detection when there isn't enough (or any) historical daily data."""
+    f = area_record_filter(resolved)
+    rows = list(M.col(M.AQI_RECORDS).find(dict(f, grain="live"), _PROJ).sort("ts", 1))
+    rows = [r for r in rows if r.get("AQI") is not None]
+    by_ts: dict[Any, list[dict]] = {}
+    for r in rows:
+        by_ts.setdefault(r["ts"], []).append(r)
+    out = []
+    for ts in sorted(by_ts):
+        group = by_ts[ts]
+        agg: dict[str, Any] = {"ts": ts, "date": ts.strftime("%Y-%m-%d")}
+        for k in ["AQI"] + POLLUTANTS:
+            vals = [g[k] for g in group if g.get(k) is not None]
+            agg[k] = round(mean(vals), 2) if vals else None
+        out.append(agg)
+    return out
+
+
+def _value_change(before: float | None, after: float | None) -> dict | None:
+    if before is None or after is None:
+        return None
+    abs_change = round(after - before, 2)
+    pct = round(100 * (after - before) / before, 1) if before else None
+    return {"from": before, "to": after, "abs": abs_change, "pct": pct}
+
+
 def current(state: str, area: str) -> dict:
     resolved = resolve_area(state, area)
 
@@ -139,38 +192,68 @@ def history(state: str, area: str, frm: datetime | None, to: datetime | None,
     }
 
 
+_HEALTH_RELEVANCE = {
+    "PM25": "Fine particulate matter; penetrates deep into the lungs.",
+    "PM10": "Coarse particulate matter; irritates airways.",
+    "NO2": "Traffic-related gas; can inflame airways.",
+    "SO2": "Combustion gas; can trigger bronchoconstriction.",
+    "CO": "Reduces oxygen delivery in the blood.",
+    "O3": "Ground-level ozone; irritant, worse on sunny days.",
+    "NO": "Precursor to NO2 and ozone.",
+    "NOx": "Nitrogen oxides, traffic/combustion related.",
+    "NH3": "Ammonia; agricultural and waste sources.",
+}
+
+
 def pollutants(state: str, area: str, trend_days: int = 30) -> dict:
+    """Per-pollutant current value, 24h change, trend stats and health/source
+    context. Falls back to the live CPCB series when there is no historical
+    daily data for the area (true for most post-2020 LGD districts), instead
+    of incorrectly reporting the area as having no data at all."""
     resolved = resolve_area(state, area)
-    series = _pick_series_docs(resolved)
+    hist_series = _pick_series_docs(resolved)
+    live_series = _area_live_series(resolved) if not hist_series else []
+
+    series = hist_series or live_series
     if not series:
         return {"available": False, "reason": "No records for this area."}
+
+    is_live = not hist_series
     latest = series[-1]
     cutoff = latest["ts"] - timedelta(days=trend_days)
     window = [d for d in series if d["ts"] >= cutoff]
-    health = {
-        "PM25": "Fine particulate matter; penetrates deep into the lungs.",
-        "PM10": "Coarse particulate matter; irritates airways.",
-        "NO2": "Traffic-related gas; can inflame airways.",
-        "SO2": "Combustion gas; can trigger bronchoconstriction.",
-        "CO": "Reduces oxygen delivery in the blood.",
-        "O3": "Ground-level ozone; irritant, worse on sunny days.",
-        "NO": "Precursor to NO2 and ozone.",
-        "NOx": "Nitrogen oxides, traffic/combustion related.",
-        "NH3": "Ammonia; agricultural and waste sources.",
-    }
+
+    # 24h-change: nearest earlier point to ~24h before the latest reading,
+    # in the same series that's actually available for this area.
+    target = latest["ts"] - timedelta(hours=24)
+    earlier = [d for d in series if d["ts"] <= target]
+    prior = min(earlier, key=lambda d: abs((d["ts"] - target).total_seconds())) \
+        if earlier else None
+
     out = []
     for p in POLLUTANTS:
         vals = [d[p] for d in window if d.get(p) is not None]
+        live_published = p in LIVE_PUBLISHED_POLLUTANTS
+        note = None
+        if is_live and not live_published:
+            note = ("Not published by the CPCB real-time feed for this area "
+                     "right now; only available in historical (2015-2020) records.")
         out.append({
             "pollutant": p,
             "current": latest.get(p),
             "unit": "mg/m³" if p == "CO" else "µg/m³",
+            "change_24h": _value_change(prior.get(p) if prior else None, latest.get(p)),
             "trend_mean": round(mean(vals), 2) if vals else None,
             "trend_min": round(min(vals), 2) if vals else None,
             "trend_max": round(max(vals), 2) if vals else None,
+            "trend_days": trend_days if hist_series else None,
+            "trend_source": "historical_daily" if hist_series else "live_readings",
             "n": len(vals),
-            "health_relevance": health.get(p, ""),
+            "health_relevance": _HEALTH_RELEVANCE.get(p, ""),
+            "possible_source_categories": POLLUTANT_SOURCE_HINTS.get(p, []),
+            "live_feed_note": note,
         })
-    return {"available": True, "as_of": latest["date"],
+    return {"available": True, "as_of": latest.get("date") or latest["ts"].isoformat(),
+            "is_live": is_live,
             "state": state, "area": area, "trend_days": trend_days,
             "pollutants": out}

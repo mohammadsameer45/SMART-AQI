@@ -23,7 +23,15 @@ export const aqi = {
   forecast: (state, area, model) =>
     api.get(`/aqi/forecast/${S(state, area)}`, { params: model ? { model } : {} }),
   pollutants: (state, area) => api.get(`/pollutants/${S(state, area)}`),
+  pollutantWhy: (state, area, pollutant) =>
+    api.get(`/pollutants/${S(state, area)}/${encodeURIComponent(pollutant)}/why`),
   dashboard: (state, area) => api.get(`/dashboard/${S(state, area)}`),
+  trend: (state, area) => api.get(`/aqi/trend/${S(state, area)}`),
+  spike: (state, area) => api.get(`/aqi/spike/${S(state, area)}`),
+  explanation: (state, area) => api.get(`/aqi/explanation/${S(state, area)}`),
+  sourceAnalysis: (state, area) => api.get(`/aqi/source-analysis/${S(state, area)}`),
+  impact: (state, area) => api.get(`/aqi/impact/${S(state, area)}`),
+  whyChange: (state, area, body = {}) => api.post('/aqi/why-change', { state, area, ...body }),
 }
 
 export const health = {
@@ -32,6 +40,7 @@ export const health = {
 
 export const weather = {
   forArea: (state, area) => api.get(`/weather/${S(state, area)}`),
+  dispersion: (state, area) => api.get(`/dispersion/${S(state, area)}`),
 }
 
 export const models = {
