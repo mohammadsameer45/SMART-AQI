@@ -22,3 +22,10 @@ def fire_events(state, area):
 def fire_impact(state, area):
     radius = request.args.get("radius_km", type=int) or 200
     return ok(fire_service.fire_impact(state, area, radius_km=radius))
+
+
+@bp.get("/smoke/<state>/<area>")
+@require_auth
+def smoke_forecast(state, area):
+    radius = request.args.get("radius_km", type=int) or 200
+    return ok(fire_service.smoke_forecast(state, area, radius_km=radius))

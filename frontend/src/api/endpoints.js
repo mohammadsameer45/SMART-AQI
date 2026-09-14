@@ -51,6 +51,7 @@ export const weather = {
 export const fire = {
   events: (state, area) => api.get(`/fire-events/${S(state, area)}`),
   impact: (state, area) => api.get(`/fire-impact/${S(state, area)}`),
+  smoke: (state, area) => api.get(`/smoke/${S(state, area)}`),
 }
 
 export const models = {

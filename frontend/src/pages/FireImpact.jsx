@@ -12,6 +12,7 @@ export default function FireImpact() {
   const enabled = !!(state && area)
   const impact = useApi(() => fireApi.impact(state, area), [state, area], { enabled })
   const events = useApi(() => fireApi.events(state, area), [state, area], { enabled })
+  const smoke = useApi(() => fireApi.smoke(state, area), [state, area], { enabled })
 
   if (!state || !area) return <Loader />
   if (impact.loading) return <Loader label="Checking for nearby fires…" />
@@ -76,6 +77,33 @@ export default function FireImpact() {
             </div>
           </GlassCard>
         </div>
+      )}
+
+      {d.fire_detected && (
+        <GlassCard className="card" style={{ marginBottom: 18 }}>
+          <SectionTitle eyebrow={smoke.data?.label || 'Estimated'} title="Smoke forecast" />
+          {smoke.loading ? <Loader /> : !smoke.data?.available ? (
+            <p className="tiny muted">{smoke.data?.reason || 'Unavailable.'}</p>
+          ) : smoke.data.days.length === 0 ? (
+            <p className="tiny muted">{smoke.data.message}</p>
+          ) : (
+            <>
+              <div className="grid g-3">
+                {smoke.data.days.map((day, i) => (
+                  <div key={i} className="smoke-day">
+                    <div className="tiny muted">{day.date === 'today' ? 'Now' : day.date}</div>
+                    <div className="stat-value" style={{ color: LEVEL_COLOR[day.estimated_smoke_impact], fontSize: 20 }}>
+                      {day.estimated_smoke_impact}
+                    </div>
+                    <div className="tiny muted">{day.wind_direction} · {day.wind_speed_kmh} km/h · {day.alignment}</div>
+                    {day.assumes_fire_persists && <div className="tiny muted">assumes fire still active</div>}
+                  </div>
+                ))}
+              </div>
+              <p className="card-note">{smoke.data.note}</p>
+            </>
+          )}
+        </GlassCard>
       )}
 
       <GlassCard className="card">

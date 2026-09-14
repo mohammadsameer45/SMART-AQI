@@ -26,6 +26,7 @@ import requests
 
 from backend.config import config
 from backend.models import mongo_models as M
+from backend.services import aqi_service
 from backend.services.location_service import resolve_area
 from backend.services.weather import _area_coord, for_area as weather_for_area
 
@@ -152,6 +153,89 @@ def _nearby_station_names(flat: float, flon: float, wind_toward_deg: float,
             seen.add(c["city"])
             uniq.append(c)
     return uniq[:8]
+
+
+def _classify_alignment_and_impact(fire_bearing_to_area: float, distance_km: float,
+                                   wind_from_deg: float | None) -> tuple[str | None, str, float | None]:
+    """Shared by fire_impact() (current wind) and smoke_forecast() (a
+    forecast day's wind): returns (alignment, impact_level, wind_toward_deg)."""
+    if wind_from_deg is None:
+        return None, "Unknown", None
+    wind_toward = (wind_from_deg + 180) % 360
+    diff = _angular_diff(fire_bearing_to_area, wind_toward)
+    alignment = ("downwind" if diff <= 45 else
+                "partially downwind" if diff <= 90 else "not downwind")
+    if alignment == "not downwind":
+        level = "Low"
+    elif distance_km < 50:
+        level = "High"
+    elif distance_km < 150:
+        level = "Moderate"
+    else:
+        level = "Low"
+    return alignment, level, wind_toward
+
+
+def smoke_forecast(state: str, area: str, days: int = 3,
+                   radius_km: int = _DEFAULT_RADIUS_KM) -> dict:
+    """Estimated smoke impact for today + the next `days`-1 forecast days,
+    combining the nearest real active fire's location with Open-Meteo's
+    daily wind forecast. A fire's future persistence isn't predicted by
+    FIRMS (it's a detection feed, not a fire-behaviour model), so every
+    day beyond today is explicitly labelled as assuming the fire stays
+    active - this is an estimate, never a smoke-concentration prediction."""
+    det = detect_fires(state, area, radius_km)
+    if not det.get("available"):
+        return det
+    if det["count"] == 0:
+        return {"available": True, "state": state, "area": area,
+                "fire_detected": False, "days": [],
+                "message": det["message"]}
+
+    fire = det["fires"][0]
+    wx = weather_for_area(state, area)
+    cur = aqi_service.current(state, area)
+    pm = (cur.get("pollutants") or {}) if cur.get("available") else {}
+
+    out_days = []
+    if wx.get("available"):
+        cur_wind = wx["current"].get("wind_direction_deg")
+        alignment, level, _ = _classify_alignment_and_impact(
+            fire["bearing_from_fire_to_area_deg"], fire["distance_km"], cur_wind)
+        out_days.append({
+            "date": "today", "assumes_fire_persists": False,
+            "wind_direction": wx["current"].get("wind_direction"),
+            "wind_speed_kmh": round(wx["current"]["wind_speed"] * 3.6, 1)
+            if wx["current"].get("wind_speed") is not None else None,
+            "alignment": alignment, "estimated_smoke_impact": level,
+        })
+        for d in wx.get("daily", [])[:max(days - 1, 0)]:
+            alignment, level, _ = _classify_alignment_and_impact(
+                fire["bearing_from_fire_to_area_deg"], fire["distance_km"],
+                d.get("wind_direction_deg"))
+            out_days.append({
+                "date": d["date"], "assumes_fire_persists": True,
+                "wind_direction": d.get("wind_direction"),
+                "wind_speed_kmh": round(d["wind_max_ms"] * 3.6, 1)
+                if d.get("wind_max_ms") is not None else None,
+                "alignment": alignment, "estimated_smoke_impact": level,
+            })
+
+    return {
+        "available": True, "state": state, "area": area,
+        "fire_detected": True,
+        "nearest_fire": {"distance_km": fire["distance_km"],
+                         "acquired_date": fire["acquired_date"]},
+        "current_PM25": pm.get("PM25"), "current_PM10": pm.get("PM10"),
+        "days": out_days,
+        "label": "Estimated smoke impact",
+        "note": ("Not a smoke-concentration prediction - a simplified "
+                 "distance+wind-alignment estimate per day, using the "
+                 "Open-Meteo wind forecast. Days after today additionally "
+                 "assume this fire is still burning, which FIRMS does not "
+                 "predict; treat them as lower-confidence than today's "
+                 "estimate."),
+    }
 
 
 def fire_impact(state: str, area: str, radius_km: int = _DEFAULT_RADIUS_KM) -> dict:
