@@ -3,7 +3,7 @@ import {
   ComposedChart, ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip,
   ReferenceLine, Cell, Legend,
 } from 'recharts'
-import { aqiColor, fmtDate } from '../utils/aqi'
+import { aqiColor, aqiLabel, fmtDate, fmtDateLong, AQI_BANDS } from '../utils/aqi'
 
 const AX = { stroke: '#52525b', fontSize: 11 }
 const GRID = { stroke: 'rgba(255,255,255,0.06)' }
@@ -159,6 +159,98 @@ export function MonthlyTrend({ data = [], height = 260 }) {
           strokeWidth={2} fill="url(#stFill)" dot={false} />
       </AreaChart>
     </ResponsiveContainer>
+  )
+}
+
+const DOW_LABELS = ['', 'Mon', '', 'Wed', '', 'Fri', '']
+const MONTH_LABELS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+function yearWeeks(dayMap, year) {
+  const jan1 = new Date(Date.UTC(year, 0, 1))
+  const dec31 = new Date(Date.UTC(year, 11, 31))
+  const start = new Date(jan1); start.setUTCDate(jan1.getUTCDate() - jan1.getUTCDay())
+  const end = new Date(dec31); end.setUTCDate(dec31.getUTCDate() + (6 - dec31.getUTCDay()))
+
+  const weeks = []
+  const cur = new Date(start)
+  while (cur <= end) {
+    const week = []
+    for (let i = 0; i < 7; i++) {
+      const inYear = cur.getUTCFullYear() === year
+      const iso = cur.toISOString().slice(0, 10)
+      week.push(inYear ? { date: iso, ...dayMap.get(iso) } : null)
+      cur.setUTCDate(cur.getUTCDate() + 1)
+    }
+    weeks.push(week)
+  }
+  return weeks
+}
+
+function weatherNote(w) {
+  if (!w) return ''
+  const parts = []
+  if (w.temp_mean != null) parts.push(`${w.temp_mean}°C`)
+  if (w.humidity != null) parts.push(`${w.humidity}% RH`)
+  if (w.wind_mean_ms != null) parts.push(`${w.wind_mean_ms} m/s wind`)
+  if (w.rain_mm != null && w.rain_mm > 0) parts.push(`${w.rain_mm} mm rain`)
+  return parts.length ? ` · ${parts.join(', ')}` : ''
+}
+
+function cellTitle(cell) {
+  if (!cell || cell.AQI == null) return cell ? fmtDateLong(cell.date) : ''
+  const main = cell.main_pollutant ? ` · main: ${cell.main_pollutant.replace('25', '2.5')}` : ''
+  return `${fmtDateLong(cell.date)} · AQI ${Math.round(cell.AQI)} (${cell.AQI_bucket || aqiLabel(cell.AQI)})${main}${weatherNote(cell.weather)}`
+}
+
+/** GitHub-contribution-style heat calendar of real recorded daily AQI, one grid per year. */
+export function HeatCalendar({ days = [] }) {
+  const dayMap = new Map(days.map((d) => [d.date, d]))
+  const years = [...new Set(days.map((d) => Number(d.date.slice(0, 4))))].sort((a, b) => b - a)
+
+  return (
+    <div className="heat-cal">
+      {years.map((year) => {
+        const weeks = yearWeeks(dayMap, year)
+        let lastMonth = -1
+        return (
+          <div key={year} className="heat-cal-year">
+            <div className="heat-cal-year-label">{year}</div>
+            <div className="heat-cal-scroll">
+              <div className="heat-cal-dow">
+                {DOW_LABELS.map((l, i) => <span key={i}>{l}</span>)}
+              </div>
+              <div className="heat-cal-grid">
+                {weeks.map((week, wi) => {
+                  const firstReal = week.find(Boolean)
+                  const month = firstReal ? new Date(firstReal.date).getUTCMonth() : lastMonth
+                  const showLabel = firstReal && month !== lastMonth
+                  if (showLabel) lastMonth = month
+                  return (
+                    <div key={wi} className="heat-cal-week">
+                      <div className="heat-cal-month">{showLabel ? MONTH_LABELS[month] : ''}</div>
+                      {week.map((cell, di) => (
+                        <div key={di}
+                          className={`heat-cal-cell${cell ? '' : ' empty'}`}
+                          title={cellTitle(cell)}
+                          style={cell?.AQI != null ? { background: aqiColor(cell.AQI) } : undefined} />
+                      ))}
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          </div>
+        )
+      })}
+      <div className="heat-cal-legend">
+        {AQI_BANDS.map((b) => (
+          <span key={b.label} className="ml-item">
+            <span className="ml-sw" style={{ background: b.hex }} /> {b.label}
+          </span>
+        ))}
+        <span className="ml-item"><span className="ml-sw empty" /> No data</span>
+      </div>
+    </div>
   )
 }
 

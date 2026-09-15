@@ -4,15 +4,17 @@ import { useApi } from '../hooks/useApi'
 import { aqi as aqiApi, geo } from '../api/endpoints'
 import AQIGauge from '../components/AQIGauge'
 import { GlassCard, Loader, ErrorState, EmptyState, AQIChip, SectionTitle, StatTile } from '../components/ui/Bits'
-import { HistoryChart, ForecastChart } from '../charts/charts'
+import { HistoryChart, ForecastChart, HeatCalendar, MonthlyTrend } from '../charts/charts'
 import WeatherCard from '../components/WeatherCard'
-import { bandFor, fmtDateLong } from '../utils/aqi'
+import { bandFor, fmtDate, fmtDateLong } from '../utils/aqi'
 import './dash-pages.css'
 
 export default function DistrictExplorer() {
   const { state, area } = useSelection()
-  const dash = useApi(() => aqiApi.dashboard(state, area), [state, area], { enabled: !!(state && area) })
-  const locs = useApi(() => geo.locations(state, area), [state, area], { enabled: !!(state && area) })
+  const enabled = !!(state && area)
+  const dash = useApi(() => aqiApi.dashboard(state, area), [state, area], { enabled })
+  const locs = useApi(() => geo.locations(state, area), [state, area], { enabled })
+  const cal = useApi(() => aqiApi.calendar(state, area), [state, area], { enabled })
 
   return (
     <div>
@@ -28,12 +30,12 @@ export default function DistrictExplorer() {
       {!state || !area ? <Loader />
         : dash.loading ? <Loader label={`Loading ${area}…`} />
         : dash.error ? <ErrorState error={dash.error} onRetry={dash.refetch} />
-        : <Explorer dash={dash.data} locs={locs.data} state={state} area={area} />}
+        : <Explorer dash={dash.data} locs={locs.data} cal={cal} state={state} area={area} />}
     </div>
   )
 }
 
-function Explorer({ dash, locs, state, area }) {
+function Explorer({ dash, locs, cal, state, area }) {
   const cur = dash.current
   const band = bandFor(cur?.AQI)
   const cov = dash.coverage
@@ -97,6 +99,43 @@ function Explorer({ dash, locs, state, area }) {
           </div>
         </GlassCard>
       )}
+
+      <AqiCalendarCard cal={cal} />
     </>
+  )
+}
+
+function AqiCalendarCard({ cal }) {
+  return (
+    <GlassCard className="card" style={{ marginTop: 18 }}>
+      <SectionTitle eyebrow="2015–2020 recorded daily AQI" title="AQI history calendar" />
+      {cal.loading ? <Loader /> : cal.error ? <ErrorState error={cal.error} onRetry={cal.refetch} />
+        : !cal.data?.available ? (
+          <p className="tiny muted">{cal.data?.reason || 'No historical daily series for this area.'}</p>
+        ) : (
+          <>
+            <p className="tiny muted" style={{ marginBottom: 12 }}>
+              {cal.data.n_days.toLocaleString()} recorded days · {fmtDate(cal.data.start)} → {fmtDate(cal.data.end)}
+            </p>
+            <HeatCalendar days={cal.data.days} />
+            <div className="grid g-2" style={{ marginTop: 18 }}>
+              <div>
+                <div className="why-label">Worst month on record</div>
+                {cal.data.worst_month
+                  ? <p className="tiny">{cal.data.worst_month.month} · avg AQI {cal.data.worst_month.avg_AQI}</p>
+                  : <p className="tiny muted">—</p>}
+                <div className="why-label" style={{ marginTop: 10 }}>Best month on record</div>
+                {cal.data.best_month
+                  ? <p className="tiny">{cal.data.best_month.month} · avg AQI {cal.data.best_month.avg_AQI}</p>
+                  : <p className="tiny muted">—</p>}
+              </div>
+              {cal.data.monthly?.length > 1 && (
+                <MonthlyTrend data={cal.data.monthly.map((m) => ({ month: m.month, aqi: m.avg_AQI }))} height={140} />
+              )}
+            </div>
+            <p className="card-note">{cal.data.note}</p>
+          </>
+        )}
+    </GlassCard>
   )
 }

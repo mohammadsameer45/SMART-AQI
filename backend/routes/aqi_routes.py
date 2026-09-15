@@ -3,8 +3,8 @@ from __future__ import annotations
 
 from flask import Blueprint, request
 
-from backend.services import (aqi_service, analyst_service, forecast_service,
-                              health_service,
+from backend.services import (aqi_service, analyst_service, calendar_service,
+                              forecast_service, health_service,
                               pollutant_insight_service as insight,
                               pollution_event_service as events,
                               weather as weather_service)
@@ -77,6 +77,12 @@ def aqi_impact(state, area):
 @require_auth
 def dispersion(state, area):
     return ok(insight.dispersion(state, area))
+
+
+@bp.get("/aqi/calendar/<state>/<area>")
+@require_auth
+def aqi_calendar(state, area):
+    return ok(calendar_service.calendar(state, area))
 
 
 @bp.get("/aqi/events/<state>/<area>")

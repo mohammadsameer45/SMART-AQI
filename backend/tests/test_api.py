@@ -204,6 +204,20 @@ def test_map_india_and_state(client, auth_headers):
     assert any(f["properties"].get("aqi") is not None for f in delhi["features"])
 
 
+def test_aqi_calendar(client, auth_headers):
+    d = _data(client, "/api/aqi/calendar/Delhi/Delhi", auth_headers)
+    assert d["available"] and d["n_days"] > 0
+    assert d["start"] <= d["end"]
+    assert len(d["days"]) == d["n_days"]
+    first = d["days"][0]
+    assert first["AQI"] is not None and first["AQI_bucket"]
+    assert d["worst_month"]["avg_AQI"] >= d["best_month"]["avg_AQI"]
+    assert "2020" in d["note"] or "historical" in d["note"].lower()
+
+    assert client.get("/api/aqi/calendar/Atlantis/Nowhere",
+                      headers=auth_headers).status_code == 404
+
+
 def test_weather(client, auth_headers):
     d = _data(client, "/api/weather/Delhi/Delhi", auth_headers)
     assert isinstance(d["available"], bool)
