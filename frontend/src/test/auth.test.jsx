@@ -4,16 +4,11 @@ import userEvent from '@testing-library/user-event'
 import { MemoryRouter, Routes, Route } from 'react-router-dom'
 import { AuthProvider } from '../auth/AuthContext'
 import { ToastProvider } from '../hooks/useToast'
+import { clerkState } from './setup'
 
-const login = vi.fn()
-const register = vi.fn()
 const me = vi.fn()
 vi.mock('../api/endpoints', () => ({
-  auth: {
-    login: (...a) => login(...a),
-    register: (...a) => register(...a),
-    me: (...a) => me(...a),
-  },
+  auth: { me: (...a) => me(...a) },
   geo: { states: vi.fn().mockResolvedValue([]), areas: vi.fn().mockResolvedValue({ level: 'city', items: [] }) },
   aqi: {}, health: {}, models: {},
 }))
@@ -39,7 +34,13 @@ function shell(ui, route = '/login') {
   )
 }
 
-beforeEach(() => { vi.clearAllMocks(); window.localStorage.clear() })
+beforeEach(() => {
+  vi.clearAllMocks()
+  window.localStorage.clear()
+  clerkState.isSignedIn = false
+  clerkState.signIn.status = null
+  clerkState.signIn.createdSessionId = null
+})
 
 describe('LoginPage', () => {
   it('renders the form fields', () => {
@@ -50,18 +51,29 @@ describe('LoginPage', () => {
   })
 
   it('submits credentials and lands on the dashboard route', async () => {
-    login.mockResolvedValue({ token: 't', user: { email: 'a@b.com', name: 'A' } })
+    clerkState.signIn.password.mockImplementation(async () => {
+      clerkState.signIn.status = 'complete'
+      return { error: null }
+    })
+    clerkState.signIn.finalize.mockImplementation(async () => {
+      clerkState.isSignedIn = true
+      return { error: null }
+    })
+    me.mockResolvedValue({ user: { email: 'a@b.com', name: 'A' } })
     const u = userEvent.setup()
     shell(<LoginPage />)
     await u.type(screen.getByLabelText('Email'), 'a@b.com')
     await u.type(screen.getByLabelText('Password'), 'Str0ng#Pass1')
     await u.click(screen.getByRole('button', { name: /log in/i }))
-    await waitFor(() => expect(login).toHaveBeenCalledWith({ email: 'a@b.com', password: 'Str0ng#Pass1' }))
+    await waitFor(() => expect(clerkState.signIn.password)
+      .toHaveBeenCalledWith({ emailAddress: 'a@b.com', password: 'Str0ng#Pass1' }))
     expect(await screen.findByText('DASHBOARD')).toBeInTheDocument()
   })
 
   it('shows the server error and stays on the page', async () => {
-    login.mockRejectedValue(new Error('Incorrect email or password'))
+    clerkState.signIn.password.mockResolvedValue({
+      error: { message: 'Incorrect email or password' },
+    })
     const u = userEvent.setup()
     shell(<LoginPage />)
     await u.type(screen.getByLabelText('Email'), 'a@b.com')
@@ -76,14 +88,14 @@ describe('LoginPage', () => {
 
 describe('ProtectedRoute', () => {
   it('redirects to /login when there is no valid session', async () => {
-    me.mockRejectedValue(new Error('no token'))
+    clerkState.isSignedIn = false
     shell(<LoginPage />, '/app/secret')
     expect(await screen.findByRole('heading', { name: /welcome back/i })).toBeInTheDocument()
     expect(screen.queryByText('SECRET')).not.toBeInTheDocument()
   })
 
   it('renders children when the session is valid', async () => {
-    window.localStorage.setItem('smartaqi_token', 'tok')
+    clerkState.isSignedIn = true
     me.mockResolvedValue({ user: { email: 'a@b.com', name: 'A' } })
     shell(<LoginPage />, '/app/secret')
     expect(await screen.findByText('SECRET')).toBeInTheDocument()

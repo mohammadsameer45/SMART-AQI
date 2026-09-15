@@ -43,11 +43,16 @@ jobs:
       - name: Install deps
         run: |
           python -m pip install --upgrade pip
-          pip install flask flask-cors python-dotenv pymongo bcrypt pyjwt \
+          pip install flask flask-cors python-dotenv pymongo clerk-backend-api \
                       numpy pandas scikit-learn scipy shapely pytest
       - name: Run unit tests
         env:
-          JWT_SECRET: ci-not-a-real-secret
+          # Real Clerk test-instance secret key, set in repo secrets - needed
+          # to mint real session tokens for auth_headers (conftest.py). Falls
+          # back to a placeholder (non-empty, so the app still boots) when
+          # the secret isn't available, e.g. a fork PR - auth-dependent tests
+          # then skip gracefully (conftest.py) instead of erroring the run.
+          CLERK_SECRET_KEY: ${{ secrets.CLERK_SECRET_KEY || 'sk_test_ci-placeholder-not-real' }}
           MONGO_URI: mongodb://127.0.0.1:1   # unreachable -> DB tests skip
           MONGO_DB: smart_aqi_ci
         run: pytest backend/tests -q

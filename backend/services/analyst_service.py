@@ -18,7 +18,7 @@ from __future__ import annotations
 
 import re
 
-from backend.services import aqi_service, forecast_service
+from backend.services import aqi_service, forecast_service, health_service
 from backend.services import pollutant_insight_service as insight
 from backend.services import pollution_event_service as events_svc
 from backend.services.forecast_insight_service import outdoor_planner, recovery_prediction
@@ -61,7 +61,9 @@ def ask(state: str, area: str, question: str) -> dict:
             state, area, question, {})
 
     # --- outdoor safety ---
-    if re.search(r"\bsafe\b.*\b(walk|outdoor|run|jog|exercise)\b|\b(walk|outdoor|run|jog)\b.*\bsafe\b", q):
+    if re.search(r"\bsafe\b.*\b(walk|outdoor|run|jog|exercise|outside|out)\b|"
+                r"\b(walk|outdoor|run|jog|go outside|go out|step out|venture out)\b.*\bsafe\b|"
+                r"\bcan i\b.*\b(go|step|venture)\b.*\b(outside|outdoors|out)\b", q):
         cur = aqi_service.current(state, area)
         plan = outdoor_planner(state, area)
         if not cur.get("available"):
@@ -124,7 +126,9 @@ def ask(state: str, area: str, question: str) -> dict:
                    ", ".join(w["possible_source_categories_general"][:3]) + ".")
         return _answer("why_pollutant", ans, state, area, question, {"why": w})
 
-    if re.search(r"\bwhich pollutant\b|\bcausing the problem\b|\bmain pollutant\b|\bworst pollutant\b", q):
+    if re.search(r"\bwhich pollutants?\b|\bcausing the (problem|pollution)\b|\bwhat.?s causing\b|"
+                r"\bmain pollutant\b|\bworst pollutant\b|"
+                r"\bpollutants?\b.*\b(high|elevated|highest|biggest|top|worst)\b", q):
         imp = insight.impact_breakdown(state, area)
         if not imp.get("available") or not imp.get("bars"):
             return _answer("which_pollutant", imp.get("reason", "No data."), state, area, question, {})
@@ -132,6 +136,23 @@ def ask(state: str, area: str, question: str) -> dict:
         ans = (f"{top['pollutant'].replace('25', '2.5')} has the largest relative impact right now "
               f"({top['relative_share_pct']}% of the observed sub-index total). {imp['note']}")
         return _answer("which_pollutant", ans, state, area, question, {"impact": imp})
+
+    # --- what should I do / precautions / masks ---
+    if re.search(r"\bwhat should i do\b|\bany precautions?\b|\bshould i wear a mask\b|"
+                r"\bhealth advice\b|\bprecautions?\b|\bhow (can|should) i protect\b|"
+                r"\bis it safe for (kids|children|elderly|asthma)\b", q):
+        adv = health_service.advisory(state, area)
+        if not adv.get("available"):
+            return _answer("precautions", adv.get("reason", "No data."), state, area, question, {})
+        status = adv.get("air_quality_status") or f"AQI is {adv['current_AQI']} ({adv['current_bucket']})."
+        ans = status
+        if adv.get("outdoor_activity"):
+            ans += f" {adv['outdoor_activity']}"
+        if adv.get("respiratory_precautions"):
+            tips = [t.rstrip(".") for t in adv["respiratory_precautions"][:2]]
+            ans += " For sensitive groups: " + "; ".join(tips) + "."
+        ans += " This is precautionary guidance, not medical advice."
+        return _answer("precautions", ans, state, area, question, {"advisory": adv})
 
     # --- why did AQI increase/change/spike ---
     if re.search(r"\bwhy\b.*(aqi|air quality|pollution)\b.*(increase|higher|worse|change|spike|risen|rose)\b|"
@@ -151,6 +172,24 @@ def ask(state: str, area: str, question: str) -> dict:
               f"({tr['current']['as_of']}), a change of {_fmt_pct(tr['percent_change'])}. "
               f"Category: {tr['category_change']}.")
         return _answer("trend", ans, state, area, question, {"trend": tr})
+
+    # --- plain "what is <pollutant>" / "how much <pollutant>" - just the value ---
+    if pollutant:
+        pol = aqi_service.pollutants(state, area)
+        item = next((p for p in pol.get("pollutants", []) if p["pollutant"] == pollutant), None) \
+            if pol.get("available") else None
+        name = pollutant.replace("25", "2.5")
+        if not item or item.get("current") is None:
+            return _answer("pollutant_value",
+                f"No current reading for {name} in {area} right now.", state, area, question, {})
+        ans = f"{name} is currently {round(item['current'], 1)} {item['unit']}"
+        chg = item.get("change_24h")
+        if chg and chg.get("pct") is not None:
+            ans += f", {_fmt_pct(chg['pct'])} over the last 24h"
+        ans += f". {item['health_relevance']}"
+        if item.get("live_feed_note"):
+            ans += f" ({item['live_feed_note']})"
+        return _answer("pollutant_value", ans, state, area, question, {"pollutant": item})
 
     # --- nearby / affected areas ---
     if re.search(r"\bnearby\b|\baffected areas\b|\bneighbo(u)?ring\b", q):

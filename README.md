@@ -39,7 +39,7 @@ Full detail: [`docs/architecture.md`](docs/architecture.md).
 | Area | Stack |
 |---|---|
 | Frontend | React 19 (pinned 19.2 for R3F), **Vite**, React Router, Axios, Three.js, @react-three/fiber, @react-three/drei, Framer Motion, GSAP, Recharts. Hand-written CSS, **no Tailwind**. |
-| Backend | Python 3.11, Flask, Flask-CORS, PyMongo, PyJWT, bcrypt |
+| Backend | Python 3.11, Flask, Flask-CORS, PyMongo, Clerk (clerk-backend-api) |
 | Database | MongoDB (local, inspected with MongoDB Compass) |
 | ML | pandas, numpy, scikit-learn, **TensorFlow/Keras**, XGBoost, joblib, pyarrow |
 | Data | Kaggle *Air Quality Data in India 2015–2020* (CPCB), geoBoundaries ADM1/ADM2, data.gov.in CPCB live, Open-Meteo weather (current + ERA5 archive) |
@@ -78,13 +78,13 @@ python -m pip install -r backend/requirements.txt
 
 ```bash
 cp backend/.env.example backend/.env
-# a generated JWT_SECRET is already filled in this environment.
-python -c "import secrets; print(secrets.token_urlsafe(48))"   # to regenerate
+# fill in CLERK_SECRET_KEY (Clerk dashboard -> API Keys -> Secret key)
 ```
 
-`backend/.env` keys: `MONGO_URI`, `MONGO_DB`, `JWT_SECRET`, `FRONTEND_URL`,
+`backend/.env` keys: `MONGO_URI`, `MONGO_DB`, `CLERK_SECRET_KEY`, `FRONTEND_URL`,
 `DATA_GOV_IN_API_KEY` (optional, enables the live feed + weather),
-`OPEN_METEO_BASE`.
+`OPEN_METEO_BASE`. The frontend also needs `frontend/.env`'s
+`VITE_CLERK_PUBLISHABLE_KEY` (same Clerk app, API Keys -> Publishable key).
 
 ### 3. Data pipeline
 
@@ -224,7 +224,7 @@ medication instruction.** Detail: [`docs/health_advisory.md`](docs/health_adviso
 | Symptom | Fix |
 |---|---|
 | `ImportError: DLL … _pywrap_tensorflow` | XGBoost imported before TensorFlow. Keep `backend/ml/__init__.py`; import `backend.ml.*` before `xgboost`. |
-| `RuntimeError: Missing … JWT_SECRET` | `backend/.env` missing/empty — copy from `.env.example` and fill. |
+| `RuntimeError: Missing … CLERK_SECRET_KEY` | `backend/.env` missing/empty — copy from `.env.example` and fill. |
 | API 500s / `mongo_ok:false` at `/api/health` | local MongoDB not running. |
 | Frontend can't reach API | run the Flask app first; Vite proxies `/api` → `:5000`. Vite binds `localhost` (IPv6) — use `http://localhost:5173`, not `127.0.0.1`. |
 | `@react-three/fiber` peer error on install | React is pinned to `19.2.0` in `frontend/package.json`; keep the exact pin. |

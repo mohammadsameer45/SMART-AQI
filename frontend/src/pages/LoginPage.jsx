@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useNavigate, useLocation } from 'react-router-dom'
+import { Link, useNavigate, useLocation, Navigate } from 'react-router-dom'
 import SceneCanvas from '../three/SceneCanvas'
 import AtmosphereSphere from '../three/AtmosphereSphere'
 import { useAuth } from '../auth/AuthContext'
@@ -7,7 +7,7 @@ import { useToast } from '../hooks/useToast'
 import './auth.css'
 
 export default function LoginPage() {
-  const { login } = useAuth()
+  const { login, loginWithGoogle, isSignedIn, ready } = useAuth()
   const toast = useToast()
   const nav = useNavigate()
   const loc = useLocation()
@@ -15,6 +15,10 @@ export default function LoginPage() {
   const [focus, setFocus] = useState(0)
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState('')
+
+  // Already signed in (e.g. a lingering Clerk session from this browser) -
+  // don't show a login form for someone who's already authenticated.
+  if (ready && isSignedIn) return <Navigate to={loc.state?.from || '/app'} replace />
 
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }))
 
@@ -28,6 +32,16 @@ export default function LoginPage() {
     } catch (e2) {
       setErr(e2.message); toast.error(e2.message)
     } finally { setBusy(false) }
+  }
+
+  const onGoogle = async () => {
+    setBusy(true); setErr('')
+    try {
+      await loginWithGoogle()
+      // success navigates the whole page away to Google - nothing more to do here
+    } catch (e2) {
+      setErr(e2.message); toast.error(e2.message); setBusy(false)
+    }
   }
 
   return (
@@ -60,6 +74,18 @@ export default function LoginPage() {
             {busy ? <span className="spin" /> : 'Log in'}
           </button>
         </form>
+
+        <div className="auth-divider"><span>or</span></div>
+        {/* Clerk's bot-protection (Smart/Invisible CAPTCHA) widget mounts
+            here - a first-time Google sign-in transparently goes through
+            sign-up, which requires this element to exist before
+            signIn.sso() is called. Left unstyled (no display:none) since
+            Clerk needs to measure/render into it if a visible challenge is
+            ever required. */}
+        <div id="clerk-captcha" />
+        <button type="button" className="btn btn-ghost auth-google-btn" onClick={onGoogle} disabled={busy}>
+          Continue with Google
+        </button>
 
         <div className="auth-alt tiny">
           <Link to="/forgot">Forgot password?</Link>

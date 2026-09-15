@@ -8,6 +8,11 @@
 .auth-form { display: flex; flex-direction: column; gap: 15px; }
 .auth-alt { margin-top: 18px; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; color: var(--text-2); }
 .auth-alt a { color: var(--violet-400); }
+.auth-divider { display: flex; align-items: center; gap: 12px; margin: 18px 0 14px;
+  color: var(--text-3); font-size: 11.5px; text-transform: uppercase; letter-spacing: .08em; }
+.auth-divider::before, .auth-divider::after { content: ''; flex: 1; height: 1px; background: var(--stroke); }
+.auth-google-btn { width: 100%; justify-content: center; }
+
 .pw-meter { height: 5px; border-radius: 999px; background: var(--stroke); overflow: hidden; margin-top: 6px; }
 .pw-meter span { display: block; height: 100%; transition: width .3s var(--ease); background: var(--aqi-verypoor); }
 .pw-meter span[data-s="2"] { background: var(--aqi-moderate); }

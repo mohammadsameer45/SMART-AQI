@@ -218,6 +218,37 @@ def test_aqi_calendar(client, auth_headers):
                       headers=auth_headers).status_code == 404
 
 
+def test_analyst_intents(client, auth_headers):
+    def a(question):
+        r = client.post("/api/aqi/analyst", headers=auth_headers,
+                        json={"state": "Delhi", "area": "Delhi", "question": question})
+        return r.get_json()["data"]
+
+    # a plain "what is <pollutant>" must return that pollutant's own value,
+    # not the generic fallback (this was the reported bug: real questions
+    # were silently answered with unrelated current-AQI boilerplate).
+    d = a("what is pm2.5")
+    assert d["available"] and d["intent"] == "pollutant_value"
+    assert "PM2.5" in d["answer"]
+
+    d = a("what pollutants are high")
+    assert d["intent"] == "which_pollutant"
+
+    d = a("can i go outside")
+    assert d["intent"] == "outdoor_safety"
+
+    d = a("what should i do today")
+    assert d["intent"] == "precautions"
+    assert ".." not in d["answer"]                 # no doubled-up periods
+
+    d = a("is pollution improving")
+    assert d["intent"] == "trend"
+
+    empty = client.post("/api/aqi/analyst", headers=auth_headers,
+                        json={"state": "Delhi", "area": "Delhi", "question": ""})
+    assert empty.status_code == 400
+
+
 def test_weather(client, auth_headers):
     d = _data(client, "/api/weather/Delhi/Delhi", auth_headers)
     assert isinstance(d["available"], bool)

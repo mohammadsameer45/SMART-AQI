@@ -29,10 +29,11 @@ class Config:
     MONGO_DB: str = os.getenv("MONGO_DB", "smart_aqi")
 
     # --- auth ---
-    JWT_SECRET: str = os.getenv("JWT_SECRET", "")
-    JWT_ALGORITHM: str = "HS256"
-    JWT_EXPIRES_HOURS: int = int(os.getenv("JWT_EXPIRES_HOURS", "24"))
-    BCRYPT_ROUNDS: int = int(os.getenv("BCRYPT_ROUNDS", "12"))
+    # Clerk is the sole identity provider (email/password + Google) - the
+    # frontend signs users in directly against Clerk (useSignIn/useSignUp) and
+    # this secret key is only used server-side to verify the session token
+    # Clerk hands back (backend/utils/auth.py). No password/JWT of our own.
+    CLERK_SECRET_KEY: str = os.getenv("CLERK_SECRET_KEY", "")
 
     # --- app ---
     FLASK_ENV: str = os.getenv("FLASK_ENV", "development")
@@ -73,8 +74,8 @@ class Config:
     @classmethod
     def validate(cls, require_secrets: bool = True) -> None:
         missing = []
-        if require_secrets and not cls.JWT_SECRET:
-            missing.append("JWT_SECRET")
+        if require_secrets and not cls.CLERK_SECRET_KEY:
+            missing.append("CLERK_SECRET_KEY")
         if missing:
             raise RuntimeError(
                 "Missing required environment variables: "

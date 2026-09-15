@@ -12,9 +12,8 @@ python-dotenv==1.0.1
 # --- database ---
 pymongo==4.7.2
 
-# --- auth (Phase 12) ---
-bcrypt==4.2.1
-PyJWT==2.9.0            # not yet installed - added in the auth phase
+# --- auth (Phase 7 rebuild): Clerk is the sole identity provider ---
+clerk-backend-api==7.0.0   # verifies the frontend's Clerk session token server-side
 
 # --- data / ml (installed) ---
 pandas==2.2.2

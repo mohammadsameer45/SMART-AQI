@@ -1,23 +1,22 @@
 import axios from 'axios'
 
-const TOKEN_KEY = 'smartaqi_token'
-
-export const tokenStore = {
-  get: () => {
-    try { return localStorage.getItem(TOKEN_KEY) } catch { return null }
-  },
-  set: (t) => { try { localStorage.setItem(TOKEN_KEY, t) } catch { /* ignore */ } },
-  clear: () => { try { localStorage.removeItem(TOKEN_KEY) } catch { /* ignore */ } },
-}
+// Clerk owns the session; this is just a place for AuthContext to hand the
+// axios client a way to fetch a fresh session token for each request (Clerk
+// tokens are short-lived and auto-refreshing, so there's nothing to persist
+// here ourselves - see auth/AuthContext.jsx's setTokenGetter call).
+let getClerkToken = null
+export const setTokenGetter = (fn) => { getClerkToken = fn }
 
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_BASE || '/api',
   timeout: 20000,
 })
 
-api.interceptors.request.use((cfg) => {
-  const t = tokenStore.get()
-  if (t) cfg.headers.Authorization = `Bearer ${t}`
+api.interceptors.request.use(async (cfg) => {
+  if (getClerkToken) {
+    const t = await getClerkToken()
+    if (t) cfg.headers.Authorization = `Bearer ${t}`
+  }
   return cfg
 })
 
@@ -31,11 +30,8 @@ api.interceptors.response.use(
   },
   (err) => {
     const e = err.response?.data?.error
-    if (err.response?.status === 401) {
-      tokenStore.clear()
-      if (!location.pathname.startsWith('/login')) {
-        location.assign('/login')
-      }
+    if (err.response?.status === 401 && !location.pathname.startsWith('/login')) {
+      location.assign('/login')
     }
     return Promise.reject(new ApiError(e || { code: 'network', message: err.message }))
   },

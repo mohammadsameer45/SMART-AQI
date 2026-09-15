@@ -1,8 +1,6 @@
 import api from './client'
 
 export const auth = {
-  register: (body) => api.post('/auth/register', body),
-  login: (body) => api.post('/auth/login', body),
   me: () => api.get('/auth/me'),
 }
 
